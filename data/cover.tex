@@ -14,7 +14,7 @@
   %=========
   % 中文信息
   %=========
-  ctitle={多用户场景下的\\可验证加密搜索问题研究},
+  ctitle={可验证对称加密搜索问题\\分析与研究},
   cdegree={工程硕士},
   cdepartment={计算机科学与技术系},
   cmajor={计算机技术},
@@ -36,7 +36,7 @@
   %=========
   % 英文信息
   %=========
-  etitle={Verifiable Searchable Encryption under multi-user secenario v\version},
+  etitle={Analysis and Research of \\Verifiable Searchable Symmetric Encryption},
   % 这块比较复杂，需要分情况讨论：
   % 1. 学术型硕士
   %    edegree：必须为Master of Arts或Master of Science（注意大小写）
@@ -53,7 +53,7 @@
   %    edegree：“填写专业学位英文名称全称”
   %    emajor：不填写此项
   edegree={Master of Engineering},
-  emajor={Computer Science and Technology},
+  emajor={Computer Technology},
   eauthor={Zhu Jie},
   esupervisor={Professor Li Qi},
   %eassosupervisor={Chen Wenguang},
@@ -61,22 +61,11 @@
   % edate={December, 2005}
   %
   % 关键词用“英文逗号”分割
-  ckeywords={\TeX, \LaTeX, CJK, 模板, 论文},
-  ekeywords={\TeX, \LaTeX, CJK, template, thesis}
 }
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  论文的摘要是对论文研究内容和成果的高度概括。摘要应对论文所研究的问题及其研究目
-  的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。摘要应
-  具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。使读者即使不阅读全
-  文，通过摘要就能了解论文的总体内容和主要成果。
-
-  论文摘要的书写应力求精确、简明。切忌写成对论文书写内容进行提要的形式，尤其要避
-  免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
-
-  本文介绍清华大学论文模板 \thuthesis{} 的使用方法。本模板符合学校的本科、硕士、
-  博士论文格式要求。
+  云计算的发展使得用户可以很方便的存储、获取与分享数据。但与此同时，云存储也带来了很多安全问题，例如，数据隐私泄露等。对称加密搜索的提出解决了数据隐私泄露问题，同时也保证了数据的可用性。通过使用对称加密搜索方案，用户可以在上传数据之前，对数据进行加密，同时云服务器可以在用户的加密数据上进行搜索，从而确保数据的隐私性。
 
   本文的创新点主要有：
   \begin{itemize}
@@ -85,32 +74,13 @@
     \item 一边学习摸索一边编写新代码。
   \end{itemize}
 
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
-  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
-  理。英文关键词同理。）
 \end{cabstract}
 
 % 如果习惯关键字跟在摘要文字后面，可以用直接命令来设置，如下：
-% \ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
+\ckeywords{对称加密搜索, 结果验证, 云计算，云存储}
 
 \begin{eabstract}
-   An abstract of a dissertation is a summary and extraction of research work
-   and contributions. Included in an abstract should be description of research
-   topic and research objective, brief introduction to methodology and research
-   process, and summarization of conclusion and contributions of the
-   research. An abstract should be characterized by independence and clarity and
-   carry identical information with the dissertation. It should be such that the
-   general idea and major contributions of the dissertation are conveyed without
-   reading the dissertation.
-
-   An abstract should be concise and to the point. It is a misunderstanding to
-   make an abstract an outline of the dissertation and words ``the first
-   chapter'', ``the second chapter'' and the like should be avoided in the
-   abstract.
-
-   Key words are terms used in a dissertation for indexing, reflecting core
-   information of the dissertation. An abstract may contain a maximum of 5 key
-   words, with semi-colons used in between to separate one another.
+  Searchable Symmetric Encryption (SSE) has been widely studied in cloud storage, which allows cloud services to directly search over encrypted data. Most SSE schemes only work with honest-but-curious cloud services that do not deviate from the prescribed protocols. However, this assumption does not always hold in practice due to the untrusted nature in storage outsourcing. To alleviate the issue, there have been studies on Verifiable Searchable Symmetric Encryption (VSSE), which functions against malicious cloud services by enabling results verification. But to our best knowledge, existing VSSE schemes exhibit very limited applicability, such as only supporting static database, demanding specific SSE constructions, or only working in the single-user model. In this paper, we propose GSSE, the first generic verifiable SSE scheme in the single-owner multiple-user model, which provides verifiability for any SSE schemes and further supports data updates. To generically support result verification, we first decouple the proof index in GSSE from SSE. We then leverage Merkle Patricia Tree (MPT) and Incremental Hash to build the proof index with data update support. We also develop a timestamp-chain for data freshness maintenance across multiple users. Rigorous analysis and experimental evaluations show that GSSE is secure and introduces small overhead for result verification.
 \end{eabstract}
 
-% \ekeywords{\TeX, \LaTeX, CJK, template, thesis}
+\ekeywords{Searchable Symmetric Encryption, Result Verification, Cloud Computing, Cloud Storage}
