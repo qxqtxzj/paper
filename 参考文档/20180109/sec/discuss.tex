@@ -1,0 +1,23 @@
+\section{Discussion} \label{Sec:Discussion}
+%第一点，首先解释论文的关注点，并不是MSSE
+%第二点，讨论论文的适用范围，可以为three-party model确保data freshness 提供结果验证功能，尤其是当用户量很大的时候；以往的论文都讨论的是two-party model，data freshness 问题很好解决
+%第三点，可以确保 data integrity 尤其是服务器恶意返回空结果的情况，这个问题虽然之前没有人关注，但是是一个很严重的问题。
+
+\noindent {\bf Multi-User Access Control.} \blue{According to a well recognised survey~\cite{bosch2015survey}, the architecture of searchable encryption includes four different types: single writer/single reader (S/S), single writer/multi-reader (S/M), multi- writer/single reader (M/S) and multi-writer/multi-reader (M/M). In this paper, we focus on the S/M architecture and provide search result verification for the multiple readers. We do not aim to develop a mechanism that achieves multi-user access control for encrypted search, since the access privilege of users can be well controlled by fine-grained access control mechanisms, such as role-based access control policies. The data owner can assign different roles for his/her users based on their responsibilities. Each role corresponds to an access privilege, such as read-only. Note that our scheme can readily be integrated into the SSE schemes that are enabled with enforced access control. There are many existing literatures~\cite{curtmola2011searchable, jarecki2013outsourced,sun2016efficient} that studied how to enforce the user authorization via one-to-many encryption schemes, like broadcast encryption (BE) or attribute-based encryption (ABE) to control the sharing of these secret keys.}
+%\blue{{\bf Secret Update upon User Update.}
+For example, the Broadcast Encryption scheme~\cite{curtmola2011searchable} can securely transmit a message to all members of the authenticated users.
+A data owner sends a symmetric key $K_U$ to a user $U$ and meanwhile sends a state $st_S$ to the server, where $st_S$ is computed from the authenticated users group $G$ and a symmetric key $r$.
+To search a keyword $w$, the data user should retrieve $st_S$ from the server and recover $r$ by using $K_U$. Then the data user sends the permutation $\Phi_r(\tau_w)$ to the server for access control.
+After receiving $\Phi_r(\tau_w)$, the server can recover the trapdoor $\tau_w$ by computing $\tau_w = \Phi_r^{-1}(\Phi_r(\tau_w))$.
+Note that, to revoke a user $U$, the data owner only needs to pick up a new key $r'$ and calculated $st^{'}_S$ from the new group $G'= G \backslash U$.
+As the revoked user is no longer belong to the group $G'$, the user can never recover the symmetric key $r'$ from $st^{'}_S$, which means the user cannot generate a correct trapdoor.
+%, unless there is a collusion between the revoked user and the server.
+Therefore, by using broadcast encryption, a data owner does not need to re-encrypt the index after each revocation.%}
+
+\noindent {\bf Generality.} The \name scheme is a generic VSSE scheme since we separate the verification index from the index used for the searching operations in SSE. Therefore, the scheme can be applied to any SSE schemes and enable result verification for them. \red{In addition}, the \name scheme allows search result verification upon data update, i.e., enabling verifiability for the dynamic SSE schemes~\cite{kamara2012dynamic,cash2014dynamic,stefanov2014practical}.
+% are emphasized here. }
+
+%我们的方案可以用在任何的searchable encryption上，为其提供结果验证服务，包括但不局限于SSE。只不过我们的方案采用的是对称秘钥，因此用了[3][4][15]这几篇SSE论文来进行举例，并且与[？]结合进行了实验。
+
+
+%在本文中，我们采用了Broadcast Encryption去实现这种访问控制和秘钥管理，但是我们的侧重点并不是如何实现多用户的访问控制，在于如何为这些实现了多用户SSE方案提供跨用户的结果验证。目前，对于Single-Writer/Multiple Reader的multi-user SE方案，已经有了多种实现方式【】【】【】。我们认为，可以通过访问控制进行搜索的用户必然是可以进行验证的。

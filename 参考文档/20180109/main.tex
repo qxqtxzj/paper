@@ -1,0 +1,135 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{algpseudocode}
+\usepackage{tabularx}
+\usepackage{tabularx}
+\usepackage{chemarrow}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{boxedminipage}
+\usepackage[normal]{caption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage[OT1]{fontenc}
+
+%\geometry{left=1 in,right=1 in,top=1 in,bottom=1in}
+
+
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+  \usepackage{cite}
+\else
+  \usepackage[caption=false,font=footnotesize]{subfig}
+  \usepackage{cite}
+\fi
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand\arraystretch{1.5}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\newcommand{\ours}{\ensuremath{\tt DV}\xspace}
+
+\newcommand{\algorithmicbreak}{\textbf{break}}
+\newcommand{\BREAK}{\STATE \algorithmicbreak}
+\graphicspath{{fig/}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newcommand{\name}{\ensuremath{{\tt GSSE}}\xspace}
+\newcommand{\mdsse}{\ensuremath{{\tt MDSSE}}\xspace}
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{red}}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+%\title{A Verifiable Dynamic Scheme based on Multi-User Symmetric Searchable Encryption}
+%\title{A Generic Verifiable Symmetric Searchable Encryption With Flexible Updates }
+%\title{Enabling Verifiable, Dynamic, and Multi-User Symmetric Searchable Encryption}
+\title{\blue{Enabling Generic, Verifiable, and Secure Data Search in Cloud Services}}
+%Dynamic Scheme based on Multi-User Symmetric Searchable Encryption}
+
+\author{Jie Zhu, Qi Li,~\IEEEmembership{Senior Member, IEEE}, Cong Wang,~\IEEEmembership{\red{Senior} Member, IEEE}, Xingliang Yuan,~\IEEEmembership{Member, IEEE}, \\ Qian Wang,~\IEEEmembership{Member, IEEE}, Kui Ren,~\IEEEmembership{Fellow, IEEE}
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem J. Zhu and Q. Li are with Graduate School at Shenzhen, Tsinghua University, Shenzhen, China, and Dept. of Computer Science, Tsinghua University, Beijing, China. \protect E-mail: j-zhu15@mails.tsinghua.edu.cn, qi.li@sz.tsinghua.edu.cn. \protect
+\IEEEcompsocthanksitem C. Wang is with Dept. of Computer Science, City University of Hong Kong, Hong Kong. \protect E-mail: congwang@cityu.edu.hk. \protect
+	\IEEEcompsocthanksitem \red{X. Yuan is with Faculty of Information Technology, Monash University, Australia.} \protect \red{E-mail: xingliang.yuan@monash.edu.} \protect
+    \IEEEcompsocthanksitem Q. Wang is with School of Computer Science, Wuhan University, \blue{Wuhan}, China. \protect E-mail: qianwang@whu.edu.cn. \protect
+	\IEEEcompsocthanksitem K. Ren is with Institute of Cyber Security Research, Zhejiang University, China. \protect
+	E-mail: kuiren@zju.edu.cn.
+}}
+
+\IEEEcompsoctitleabstractindextext{
+\input{sec/abstract}}
+\maketitle
+\input{sec/introduction}
+\input{sec/related}
+\input{sec/problem}
+\input{sec/overview}
+\input{sec/design}
+\input{sec/analysis}
+\input{sec/experiments}
+\input{sec/discuss}
+
+\input{sec/conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{Reference}
+
+\input{sec/authors.tex}
+
+%\appendices
+%\section{}
+%Appendix one text goes here.
+
+% you can choose not to have a title for an appendix
+% if you want by leaving the argument blank
+
+
+% use section* for acknowledgment
+%\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+%  \section*{Acknowledgments}
+%\else
+  % regular IEEE prefers the singular form
+%  \section*{Acknowledgment}
+%\fi
+
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+%\ifCLASSOPTIONcaptionsoff
+%  \newpage
+%\fi
+
+
+%\begin{IEEEbiography}{Jie Zhu}
+%Biography text here.
+%\end{IEEEbiography}
+
+%\renewcommand\refname{Reference}
+%\bibliographystyle{plain}
+%\bibliography{Reference}
+
+
+
+% that's all folks
+\end{document}

@@ -1,0 +1,66 @@
+\section{Problem Statement}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=7 in]{mpt_detail}
+\DeclareGraphicsExtensions.
+\caption{The Merkle Patricia Tree}
+\label{fig:mpt_detail}
+\end{figure*}
+
+In this section, we first formally define our problem and then present our design goals. We also review preliminaries used in this paper.
+
+
+
+\subsection{Threat Model}
+\blue{We assume that the data owner is trusted and the data users authorized by the data owner are \red{also trusted}\footnote{\red{Please refer to Section \ref{Sec:Discussion} for details on how we can enforce such assumption in practice with multi-user access control techniques.}}.}
+\blue{We consider cloud services performing searchable symmetric encryption (SSE) to be untrusted, which means 1) cloud services intends to derive some sensitive information from the encrypted data and the queries; 2) cloud services may \red{deviate from the prescribed protocols and} mount a data freshness attack or a data integrity attack to save its computation or communication cost.} The definitions of the data freshness attack and the data integrity attack are presented as follow:
+
+\begin{definition}[\textbf{Data Freshness Attacks}]\label{def:freshness}
+    {\itshape
+      A data freshness attack in SSE is that a malicious server (or an attacker) attempts to return the historical version of the search result, not the most recently updated version. Formally, let $\Delta_{n-1} = \{\delta_1,\delta_2,\cdots,\delta_{n-1}\}$ denote the historical version of the dataset and $\delta_n$ is the latest version. However, the search result returned by the server is retrieved from $\delta_i$ where $1 \le i \le n-1$.
+    }
+\end{definition}
+
+\begin{definition}[\textbf{Data Integrity Attacks}]\label{def:integrity}
+    {\itshape
+      A data integrity attack in SSE is that a malicious server (or an attacker) attempts to tamper with the search result to prevent authenticated users from accessing the complete and correct search result. Formally, let $\tau$ be the search token of the SSE scheme, and $\delta_i$ be the dataset, where $1 \le i \le n$, the corresponding search result should be $\mathcal{F}(\delta_i, \tau)$, but the result returned by the server is $\mathcal{G}(\delta_i, \tau)$, where $\mathcal{G}(\delta_i, \tau) \neq \mathcal{F}(\delta_i, \tau)$.
+    }
+\end{definition}
+
+
+
+\subsection{Design Goal}
+  In this paper, we aim to design a generic verifiable SSE scheme that enables verifiable searches on the three-party model. In particular, the scheme should satisfy the following privacy and efficiency requirements:
+ 
+
+  \begin{enumerate}
+    \item \textbf{Confidentiality:} The confidentiality of data and keywords is the most important privacy requirements in SSE. \blue{It ensures that users' plaintext data and keywords cannot be revealed by any unauthorized parties, \red{and an adversary cannot learn any useful information about files and keywords through the proof index and update tokens used in \name}}.
+    %In our scheme, data privacy and keyword privacy is guaranteed by its underlying cipher. Moreover, the search pattern of our scheme is hiding by trading the space.
+    \item \textbf{Verifiability:} A verifiable SSE scheme should be able to verify the freshness and integrity of the search results for users.
+    %In our scheme, we design a proof algorithm based on the proof structure to detect the dara integrity attacks and meanwhile use the chained-timestamp mechanism to detect the replay attacks.
+    \item \textbf{Efficiency:} A verifiable SSE scheme should achieve \red{sublinear computational complexity, e.g. logarithmic} $O(log(|W|))$, where $|W|$ is the number of keywords, even with file update. \blue{Note that, the computational complexity only refers to the cost of searching operations for verification, which does not include the complexity of the searching operations in the existing SSE schemes.}
+    %Update efficiency, search efficiency and verification efficiency is the most improtant indicator we aim to achieve. In our scheme, we leverage the Mekle Patricia Tree (MPT) which provides the $O(log(n))$ efficiency for search and update which is the optimal solution to the best of our knowledge.
+  \end{enumerate}
+
+%{\bf (Qi: can we mention two-party model?) We can briefly summarize how our model can be applied to the two-party model}
+%{\bf (Qi: Also, it is fine to use the abbreviated form of SSE?}
+
+%  \subsection{System Model}
+  This paper aims to provide result verification for any SSE schemes, \red{including but} not limited to~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic}. Therefore, we treat an existing SSE scheme as a black box such that our proposed scheme can be applied to these SSE schemes for result verification. %For simplicity, we use the SSE scheme proposed by Curtmola et al.~\cite{curtmola2011searchable} as a typical scheme to illustrate result verification in verifiable SSE.
+  %should be able to wrap the algorithms of the scheme and enable verifiable SSE.
+
+%  {\bf Note that, our verifiable SSE can be applied to implement verifiable two-party SSE. Different from the model shown in Figure~\ref{fig:model}, in the two-party model, the proof index that is used verify research results is outsourced to the cloud but not retained locally by data owner,  which is the similar to that in \cite{kamara2011cs2}. In this paper, for simplicity, we focus on the multi-party SSE.}
+
+%  {\bf (Qi: authenticated users, or authorized users?)}
+
+
+\subsection{Preliminaries}
+\noindent\textbf{Merkle Patricia Tree.} The Merkle Patricia Tree (MPT) is first proposed in Ethereum~ \cite{wood2014ethereum, merkle_patricia_tree}, which combines the Trie Tree and the Merkle Tree for data update efficiency. There are three kinds of nodes in an MPT to achieve the goal. \red{Leaf Nodes(LN) represents} [key,value] pairs. \red{Extension Nodes(EN) represent} [key,value] pairs where keys are the public prefixes and their values are the hashes of the next nodes. \red{The Branch Nodes (BN)} are used to store possible branches when the prefixes of the keywords differ, which is presented with 17 elements. \red{Among the 17 elements,} the first 16 elements represent the 16 possible hex characters in a key and the last element stores a value if a key in a [key,value] pair matches the node. Fig.~\ref{fig:mpt_detail} shows insertion operations of a Merkle Patricia Tree (MPT) with the following four cases. First, to insert a [key,value] pair into a branch node, there are two possible cases. If the current key is empty, we can directly insert the value into the 17th bucket of the branch node. Otherwise, the unmatched key and value will be stored in a leaf node. Second, if we want to insert a [key,value] pair into a leaf node, there are also two possible cases. If the current key matches, we should modify the value of the leaf node directly. Otherwise, we should find the common prefix as the key of a newly created extension node. Meanwhile, we create a new branch node, and the original leaf node and the inserting [key,value] pair will be inserted as child node of the branch node.
+Note that, each node of the MPT is represented by its hash and is encoded using Recursive Length Prefix (RLP) code that is mainly used to encode arbitrarily binary data~\cite{RLP_code}, which ensures the cryptographically security of the search operations. The root hash in MPT becomes a fingerprint of the entire tree and is computed based on all hashes of nodes below. Therefore, any modification in a node would incur recomputation of the root hash. Note that, the MPT is fully deterministic, meaning that an MPT with the same [key,value] pairs is exactly the same regardless of the order of insertion, which is different from the Merkle Tree.
+
+
+
+\noindent\textbf{Incremental Hash.} Incremental hash was proposed by Bellare et al.~\cite{bellare1994incremental} and was used by existing SSE schemes, e.g., CS2~\cite{kamara2011cs2}. An incremental hash function is a collision-resistant function $IH: \{0,1\}^* \rightarrow \{0,1\}^l$, with which the addition or the subtraction operation of two random strings on the $IH$ does not produce a collision. For example, assuming $F$ is a file collection that contains the keyword $k$. After a new file $f$ is inserted to $F$, the file collection becomes $F'$ (i.e., $F+f$), which means the new file $f$ is a slight change according to $F$.  Therefore, an incremental hash function can be used to quickly compute the corresponding collision-resist hash value after a file change. More detailed descriptions can be found in~\cite{kamara2011cs2}.
+
+
+\noindent\textbf{Secure Searchable Encryption.} \blue{Searchable Encryption was first proposed by Song et al. \cite{song2000practical}, their solution allows a user to outsource its encrypted data to cloud services, and meanwhile retaining the ability to search over it.} Normally, searchable encryption has been divided into two categories, i.e.,  Searchable Symmetric Encryption(SSE) and Public Key Encryption with keyword search(PKE). The most classical SSE scheme was proposed by Curtmola et al. in~\cite{curtmola2011searchable}. They defined  privacy against passive adversaries (i.e., honest but curious servers) and developed their scheme by using an inverted index. There exist various SSE schemes with different secure searching functionalities. For example, dynamic SSE schemes~\cite{kamara2012dynamic,cash2014dynamic,stefanov2014practical} allow a user to update his dataset and ranked keyword search scheme~\cite{wang2010secure} that allow a user to retrieve  ranked search results from the server. The most famous PKE scheme was proposed by Boneh et al.~\cite{boneh2004public} with the bilinear map. Normally, the efficiency of the PKE schemes are much lower than the SSE schemes.

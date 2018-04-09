@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  8 APR 2018 21:36
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  9 APR 2018 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2426,31 +2426,514 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
 
 ]
-[3] (./main.toc)
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- (./data/denotation.tex [4
+ (./data/denotation.tex [3
 
 
-] [5
+]) [4
 
 
-]) [6]
+]
 \openout2 = `data/chap01.aux'.
 
  (./data/chap01.tex
 第1章
-) [1
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 12.64714pt on input line 3.
+Missing character: There is no Δ in font ntx-Regular-tlf-t1!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 ...不是最新的搜索结果。我们用Δ_
+                                                  n={δ_1,δ_2,⋯,δ_n}来�...
+
+? q
+OK, entering \batchmode...
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no δ in font ntxmi!
+Missing character: There is no δ in font ntxmi!
+Missing character: There is no ⋯ in font ntx-Regular-tlf-ot1!
+Missing character: There is no δ in font ntxmi!
+Missing character: There is no 来 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 表 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 示 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 旧 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 版 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 本 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 集 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no δ in font ntxmi!
+Missing character: There is no 来 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 表 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 示 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 最 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 新 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 集 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 则 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 返 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 回 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 集 in font ntx-Regular-tlf-ot1!
+Missing character: There is no δ in font ntxmi!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 其 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ≤ in font ntx-Regular-tlf-ot1!
+Missing character: There is no ≤ in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 完 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 整 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 性 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no （ in font ntx-Regular-tlf-ot1!
+Missing character: There is no ） in font ntx-Regular-tlf-ot1!
+Missing character: There is no ： in font ntx-Regular-tlf-ot1!
+Missing character: There is no 在 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 完 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 整 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 性 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 指 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no （ in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 者 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ） in font ntx-Regular-tlf-ot1!
+Missing character: There is no 试 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 图 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 不 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 让 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 户 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 获 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 取 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 完 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 整 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 我 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 们 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no 来 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 表 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 示 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 户 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 陷 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 门 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 户 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 应 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 该 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 得 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 到 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 而 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 返 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 回 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 其 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no ⊂ in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no 并 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 且 in font ntx-Regular-tlf-ot1!
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no 可 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 能 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ∅ in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 重 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 放 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 仅 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 存 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 在 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 于 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 动 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 态 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 案 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 在 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 库 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 静 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 态 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 情 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 况 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 下 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 不 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 存 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 在 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 但 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 现 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 实 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 动 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 态 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 库 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 较 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 常 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 见 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 因 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 此 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 重 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 放 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 可 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 必 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 须 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 要 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 解 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 决 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 问 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 题 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 完 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 整 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 性 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 不 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 仅 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 包 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 括 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 少 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 返 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 回 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 情 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 况 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 还 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 包 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 括 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 不 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 返 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 回 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 来 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 规 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 避 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 情 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 况 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 现 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 有 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 可 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 对 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 称 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 案 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 尚 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 未 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 有 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 案 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 完 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 善 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 地 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 解 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 决 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 以 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 上 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 两 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 种 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 攻 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 击 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 尤 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 其 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 服 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 务 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 器 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 通 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 过 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 返 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 回 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 空 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 来 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 规 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 避 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 结 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 情 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 况 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 并 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 且 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 现 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 有 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 案 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 均 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 未 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 考 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 虑 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 共 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 享 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 即 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 户 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 并 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 不 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 只 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 是 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 据 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 拥 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 有 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 者 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 人 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 情 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 况 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 基 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 于 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 以 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 上 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 几 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 点 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 我 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 们 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 展 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 开 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 可 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 对 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 称 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 研 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 究 in font ntx-Regular-tlf-ot1!
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
+Missing character: There is no 并 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 提 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 出 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 个 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 多 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 户 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 场 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 景 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 下 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 可 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 验 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 证 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 搜 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 索 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 案 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
+ [1
 
 
 
-]
+]) [2]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
 第2章
-) [2
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+Missing character: There is no √ in font ntx-Regular-tlf-t1!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.11 SPS14[9]^^I√^^I×^^I√^^I×^^IO(rlog^
+                                             3 (n))
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no × in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no × in font ntx-Regular-tlf-ot1!
+Missing character: There is no × in font ntx-Regular-tlf-ot1!
+Missing character: There is no × in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+Missing character: There is no √ in font ntx-Regular-tlf-ot1!
+) [3
 
 
 
@@ -2459,7 +2942,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
  (./data/chap03.tex
 第3章
-) [3
+) [4
 
 
 
@@ -2468,7 +2951,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
  (./data/chap04.tex
 第4章
-) [4
+) [5
 
 
 
@@ -2477,7 +2960,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
  (./data/chap05.tex
 第5章
-) [5
+) [6
 
 
 
@@ -2485,7 +2968,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 No file main.bbl.
 \openout2 = `data/ack.aux'.
 
-(./data/ack.tex
+ (./data/ack.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
@@ -2495,49 +2978,50 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 
-
-Package natbib Warning: Citation `thuthesis' on page 6 undefined on input line 
+Package natbib Warning: Citation `thuthesis' on page 7 undefined on input line 
 11.
 
-[6
+ [7
 
 
 
 
 
-]) [7
+]) [8
 
 
 ]
 \openout2 = `data/resume.aux'.
 
- (./data/resume.tex [8
+ (./data/resume.tex [9
 
 
 
 
-]) [9]
+]) [10]
 \tf@thm=\write5
 \openout5 = `main.thm'.
-
 
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
-(./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux)
-(./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
+ (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./dat
+a/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 80.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 35196 strings out of 492998
- 653533 string characters out of 6137851
- 721144 words of memory out of 5000000
- 38668 multiletter control sequences out of 15000+600000
- 620681 words of font info for 134 fonts, out of 8000000 for 9000
+ 35202 strings out of 492998
+ 653811 string characters out of 6137851
+ 724147 words of memory out of 5000000
+ 38674 multiletter control sequences out of 15000+600000
+ 623678 words of font info for 135 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 66i,12n,96p,10438b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,12n,96p,10438b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (21 pages).
+Output written on main.pdf (20 pages).

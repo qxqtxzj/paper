@@ -1,0 +1,61 @@
+\section{Security Analysis}
+In this section, we give a rigorous security analysis of our \name scheme.
+We plan to demonstrate the security of \name on two aspects, i.e., confidentiality and verifiability. \red{Confidentiality means an adversary cannot learn any useful information about files and keywords through the proof index and update tokens used in \name}, while verifiability means that result verification will not output an accept when the search result received from cloud services is incorrect or incomplete. First, we adopt the $\mathbf{Real/Ideal}$ simulation in \cite{kamara2011cs2} to prove confidentiality of \name.
+
+\begin{definition}[\textbf{\name confidentiality}]
+  {\itshape
+    Let the \name scheme be a dynamic verifiable scheme based on the searchable symmetric encryption and consider the following probabilistic experiments, where $\mathcal{A}$ is a stateful adversary, $\mathcal{S}$ is a stateful simulator, and $\mathcal{L}$ are stateful leakage algorithms:
+
+    $\mathbf{Real}_\mathcal{A}(k)$: a challenger runs $KGen(1^k)$ to generate symmetric keys {$K_1,K_2,K_3$}. The adversary $\mathcal{A}$ chooses a document set $\mathcal{D}$ for the challenger to create a proof index $\lambda$ and an authenticator $\pi$ via $\{\lambda,\pi\} \leftarrow Init(K_1,K_2,K_3,\mathcal{D})$, and makes a polynomial number of adaptive queries $q = \{w,f\}$. For each query $q$, $\mathcal{A}$ receives from the challenger a challenge token $\tau_w$ such that $\tau_w \leftarrow Challenge(K_1,w)$, an update token and the authenticator $(\tau_u,\pi)$ such that $(\tau_u,\pi) \leftarrow PreUpdate(K_1,K_2,K_3,f)$. Finally, $\mathcal{A}$ returns a bit $b$.
+
+    $\mathbf{Ideal}_\mathcal{A,S}(k)$: The adversary $\mathcal{A}$ chooses a document set $\mathcal{D}$. Given $\mathcal{L}(\mathcal{D})$, the simulator $\mathcal{S}$ generates and sends proof index $\tilde{\lambda}$ and the authenticator $\tilde{\pi}$ to $\mathcal{A}$. The adversary $\mathcal{A}$ makes a polynomial number of adaptive queries $q = \{w,f\}$. For each query $q$, $\mathcal{S}$ returns the appropriate token $\tau$ and the authenticator $\pi$. Finally, $\mathcal{A}$ returns a bit $b$.
+
+    We say that SSE is $\mathcal{L}$-confidential if for all probabilistic polynomial-time  (PPT) adversaries $\mathcal{A}$, there exists a PPT simulator $\mathcal{S}$ such that $$|Pr[\mathbf{Real}_A(k) = 1] - Pr[\mathbf{Ideal}_{A,S}(k) = 1]| \leq negl(k).$$
+  }
+\end{definition}
+
+Before proving the confidentiality, we formalize the view of the adversary as follows: $\mathcal{L}(\mathcal{D})$ = $(|\lambda|,|\pi|,\{\tau\}_q,\{\sigma\})$\red{. Here} $|\lambda|$ is the size of the proof index \red{indicated} by the number of leaf nodes\red{. $\pi$} is the length of the authenticator\red{. $\{\tau\}_q$} are $q$ tokens which are adaptively generated\red{. $\{\sigma\}$} are the search paths in the proof index, e.g., all the tokens correspond to the set of keywords $\mathcal{W}$. Then we have the following theorem.
+
+\begin{theorem}
+  {\itshape
+    The \name scheme is $\mathcal{L}$-confidential if $F$ and $G$ are pseudo-random functions.
+  }
+\end{theorem}
+
+\begin{proof}
+  We show that there exist a polynomial-time simulator $\mathcal{S}$ such that for all probabilistic polynomial time (PPT) adversaries $\mathcal{A}$, the output between the real game $\mathbf{Real}_\mathcal{A}(k)$ and a simulation game $\mathbf{Ideal}_\mathcal{A,S}(k)$ is computationally indistinguishable.
+
+  First of all, given $\mathcal{L}(\mathcal{D})$ = $(|\lambda|,|\pi|,\{\tau\}_q,\{\sigma\})$, $\mathcal{S}$ simulates the proof index $\tilde{\lambda}$ by choosing $|\lambda|$ random key-value strings and inserting into MPT. Meanwhile, $\mathcal{S}$ chooses a random  string $\tilde{\pi}$ with length $|\pi|$. Recall that each key-value pair in MPT is encrypted by the pseudo-random function $F$ and $G$\red{, and} the confidentiality of the authenticator is essentially ensured by the underlying cipher\red{. Therefore,} $\mathcal{A}$ cannot differentiate $(\tilde{\lambda},\tilde{\pi})$ from $(\lambda,\pi)$.
+  Now let $\mathcal{S}$ simulates challenge tokens. For the first token $\tau_w$, if it matches one search path in $\{\sigma\}$, then $\mathcal{S}$ chooses a random path in $\tilde{\lambda}$ as the challenge token $\tilde{\tau_w}$ and returns it to $\mathcal{A}$.  Otherwise, $\mathcal{S}$ chooses a random string which is not in the search path of $\tilde{\lambda}$. Thus, $\mathcal{A}$ cannot differentiate the real token from the simulated token. For the subsequent tokens, if $w$ has appeared before, then the challenge token $\tilde{\tau_w}$ is the same to the previous one or follows the same way of simulating the first token. \red{In either case, the} challenge token $\tilde{\tau_w}$ is returned to $\mathcal{A}$ \red{accordingly}.
+% who cannot differentiate tokens either.
+  Similarly, when $\mathcal{A}$ simulates an update token, the update token is set to $\tilde{\tau_u} = (\tilde{\tau_{w_1}},\cdots,\tilde{\tau_{w_{|W_f|}}},\tilde{\tau_r})$ and the authenticator $\tilde{\pi}$ is set as a random string with the same length as $\pi$. For each $\tilde{\tau_{w_1}}$, $\mathcal{A}$ chooses the random string as the same way in simulating the challenge tokens.
+  Since all tokens in the $\mathbf{Real}_\mathcal{A}(k)$ game was encrypted by the pseudo-random function $F$, the adversary $A$ cannot differentiate the simulated tokens from the real tokens. Therefore, we can conclude that the outputs of $\mathbf{Real}_\mathcal{A}(k)$ and $\mathbf{Ideal}_\mathcal{A,S}(k)$ are indistinguishable.
+\end{proof}
+
+ The verifiability of the \name scheme means that the scheme can verify the freshness and integrity of the search results, i.e., prevent the data freshness attack and data integrity attack defined by Definition~\ref{def:freshness} and Definition~\ref{def:integrity}. Here, we adopt a game-based security definition to prove the verifiability of \name.
+\begin{definition}[\textbf{\name verifiability}]
+  \itshape{
+      Let the \name scheme be a dynamic verifiable scheme based on the searchable symmetric encryption and consider the following probabilistic experiments, where $\mathcal{A}$ is a stateful adversary:
+
+      \noindent$\mathbf{Vrf}_\mathcal{A}(k)$:
+      \begin{enumerate}[1.]
+        \item the challenger runs $KGen(1^k)$ to generate symmetric keys {$K_1,K_2,K_3$}.
+        \item the adversary $\mathcal{A}$ chooses a document set $\mathcal{D}$ for the challenger.
+        \item the challenger \red{creates} a proof index $\lambda$ and an authenticator $\pi$ via $\{\lambda,\pi\} \leftarrow Init(K_1,K_2,K_3,\mathcal{D})$,
+        \item given $\{\lambda,\pi\}$ and oracle access to $Challenge(K_1,w)$ and $PreUpdate(K_1,K_2,K_3,f)$, the adversary $\mathcal{A}$ outputs a keyword token $\tau_w$, a sequence of files $C'$ such that $C' \neq C_w$, the authenticators $\pi_q',\pi_c'$ and a proof $\rho'$.
+        \item the challenger computes $b:=Verify(K_1,K_2,K_3,C_w,\rho,\pi_q',\pi_c',\tau_w)$.
+        \item the output of the experiment is the bit b.
+      \end{enumerate}
+      We say that \name is verifiable if for all PPT adversaries $\mathcal{A}$, $$Pr[\mathbf{Vrf}_\mathcal{A}(k)=1] \leq negl(k).$$
+  }
+\end{definition}
+
+\begin{theorem}
+  {\itshape
+    The \name scheme is verifiable if the hash function $H$ and the incremental hash function $IH$ are collision-resistant and $G$ is pseudo-random.
+  }
+\end{theorem}
+
+\begin{proof}
+Considering the situation where a search result $\tilde{D_w}$ returned by the server is different from the correct answer $D_w$ but the {\it Verify} algorithm accepts the search result $\tilde{D_w}$. In order to \red{ensure} the \name scheme is verifiable, we only need to prove verifiability of {\it Check} and {\it Generate} algorithms. First, for the {\it Check} algorithm, since the authenticator $\pi$ is encrypted by \red{the data owner, its unforgeability is guaranteed by the underlying AES ciphers and digital signature. Anyone without the secret signing key $ssk$ and symmetric key $K_3$ cannot generate the authenticator that can be authenticated by the data user.} Second, for the {\it Generate} algorithm, there are two possible scenarios to output two collision root hash\red{. The} first is that $\tilde{D_w}$ and $D_w$ induce a collision of the incremental hash function $IH$. \red{The other} is that the collision occurs in the path when computing the root hash of the proof index. However, the probability that a hash function produces a collision is less than a negligible value, so the verifiability of the {\it Generate} algorithm is guaranteed. Therefore, \red{the \name scheme is indeed} verifiable.
+\end{proof}

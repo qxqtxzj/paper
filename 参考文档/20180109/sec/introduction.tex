@@ -1,0 +1,88 @@
+\section{Introduction}
+\blue{\red{Cloud storage allows users to retrieve and share their data conveniently with well understood benefits, such as on-demand access, reduced data maintenance cost, and service elasticity~\cite{juels2007pors,ateniese2008scalable,kamara2011cs2,wang2011enabling,stefanov2012iris,kamara2013parallel,sun2015catch}. Meanwhile}, cloud storage also brings serious data privacy issues, i.e., the \blue{disclosure of private information}.
+In order to ensure data privacy without losing data usability, a cryptographic notion named searchable symmetric encryption (SSE), \red{(e.g., \cite{song2000practical,curtmola2011searchable,kamara2012dynamic,cash2014dynamic,wang2016searchable}, to just list a few)}, has been proposed. \blue{By using SSE, users \red{can} encrypt their data before uploading to cloud services, and cloud services can directly operate and search over encrypted data, which ensures data privacy.}}
+
+\blue{However, most existing SSE schemes~\cite{curtmola2011searchable, kamara2012dynamic, cash2014dynamic} are built based on the assumption that cloud services are honest but curious, which means cloud services will follow the protocol but intend to derive users' information from their search queries. \red{Unfortunately, this assumption does not always hold in practice, since cloud services may be subject to external attacks, internal misconfiguration errors, software bugs, and even insider threats~\cite{sun2015catch,bost2016verifiable}. All these factors may cause the cloud services to deviate from the prescribed protocol and operate beyond the honest-but-curious model. Exemplary consequences might be cloud services executing a fraction of search operations or omitting some files in search results.}}
+
+
+
+\begin{table*}[t]
+  \begin{center}
+  \caption{Comparison with existing typical verifiable SSE schemes.}
+  \label{tab:comparison}
+  %\begin{threeparttable}
+  \begin{tabular}{|c|c|c|c|c|c|c|c}
+    \hline
+                                          &\blue{Dynamism}     &Three-party$^1$    &Freshness Verify$^2$     &Integrity Verify$^3$    & \blue{Prove Efficiency}$^4$        &Generality$^5$  \\
+    \hline
+    \hline
+    KPR11~\cite{kamara2011cs2}            &\checkmark     &\texttimes     &\checkmark         &\texttimes                          &$O(|W|)$                      &\checkmark  \\
+    \hline
+    KO12~\cite{kurosawa2012uc}            &\texttimes     &\texttimes     &\text{-}           &\texttimes                          &$O(n)$                        &\texttimes\\
+    \hline
+    CG12~\cite{chai2012verifiable}        &\texttimes     &\texttimes     &\text{-}           &\checkmark                          &$O(log(|W|))$                 &\texttimes  \\
+    \hline
+    KO13~\cite{kurosawa2013update}        &\checkmark     &\texttimes     &\checkmark         &\texttimes                          &$O(n)$                        &\texttimes \\
+    \hline
+    SPS14~\cite{stefanov2014practical}    &\checkmark     &\texttimes     &\checkmark         &\texttimes                          &$min\{\alpha + log(N), r log^3(N)\}$                  &\texttimes \\
+    \hline
+    CYGZR15\cite{cheng2015verifiable}    &\texttimes     &\texttimes      &\text{-}         &\texttimes                            &$O(|W|)+O(r)$                 &\texttimes \\
+    \hline
+    BFP16~\cite{bost2016verifiable}       &\checkmark     &\texttimes     &\checkmark         &\checkmark                          &$O(r)$                        &\checkmark   \\
+    \hline
+    OK16~\cite{ogataefficient}            &\texttimes     &\texttimes     &\text{-}           &\checkmark                          &$O(r)$                        &\checkmark  \\
+    \hline
+    \name                                 &\checkmark     &\checkmark     &\checkmark         &\checkmark                          &$O(log(|W|))$                 &\checkmark  \\
+    \hline
+  \end{tabular}\\
+  \end{center}
+  $^1$ Three-party means whether the scheme supports search result verification for an SSE scheme with three parties, i.e., data owners, servers, and users.\\
+  $^2$ Note that, '\texttimes' represents the requirements which are not implemented, while '-' means the requirements which are not required. Specifically, the static verifiable SSE schemes do not have the problem of data freshness attacks, and thus the existing schemes~\cite{kurosawa2012uc,chai2012verifiable,cheng2015verifiable,ogataefficient} do not require data freshness verification.\\
+  $^3$ We consider various data integrity attacks, especially the attacks that servers can intentionally returns an empty result to evade search result verification.\\
+  $^4$ \red{The prove efficiency refers to the cost of operations for search result verification. For some selected non-generic schemes~\cite{kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,cheng2015verifiable}, their prove efficiency is equivalent to their encrypted search efficiency. Here, $n$ indicates the number of total files, $|W|$ means the number of all keywords, $r$ means the number of files which contain the specific keyword, $\alpha$ means the number of times this keyword was historically added to the collection \cite{stefanov2014practical}, and $N$ means the total number of document and keyword pairs.}\\
+  $^5$ A generic VSSE scheme means that the verifiable design can provide result verification for any SSE schemes, while a non-generic scheme only works for a particular SSE construction.\\
+\end{table*}
+
+
+%{\bf There have been a lot of researches
+\blue{In order to address this issue, a large amount of studies~\cite{wang2011enabling, zhu2012cooperative, juels2007pors, stefanov2012iris, ateniese2007provable, erway2015dynamic} have  been conducted to ensure data integrity against a malicious cloud server}. Also, verifiable SSE schemes  \cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,cheng2015verifiable,bost2016verifiable,ogataefficient} have been developed to ensure data integrity in SSE.
+\blue{Unfortunately, these schemes either support verification on only static database~\cite{kurosawa2012uc,chai2012verifiable,cheng2015verifiable,ogataefficient}, or cannot prevent cloud services from deliberately returning an empty result to evade result verification~\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}.}
+Specifically, \red{previous schemes that are} built on Merkle Hash Tree~\cite{kamara2011cs2}, RSA accumulator~\cite{kurosawa2013update}, or Message Authenticated Code (MAC)~\cite{stefanov2014practical} \red{are not able to} return any search result when there does not exist any document matching the query keywords~\cite{bost2016verifiable}. To prevent the server from returning an empty result maliciously, the user should maintain all keywords of the data set locally. Recently, Ogata et al. \cite{ogataefficient} addressed the issue by maintaining keywords with a cuckoo hash table. Unfortunately, the scheme cannot enable verification under data updates.
+\red{Further, most} verifiable SSE schemes~\cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,
+cheng2015verifiable,ogataefficient,bost2016verifiable} only enable verifiability for the single-user model, \red{which we refer to as the two-party model}. However, in practice, service providers such as public cloud normally enable data sharing among \red{the data owner and multiple data users} in a three-party model, where data owner and user are not the same entity. Table~\ref{tab:comparison} compares various existing verifiable SSE schemes. \red{To our best knowledge,} none of the existing verifiable SSE schemes can explicitly allow users to verify their search results \red{in} the three-party model.
+%, i.e., data users separate from the data owners.
+
+
+%In particular, they cannot prevent the data integrity attacks, e.g., clouds may deliberately omit search results, and the replay attacks, e.g., clouds can replay the previous results. The problems above motivate us to revisit SSE.
+% and  design a generic dynamic verifiable SSE
+% schemes in the multi-user scenario which not only support the result verification against the data integrity attack, but also support the preventing of the replay attack.
+In this paper, we propose \name, a generic dynamic verifiable SSE framework to ensure \red{search result} integrity and freshness across multiple users. It can be applied to any SSE schemes, \red{including but not limited to those in~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic}, etc., to provide search results verification for data users. In addition, it supports data updates, a highly desirable advantage demanded by many modern cloud storage applications, where data update happens frequently.} %It is the first generic and verifiable SSE, which can be applied to various existing SSE schemes~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic} while enabling verifiability across multiple users.}
+
+\name addresses two challenges in verifying search results of SSE. The first challenge is how to design an efficient yet \red{generic} proof index which not only supports data integrity verification but also supports data updating. \name builds and maintains such a proof index by \red{leveraging the fully dynamic and balanced Merkle Patricia Tree (MPT)~\cite{merkle_patricia_tree} and Incremental Hash~\cite{bellare1994incremental}. With these two prelimitives,} we store encrypted keywords and their corresponding documents in the proof index such that the root of the MPT becomes an accumulator of the data\red{,} which can be treated as a witness of data integrity. Meanwhile, \name designs a verification mechanism based on the proof index to ensure the authenticity of search results. \blue{Different from the previous solutions~\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}, our scheme requires the server to return a proof to the users regardless of whether the keyword exists or not, such that the users can detect whether the cloud services deliberately omit all files and returning an empty result to evade result verification.} More specially, \name does not require the users to maintain a large set of keywords, while easily verifying the integrity of the search results with the proof.
+
+The second challenge is how to ensure data freshness by preventing the root from being replayed \red{in the context of data updates}. In the previous two-party model, \red{data ower} can recalculate the root after each update, but \red{in} the three-party model, data users cannot easily detect a data update \red{from} the data owner\red{, unless} data owner sends the latest root to \red{all users} after each data update. \red{But doing so would bring in significant, if not impractical, online communication burden to the data owner}.
+In order to solve this problem, we develop a timestamp-chain based verification mechanism for \name. This mechanism constructs a timestamp-chain based authenticator which \red{includes} the root of the MPT. \blue{It allows users to obtain an authenticator from cloud services on demand and easily ensure the freshness of the root while not incurring significant computation and communication overhead.}
+%To address our challenges, our first obstacle is how to design an efficient proof index and meanwhile prevent the server from evading the result verification. \name builds and maintains an efficient proof index by leveraging the Merkle Patricia Tree (MPT). We store encrypted keywords and their corresponding documents in the proof index such that \name enables search over encrypted keywords, and ensures the authenticity of search results under data insertions and deletions. \name allows users to verify their search results according to the proofs presented by the cloud servers such that the users can detect whether the clouds deliberately omit some files from the search results, specially, omitting all files and returning an empty result to evade result verification. Therefore, users can easily validate the integrity of the search result.
+%
+%Moreover, in order to prevent search results and the corresponding proofs from the replay attacks, we develop a timestamp chain based verification mechanism for \name. This mechanism constructs a timestamp chain for all authenticators that include the proofs of updated data and the update timestamp. Therefore, it allows users to obtain an authenticator from the cloud server on demand and compare it with that stored in the timestamp chain computed by the users. Therefore, the users can easily ensure the correctness of the proofs and detect the replay attacks in realtime if the two authenticators are different, while not incurring significant computation and communication overhead.
+%
+%The reasons that the existing verifiable SSE schemes for the three-party model cannot ensure the integrity of search results are two-fold. Firstly, users cannot easily synchronize with the data owners if the dataset of a data owner is dynamic. Thereby, users cannot detect a replay attack if the clouds return the previous search results. Secondly, a cloud can simply tamper with the search results and return the modified results to the users. In particular, it can completely omit all search results so as to evade the verification of the existing verifiable SSE scheme.%, even though a timestamp is applied.
+%
+%Recent work by Kurosawa et.al. \cite{kurosawa2012uc} first proposed the concept of verifiable SSE (VSSE) and extend it to a dynamic solution \cite{kurosawa2013update}. Generally speaking, there are two main types of attacks in the VSSE problem, one is the \textit{replay attack} which means the cloud intends to return the old version of the data to the user (e.g., data before adding, deleting or editing) and the other is the \textit{data integrity attack} which means the cloud intends to omit some files or even omit all the files to save its computation costs or download bandwidth. Most of the exiting solutions do not consider the situation when the cloud omits all the files except the generic VSSE schemes proposed by Bost et.al. \cite{bost2016verifiable}, but their scheme need two communication round between the cloud and the user. And unfortunately, all of the above schemes are established under the two-party model, e.g. the client-server model. To the best of our knowledge, there are no research address the VSSE problem in a multi-user model, because it is much more complicated to prevent the replay attack in the multi-user scenario.
+%
+%To address the challenges, our first obstacle is how to design an effient proof index for result verification. Here, we leverage the MPT which is balance of the Merkle Tree and the Trie Tree. This structure enables the search of the encrypted keyword and meanwhile ensure the authentication capability and is fully dynamic for data insertions and deletions. Specifically, we store the encrypted keyword and its corresponding documents in this proof index and design a prove algorithm excuted by the cloud for the following checking of the data integrity. The proof produced by the prove algorithm not only enables the data user to verify the search result when the cloud omits some files, but also allows the user to verify the search results when the cloud deliberately return an empty file set.
+%
+%Our second obstacle is how to prevent the replay attack launched by the cloud. Since the cloud is untrusted, the data user can only trust the data owner when there is no trusted authority. Consider the following two models: First, the push model, e.g., the data owner broadcasting the proof to every user after each update. Second, the pull model, e.g., the data user retrieve the proof from the data owner when he need. However, both of the above models require frequent interaction between the data owner and the data user, and the communication cost becomes larger when the update frequency increases and the number of users grows. We propose a new chained-timestamp solution which allows the users to obtain the result proof from the cloud on demand and meanwhile does not introduce significant overhead to the data owner.
+%
+In summary, our contributions are three-fold:
+\begin{enumerate}
+  \item \red{We propose the first generic verifiable SSE framework, i.e., \name, in the single-owner multiple-user model, which provides verifiability for any existing SSE schemes and further supports data updates.}
+  %based on the multi-user scenario which enables the users to check the data integrity over the search result while providing a detection mechanism against the repaly attack.
+  \item We develop verification mechanisms for \name such that it can ensure both the freshness and integrity of search results across multiple users and data owners. \red{Rigorous analysis formally shows the security strength of \name.}
+
+  %We propose a fully dynamic Verifiable scheme leverage the Merkle Patricia Tree, and carefully tailor our design with detailed protocol illustration.
+  %\item We design a prove algorithm against the data integrity attack which can detects the malicious situation where the cloud tries to omit some files or even all the files.
+  %\item We design a chained-timestamp machanism against the replay attack in the multi-user scenario.
+  %\item experient and performance.
+  \item \red{Through comprehensive experimental results, we show that \name only introduces small extra overhead for result verification, compared to existing searchable encryption schemes.}
+\end{enumerate}
