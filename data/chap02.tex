@@ -3,15 +3,7 @@
 现有的CS2论文[5]提出了搜索鉴别符方案，该方案利用了默克尔树（Merkle Hash Tree， MHT）来实现了对数据完整性的验证，然而该方案并没有考虑到服务器返回空结果来规避结果验证的情况。Kurosawa等人提出了一系列可验证加密搜索方案[6][8][12]，然而他们的方案要么在搜索效率上接近O(n)，不适用于大型数据库，要么只支持静态数据库。除了Kurosawa等人的方案，其他还有许多只支持静态数据库的方案[7][10][13]。虽然Stefanov等人的方案[9]通过消息验证码（Message Authenticated Code，MAC）实现了动态数据库下的可验证搜索，然而他们的方案仍然没有考虑到服务器返回空结果的情况。Bost等人提出的方案是目前为止最完善的[11]，但他们的方案在搜索时需要和服务器有两轮通信才能进行验证，无法并行进行验证，并且他们的方案同样也不支持多用户情况下的验证。各个方案的对比情况如表格1所示。
 表格 1 现有的可验证加密搜索方案比较
 	动态性	多用户	防御重放攻击	防御数据完整性攻击	验证效率
-KPR11[5]	√	×	√	×	O(|W|)
-KO12[6]	×	×	×	×	O(n)
-CG12[7]	×	×	×	√	O(log|W|)
-KO13[8]	√	×	√	×	O(n)
-KW13[13]	×	√	×	√	O(|W|)
-SPS14[9]	√	×	√	×	O(rlog^3 (n))
-BFP16[11]	√	×	√	√	O(r)
-OK16[12]	×	×	×	√	O(1)
-OURS	√	√	√	√	O(log|W|)
+
 
 2.2 可验证的非对称加密搜索
 第一个可验证的非对称加密搜索方案[18]由Zheng等人提出，他们的方案采用了基于属性的关键字（Attribute-based keyword，ABK），但是他们的方案也只适用于数据库静态的情况。基于他们的工作，Liu等人又提出了一个更高效的可验证非对称加密搜索方案[19]，然而，由于非对称加密本身的限制，他们的方案必不可少地需要引入一个可信第三方。
@@ -30,9 +22,10 @@ OURS	√	√	√	√	O(log|W|)
 
 
   \section{Related Work}
-  \noindent\textbf{Secure Cloud Storage Scheme.} Verifiable cloud storage services have been extensively studied, e.g., Proof of Data Possession (PDP) \cite{ateniese2007provable, ateniese2008scalable, erway2015dynamic,zhu2012cooperative} and Proof \red{of} Retrievability (POR) \cite{juels2007pors, bowers2009proofs, stefanov2012iris}. \blue{These schemes mainly focused on verifying the integrity of data stored in cloud services and enable restoring data blocks if they are corrupted.} However, they did not ensure \red{the} integrity of search results,  \red{which is the focus of VSSE}.
-  Authenticated data structures are used by a set of searching algorithms to verify the integrity of data blocks stored on an untrusted server. Several schemes have been proposed, e.g., Merkle Tree\cite{merkle1987digital}, authenticated hash table\cite{papamanthou2008authenticated}, and \red{authenticated} skip list\cite{pugh1990skip,goodrich2001implementation}. Merkle Tree is the most common structure used to verify data integrity. However, Merkle Tree cannot flexible support data update. %is not a balanced tree when new leaf nodes are added and the searching operations are efficient.
-  Moreover, the current verification scheme~\cite{kamara2011cs2} built upon Merkle Tree did not store keyword information in its intermediate node and thus it is not suitable for keyword related searches. An authenticated hash table enabled by the RSA accumulator can be used to verify search results as well. Unfortunate, it has low efficiency in searching and update operations. For example, the search delay of the authenticated hash table is in millisecond level, while that of \name is in microsecond level. Skip list used a multilayer linked list to improve its search efficiency, but the storage overhead is much higher than a tree structure if the keyword information is required in the search path.
+  \noindent\textbf{Secure Cloud Storage Scheme.} Verifiable cloud storage services have been extensively studied, e.g., Proof of Data Possession (PDP) \cite{ateniese2007provable, ateniese2008scalable, erway2015dynamic,zhu2012cooperative} and Proof of Retrievability (POR) \cite{juels2007pors, bowers2009proofs, stefanov2012iris}. These schemes mainly focused on verifying the integrity of data stored in cloud services and enable restoring data blocks if they are corrupted. However, they did not ensure the integrity of search results, which is the focus of VSSE.
+  Authenticated data structures are used by a set of searching algorithms to verify the integrity of data blocks stored on an untrusted server. Several schemes have been proposed, e.g., Merkle Tree\cite{merkle1987digital}, authenticated hash table\cite{papamanthou2008authenticated}, and authenticated skip list\cite{pugh1990skip,goodrich2001implementation}. Merkle Tree is the most common structure used to verify data integrity. However, Merkle Tree cannot flexible support data update. %is not a balanced tree when new leaf nodes are added and the searching operations are efficient.
+  Moreover, the current verification scheme~\cite{kamara2011cs2} built upon Merkle Tree did not store keyword information in its intermediate node and thus it is not suitable for keyword related searches. An authenticated hash table enabled by the RSA accumulator can be used to verify search results as well. Unfortunate, it has low efficiency in searching and update operations. For example, the search delay of the authenticated hash table is in millisecond level, while that of %\name
+	is in microsecond level. Skip list used a multilayer linked list to improve its search efficiency, but the storage overhead is much higher than a tree structure if the keyword information is required in the search path.
    %First, Merkle Tree is not a balanced data structure, and search delay of the authenticated hash table leveraging the RSA accumulator is lower than Merkle Patricia Tree. The search delay of the authenticated hash table is in millisecond level, while that of the authenticated hash table is in microsecond level. Second, the current Merkle Tree scheme proposed by Kamara et al. [5] did not store additional information such as keyword in its intermediate node, so that it cannot enable empty result validation
 
   \noindent\textbf{Verifiable Searchable Symmetric Encryption.} The CS2 scheme \cite{kamara2011cs2} enabled users to verify the search result by using dynamic search authenticators, but their scheme cannot prevent the attacks that the server maliciously replies an empty result.
@@ -41,7 +34,8 @@ OURS	√	√	√	√	O(log|W|)
   %Also, schemes in~\cite{chai2012verifiable} \cite{cheng2015verifiable} only enabled static SSE.
   Although the verifiable scheme proposed by Stefanov et al.\cite{stefanov2014practical} achieved verifiability by leveraging message authenticated code, it cannot easily detect the data integrity attacks when the server intentionally returned an empty result.
   Bost et al. \cite{bost2016verifiable} presented a generic verifiable dynamic SSE scheme and combined it with the SSE scheme proposed by Stefanov et al. \cite{stefanov2014practical}.
-  Yet, their scheme required two round communications for result verification and did not enable verification in the setting of multiple users. Our \name scheme is a generic verifiable SSE scheme that can work with three-party model, which can be \red{more readily} deployed in practice. In particular, it enables search result verification under file update with only one round of communication.
+  Yet, their scheme required two round communications for result verification and did not enable verification in the setting of multiple users. Our %\name
+	scheme is a generic verifiable SSE scheme that can work with three-party model, which can be more readily deployed in practice. In particular, it enables search result verification under file update with only one round of communication.
 
 
   \noindent\textbf{Verifiable Public Key Encryption with Keyword Search.} The first verifiable attribute-based keyword search (VABKS) was proposed by Zheng et al. \cite{zheng2014vabks}. Similar to the existing SSE schemes above, VABKS only focused on search based on static encrypted data. Liu et.al \cite{liu2014efficient} proposed a more efficient construction based on VABKS, and Sun et.al \cite{sun2015catch} also provided a verifiable scheme VCKS that support conjunctive keyword search. However, due to the limitations of asymmetric encryption schemes, both of the above schemes require an additional trusted authority.

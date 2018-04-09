@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: data/chap01.aux
+A level-1 auxiliary file: data/chap02.aux
+A level-1 auxiliary file: data/chap03.aux
+A level-1 auxiliary file: data/chap04.aux
+A level-1 auxiliary file: data/chap05.aux
+The style file: thuthesis-numeric.bst
+A level-1 auxiliary file: data/ack.aux
+A level-1 auxiliary file: data/resume.aux
+Database file #1: ref/refs.bib
+Warning--I didn't find a database entry for "thuthesis"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 33 entries,
+            3389 wiz_defined-function locations,
+            927 strings with 11580 characters,
+and the built_in function-call counts, 242375 in all, are:
+= -- 32279
+> -- 23312
+< -- 23414
++ -- 8518
+- -- 299
+* -- 1024
+:= -- 27058
+add.period$ -- 99
+call.type$ -- 33
+change.case$ -- 66
+chr.to.int$ -- 7561
+cite$ -- 33
+duplicate$ -- 744
+empty$ -- 1986
+format.name$ -- 480
+if$ -- 73442
+int.to.chr$ -- 1
+int.to.str$ -- 34
+missing$ -- 0
+newline$ -- 174
+num.names$ -- 99
+pop$ -- 356
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 31254
+stack$ -- 0
+substring$ -- 8352
+swap$ -- 34
+text.length$ -- 365
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 390
+warning$ -- 0
+while$ -- 449
+width$ -- 0
+write$ -- 485
+(There was 1 warning)
