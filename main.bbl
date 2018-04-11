@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -120,6 +120,52 @@ Boneh D, Di~Crescenzo G, Ostrovsky R, et~al.
   search\allowbreak[C]//\allowbreak{}Proc. of EUROCRYPT.
 \newblock [S.l.: s.n.], 2004.
 
+\bibitem[Bost\ et~al.(2016)Bost, Fouque, and Pointcheval]{bost2016verifiable}
+Bost R, Fouque P~A, Pointcheval D.
+\newblock Verifiable dynamic symmetric searchable encryption: Optimality and
+  forward security.\allowbreak[J].
+\newblock IACR Cryptology ePrint Archive, 2016, 2016: 62.
+
+\bibitem[Kurosawa\ et~al.(2012)Kurosawa and Ohtaki]{kurosawa2012uc}
+Kurosawa K, Ohtaki Y.
+\newblock Uc-secure searchable symmetric
+  encryption\allowbreak[C]//\allowbreak{}Proc. of International Conference on
+  Financial Cryptography and Data Security (FC).
+\newblock [S.l.: s.n.], 2012.
+
+\bibitem[Chai\ et~al.(2012)Chai and Gong]{chai2012verifiable}
+Chai Q, Gong G.
+\newblock Verifiable symmetric searchable encryption for
+  semi-honest-but-curious cloud servers\allowbreak[C]//\allowbreak{}Proc. of
+  International Conference on Communications (ICC).
+\newblock [S.l.: s.n.], 2012.
+
+\bibitem[Kurosawa\ et~al.(2013)Kurosawa and Ohtaki]{kurosawa2013update}
+Kurosawa K, Ohtaki Y.
+\newblock How to update documents verifiably in searchable symmetric
+  encryption\allowbreak[C]//\allowbreak{}Proc. of International Conference on
+  Cryptology And Network Security (CANS).
+\newblock [S.l.: s.n.], 2013.
+
+\bibitem[Stefanov\ et~al.(2014)Stefanov, Papamanthou, and
+  Shi]{stefanov2014practical}
+Stefanov E, Papamanthou C, Shi E.
+\newblock Practical dynamic searchable encryption with small
+  leakage\allowbreak[C]//\allowbreak{}Proc. of NDSS.
+\newblock [S.l.: s.n.], 2014.
+
+\bibitem[Cheng\ et~al.(2015)Cheng, Yan, Guan, Zhang, and
+  Ren]{cheng2015verifiable}
+Cheng R, Yan J, Guan C, et~al.
+\newblock Verifiable searchable symmetric encryption from indistinguishability
+  obfuscation\allowbreak[C]//\allowbreak{}Proc. of AsiaCCS.
+\newblock [S.l.: s.n.], 2015.
+
+\bibitem[Ogata\ et~al.(2016)Ogata and Kurosawa]{ogataefficient}
+Ogata W, Kurosawa K.
+\newblock Efficient no-dictionary verifiable sse\allowbreak[J].
+\newblock IACR Cryptology ePrint Archive, 2016, 2016: 981.
+
 \bibitem[Merkle(1987)]{merkle1987digital}
 Merkle R~C.
 \newblock A digital signature based on a conventional encryption
@@ -145,52 +191,6 @@ Goodrich M~T, Tamassia R, Schwerin A.
   commutative hashing\allowbreak[C]//\allowbreak{}Proc. of DARPA Information
   Survivability Conference \& Exposition (DISCEX).
 \newblock [S.l.: s.n.], 2001.
-
-\bibitem[Kurosawa\ et~al.(2012)Kurosawa and Ohtaki]{kurosawa2012uc}
-Kurosawa K, Ohtaki Y.
-\newblock Uc-secure searchable symmetric
-  encryption\allowbreak[C]//\allowbreak{}Proc. of International Conference on
-  Financial Cryptography and Data Security (FC).
-\newblock [S.l.: s.n.], 2012.
-
-\bibitem[Kurosawa\ et~al.(2013)Kurosawa and Ohtaki]{kurosawa2013update}
-Kurosawa K, Ohtaki Y.
-\newblock How to update documents verifiably in searchable symmetric
-  encryption\allowbreak[C]//\allowbreak{}Proc. of International Conference on
-  Cryptology And Network Security (CANS).
-\newblock [S.l.: s.n.], 2013.
-
-\bibitem[Ogata\ et~al.(2016)Ogata and Kurosawa]{ogataefficient}
-Ogata W, Kurosawa K.
-\newblock Efficient no-dictionary verifiable sse\allowbreak[J].
-\newblock IACR Cryptology ePrint Archive, 2016, 2016: 981.
-
-\bibitem[Chai\ et~al.(2012)Chai and Gong]{chai2012verifiable}
-Chai Q, Gong G.
-\newblock Verifiable symmetric searchable encryption for
-  semi-honest-but-curious cloud servers\allowbreak[C]//\allowbreak{}Proc. of
-  International Conference on Communications (ICC).
-\newblock [S.l.: s.n.], 2012.
-
-\bibitem[Cheng\ et~al.(2015)Cheng, Yan, Guan, Zhang, and
-  Ren]{cheng2015verifiable}
-Cheng R, Yan J, Guan C, et~al.
-\newblock Verifiable searchable symmetric encryption from indistinguishability
-  obfuscation\allowbreak[C]//\allowbreak{}Proc. of AsiaCCS.
-\newblock [S.l.: s.n.], 2015.
-
-\bibitem[Stefanov\ et~al.(2014)Stefanov, Papamanthou, and
-  Shi]{stefanov2014practical}
-Stefanov E, Papamanthou C, Shi E.
-\newblock Practical dynamic searchable encryption with small
-  leakage\allowbreak[C]//\allowbreak{}Proc. of NDSS.
-\newblock [S.l.: s.n.], 2014.
-
-\bibitem[Bost\ et~al.(2016)Bost, Fouque, and Pointcheval]{bost2016verifiable}
-Bost R, Fouque P~A, Pointcheval D.
-\newblock Verifiable dynamic symmetric searchable encryption: Optimality and
-  forward security.\allowbreak[J].
-\newblock IACR Cryptology ePrint Archive, 2016, 2016: 62.
 
 \bibitem[Zheng\ et~al.(2014)Zheng, Xu, and Ateniese]{zheng2014vabks}
 Zheng Q, Xu S, Ateniese G.
@@ -224,5 +224,32 @@ Sun S~F, Liu J~K, Sakzad A, et~al.
 \newblock An efficient non-interactive multi-client searchable encryption with
   support for boolean queries\allowbreak[C]//\allowbreak{}Proc. of ESORICS.
 \newblock [S.l.: s.n.], 2016.
+
+\bibitem[Bellare\ et~al.(1994)Bellare, Goldreich, and
+  Goldwasser]{bellare1994incremental}
+Bellare M, Goldreich O, Goldwasser S.
+\newblock Incremental cryptography: The case of hashing and
+  signing\allowbreak[C]//\allowbreak{}Proc. of CRYPTO.
+\newblock [S.l.: s.n.], 1994.
+
+\bibitem[Wood(2014)]{wood2014ethereum}
+Wood G.
+\newblock Ethereum: A secure decentralised generalised transaction
+  ledger\allowbreak[J].
+\newblock Ethereum Project Yellow Paper, 2014, 151: 1--32.
+
+\bibitem[mer()]{merkle_patricia_tree}
+Merkle patricia tree\allowbreak[M].
+\newblock [S.l.: s.n.].
+
+\bibitem[RLP()]{RLP_code}
+Rlp code\allowbreak[M].
+\newblock [S.l.: s.n.].
+
+\bibitem[Wang\ et~al.(2010)Wang, Cao, Li, Ren, and Lou]{wang2010secure}
+Wang C, Cao N, Li J, et~al.
+\newblock Secure ranked keyword search over encrypted cloud
+  data\allowbreak[C]//\allowbreak{}Proc. of ICDCS.
+\newblock [S.l.: s.n.], 2010.
 
 \end{thebibliography}
