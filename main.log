@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  12 APR 2018 16:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  13 APR 2018 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2372,14 +2372,16 @@ File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.045pt on input line 22.
  (./main.aux
-(./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/chap04.aux)
-(./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
+(./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux
+
+LaTeX Warning: Label `fig:inverted-index' multiply defined.
+
+) (./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 22.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 22
 .
-
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
@@ -2824,35 +2826,28 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 40.
  [14] [15]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 113.
+(Font)              scaled to size 6.0pt on input line 119.
  [16]
+File: fig/inverted-index.eps Graphic file (type eps)
+<fig/inverted-index.eps>
+ [17]
 File: fig/MPT.eps Graphic file (type eps)
 <fig/MPT.eps>
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 144--146
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 154--156
  [][] 
  []
 
-! Missing { inserted.
-<to be read again> 
-                   $
-l.151 ...�点上。对于不存在的关键字$w_$
-                                                  2，我们需要创建一�...
+File: fig/updateProof.eps Graphic file (type eps)
+<fig/updateProof.eps>
+File: fig/resultProof.eps Graphic file (type eps)
+<fig/resultProof.eps>
 
-? q
-OK, entering \batchmode...
-! Missing } inserted.
-<inserted text> 
-                }
-l.151 ...�点上。对于不存在的关键字$w_$
-                                                  2，我们需要创建一�...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Overfull \hbox (22.13368pt too wide) in paragraph at lines 168--169
+[][] 
+ []
 
- [17] [18]
+[18]
 Missing character: There is no λ in font ntxmi!
 Missing character: There is no π in font ntxmi!
 Missing character: There is no ← in font ntx-Regular-tlf-ot1!
@@ -2862,6 +2857,7 @@ Missing character: There is no τ in font ntxmi!
 Missing character: There is no τ in font ntxmi!
 Missing character: There is no τ in font ntx-Regular-tlf-t1!
 Missing character: There is no π in font ntx-Regular-tlf-t1!
+ [19]
 Missing character: There is no ⁡ in font ntx-Regular-tlf-ot1!
 Missing character: There is no ⁡ in font ntx-Regular-tlf-ot1!
 Missing character: There is no ≤ in font ntx-Regular-tlf-ot1!
@@ -2888,179 +2884,19 @@ Missing character: There is no λ in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no π in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
-Missing character: There is no τ in font ntx-Regular-tlf-t1!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.164 ...��牌时，对于第一个挑战令牌τ_
-                                                  w，如果与{σ}中的某...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
-Missing character: There is no 如 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 与 in font ntx-Regular-tlf-ot1!
-Missing character: There is no σ in font ntxmi!
-Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 某 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 路 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 径 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 匹 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 配 in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
-Missing character: There is no 那 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 么 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 就 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 在 in font ntx-Regular-tlf-ot1!
-Missing character: There is no λ in font ntxmi!
-Missing character: There is no ̃ in font ntxmi!
-Missing character: There is no 中 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 选 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 择 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 任 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 意 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 条 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 路 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 径 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 作 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 挑 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 战 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no τ in font ntx-Regular-tlf-t1!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.164 ...任意一条路径作为挑战令牌($τ_
-                                                  w $) ̃发送给敌手A，...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no σ in font ntx-Regular-tlf-t1!
+Missing character: There is no λ in font ntx-Regular-tlf-t1!
+Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
+Missing character: There is no τ in font ntxmi!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no λ in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no τ in font ntxmi!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
-Missing character: There is no τ in font ntx-Regular-tlf-t1!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.164 ...w之前出现过，那么挑战令牌(τ_
-                                                  w ) ̃就和之前发送�...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no ̃ in font ntxmi!
-Missing character: There is no 就 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 和 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 之 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 前 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 发 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 送 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 给 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 敌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 手 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 样 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 如 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 果 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 没 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 出 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 现 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 过 in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
-Missing character: There is no 那 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 么 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 挑 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 战 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 生 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 成 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 方 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 式 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 就 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 和 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 第 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 个 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 一 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 样 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 由 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 于 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 采 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 用 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 伪 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 随 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 机 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 函 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 数 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 进 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 行 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 了 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 加 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 密 in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
-Missing character: There is no 因 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 此 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 敌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 手 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 也 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 无 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 法 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 区 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 分 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 真 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 实 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 和 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 仿 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 真 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 的 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 。 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 模 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 拟 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 更 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 新 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
-Missing character: There is no 更 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 新 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 令 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 牌 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 被 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 设 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 置 in font ntx-Regular-tlf-ot1!
-Missing character: There is no 为 in font ntx-Regular-tlf-ot1!
-Missing character: There is no τ in font ntx-Regular-tlf-t1!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.165 ...令牌时，更新令牌被设置为$(τ_
-                                                  u ) ̃=((τ_(w_1 ) ) ̃,�...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+Missing character: There is no τ in font ntxmi!
+Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
+Missing character: There is no τ in font ntxmi!
 Missing character: There is no ̃ in font ntxmi!
 Missing character: There is no τ in font ntxmi!
 Missing character: There is no ̃ in font ntxmi!
@@ -3079,44 +2915,58 @@ Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no π in font ntx-Regular-tlf-t1!
 Missing character: There is no π in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [19] [20]) [21]
+ [20]
+File: expr/initialization.eps Graphic file (type eps)
+<expr/initialization.eps>
+File: expr/update.eps Graphic file (type eps)
+<expr/update.eps>
+File: expr/proof.eps Graphic file (type eps)
+<expr/proof.eps>
+File: expr/prove.eps Graphic file (type eps)
+<expr/prove.eps>
+File: expr/verify.eps Graphic file (type eps)
+<expr/verify.eps>
+File: expr/comparison.eps Graphic file (type eps)
+<expr/comparison.eps>
+ [21] [22]) [23]
 \openout2 = `data/chap04.aux'.
 
  (./data/chap04.tex
 第4章
 Missing character: There is no η in font ntx-Regular-tlf-t1!
-) [22
-
-
-
-] [23]
-\openout2 = `data/chap05.aux'.
-
- (./data/chap05.tex
-第5章
 ) [24
 
 
 
-] (./main.bbl [25
+] [25]
+\openout2 = `data/chap05.aux'.
+
+ (./data/chap05.tex
+第5章
+) [26
+
+
+
+] (./main.bbl [27
 
 
 
 
-]) [26]
+]) [28]
 \openout2 = `data/ack.aux'.
 
- (./data/ack.tex [27
+ (./data/ack.tex [29
 
 
 
-]) [28
+]) [30
 
 
 ]
 \openout2 = `data/resume.aux'.
 
- (./data/resume.tex) [29
+ (./data/resume.tex)
+[31
 
 
 
@@ -3127,21 +2977,25 @@ Missing character: There is no η in font ntx-Regular-tlf-t1!
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
- (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./dat
-a/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
+ (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux)
+(./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 83.
 
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 45747 strings out of 493007
- 892675 string characters out of 6137965
- 946174 words of memory out of 5000000
- 48965 multiletter control sequences out of 15000+600000
+ 45785 strings out of 493007
+ 893386 string characters out of 6137965
+ 946293 words of memory out of 5000000
+ 48993 multiletter control sequences out of 15000+600000
  650084 words of font info for 172 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  66i,12n,96p,10438b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (40 pages).
+Output written on main.pdf (42 pages).

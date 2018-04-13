@@ -24,23 +24,23 @@
 \contentsline {subsection}{\numberline {3.4.1}构建及更新验证索引}{14}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}生成结果证明}{16}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}结果验证}{17}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}实例分析}{17}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.4}实例分析}{18}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}安全性分析}{19}{section.3.5}
-\contentsline {section}{\numberline {3.6}实验结果}{20}{section.3.6}
-\contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}系统架构}{22}{section.4.2}
-\contentsline {section}{\numberline {4.3}方案流程}{22}{section.4.3}
-\contentsline {section}{\numberline {4.4}算法分析}{22}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}构建时间戳链}{22}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}验证时间戳}{22}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}实例分析}{22}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}安全性分析}{22}{section.4.5}
-\contentsline {section}{\numberline {4.6}实验结果}{22}{section.4.6}
-\contentsline {chapter}{\numberline {第5章}总结与展望}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}论文工作总结}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来工作展望}{24}{section.5.2}
-\contentsline {chapter}{参考文献}{25}{section*.14}
-\contentsline {chapter}{致\hspace {1em}谢}{27}{section*.16}
-\contentsline {chapter}{声\hspace {1em}明}{28}{section*.18}
-\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{29}{section*.20}
+\contentsline {section}{\numberline {3.6}实验结果}{21}{section.3.6}
+\contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{24}{section.4.1}
+\contentsline {section}{\numberline {4.2}系统架构}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}方案流程}{24}{section.4.3}
+\contentsline {section}{\numberline {4.4}算法分析}{24}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}构建时间戳链}{24}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}验证时间戳}{24}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}实例分析}{24}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}安全性分析}{24}{section.4.5}
+\contentsline {section}{\numberline {4.6}实验结果}{24}{section.4.6}
+\contentsline {chapter}{\numberline {第5章}总结与展望}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}论文工作总结}{26}{section.5.1}
+\contentsline {section}{\numberline {5.2}未来工作展望}{26}{section.5.2}
+\contentsline {chapter}{参考文献}{27}{section*.18}
+\contentsline {chapter}{致\hspace {1em}谢}{29}{section*.20}
+\contentsline {chapter}{声\hspace {1em}明}{30}{section*.22}
+\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{31}{section*.24}
