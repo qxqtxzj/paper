@@ -281,14 +281,14 @@
   \hspace{-36.0pt}
 
   \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/proof}
-    \caption{Proof cost of MPT}
-    \label{fig:proof}
-  \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/prove}
     \caption{$Prove$ cost}
     \label{fig:prove}
+  \end{minipage}
+  \begin{minipage}[b]{0.48 \textwidth}
+    \includegraphics[width=\textwidth]{expr/proof}
+    \caption{Proof cost of MPT}
+    \label{fig:proof}
   \end{minipage}
 
   \hspace{-40.0pt}
@@ -308,16 +308,38 @@
 \centering
 \end{figure}
 
-目前已经完成了实验测试和论文撰写。原型系统采用了Crypto5.6.5在C++上实现，包括测试代码在内总共2200多行代码。实验环境为Intel Core i5 2.5GHz处理器和4G内存，所有测试均采用单线程执行。实验采用了开源的Enron emails[17]作为测试数据，我们利用python脚本从其中提取出了关键字-文件对形成了倒排索引，注意提取关键字-文件对的时间不算在实验的测试时间范围内，因为该部分是和我们的方案独立的，取决于采用的文本提取算法。实验结果中给出的每一个数据点都是十次测试的平均值。
+\subsection{实验设置}
+为了证明方案\single 的有效性，我们通过 Crypto++ 5.6.5 库实现了方案的原型。原型系统包含大约2200行代码。我们使用 HMAC-SHA256 作为两个随机预言 (random-oracle)，使用 SHA3-256 作为哈希函数，使用 MuHash 作为增量哈希函数。我们的实验在一台处理器为 Intel Core i5 2.5GHz，内存为 4G 的笔记本上进行，使用单线程实现。
 
-首先，如图5所示，生成验证索引的开销与文件-关键字对（document-keyword pair）的数目有关，因为有多少文件-关键字对，就需要执行多少次MPT的插入操作。从图中可以看出，当文件-关键字对的数目达到400万时，初始化生成验证索引的时间也只需要25秒左右，这对于初始化来说是可以接受的。
-更新操作的延迟与MPT的大小有关，即与MPT中包含的关键字数目有关。关键字数目越多，MPT包含的叶子节点数目越多，MPT的大小就越大。严格上来说，更新的效率应该与MPT的层数有关，这里为了直观起见，我们采用关键字的数量来衡量MPT的大小，即数据库的大小。由于每个文件包含的关键字数目不等，因此我们采用吞吐量来衡量更新操作的效率，其中吞吐量代表了每秒钟可以执行多少个文件-关键字对的更新操作。从图6中可以看到，添加（Add）和删除（Delete）操作的吞吐量几乎相同。当数据库大小为100万时，每秒钟可以支持大约110000次更新操作。
+我们使用一个开源数据集Enron email dataset~\cite{enron_email}作为实验的测试数据集，使用了其中从“allen-p”到“kaminski-v”之间的数据。我们从该数据集中提取出了大量的“文件-关键字”对 (document-keyword pairs)，并通过python脚本为他们构建出了明文的倒排索引。注意，从文件中提取关键字的时延并没有被考虑在实验评估中，因为该问题与我们研究的\single 方案是一个独立的问题。
 
-如图7所示，当数据库大小为100万关键字时，服务器每秒钟可以执行大约43000次证明操作，这意味着服务器可以支持43000个用户的并发查询请求。而由结果证明带来的通信开销并不大，从图7中可以看出，每个结果证明的通信开销大约在2-3KB之间，结果证明的大小也与数据库的大小有关，但随着数据库的增长，结果证明的大小增长并不明显。
-图8展示了用户对结果证明进行验证需要的时间，从图中可以看出，几乎100\%的验证可以在0.1毫秒内完成。
+下文中，我们首先评估了\single 方案的算法效率，然后将\single 方案与一个著名的对称加密搜索方案~\cite{cash2014dynamic}进行了结合，以此来证明\single 方案引入的结果验证的开销并不大。注意，如无特别说明，下文中的每一个实验结果都是十次实验的平均值。
 
 
-如图11所示，我们与动态加密搜索方案[3]进行了对比，我们采用了论文[3]中的实验结果作为基准，为了使得实验的对比更加公平，我们选择了相同的实验参数并且在最坏情况下进行了测量。通过提取16MB的邮件数据作为数据库大小，我们可以看到，我们的方案在搜索结果证明时，只需要18微秒的时间，而加密搜索的搜索时间由于与关键字包含的文件数量有关，因此平均搜索时间相对会比较大。对于添加和删除操作，加密搜索方案[3]在最坏情况下分别需要1.7微秒和113微秒时间，而我们的方案只需要0.7微秒。因此，可以说，我们的可验证加密搜索框架给加密搜索带来的额外开销并不大。
+\subsection{实验结果}
+首先，我们评估了$Init$算法的时延，即数据持有者生成验证索引$\lambda$所需的时间。如图~\ref{fig:init}所示，生成验证索引$\lambda$所需的时间与“文件-关键字”对的数量大小成正比，因为向MPT中执行的插入操作与“文件-关键字”对的数量相同。总体来说，$Init$ 算法在 “文件-关键字”对达到400万的时候，可以在25秒内执行完毕。由于$Init$算法仅需要在初始化时执行一次，因此这个开销是可以接受的。
+
+%The delays of generating the proof index are proportional to the size of the document-keyword pairs, since \name performs the same number of insertions to the number of the document-keyword pairs. Overall, the initialization consumes around 25 seconds where the documents include four million keywords, which is acceptable.
+% for the initialization process.
+云服务器更新验证索引的时间如图~\ref{fig:update}所示，更新的时延与数据库的大小有关，即与验证索引的大小有关，而验证索引的大小由它包含的关键字数量来衡量。严格意义上来书，一次更新的时延与MPT树的层数有关。为了更好的展示更新时延与验证索引大小的关系，我们使用了大量的关键字来评估更新时延。由于每一个文件包含的关键字个数不同，这里我们采用吞吐量(throughput)来衡量每秒钟云服务器可以更新的“文件-关键字”对。从图中可以看到，$Add$和$Del$操作的性能几乎相同。当数据库的大小增大时，吞吐量将会降低。当数据库的大小为100万个关键字时，云服务器每秒钟可以同时支持110,000此更新操作。同时，我们也测量了用户端$UpdateToken$算法引入的带宽开销，更新令牌$\tau_u$中每一个关键字对应的密文带来的平均开销大小在 32字节左右，而更新令牌的总大小与待更新文件$d$包含的关键字个数有关，这也是可以接受的。
+
+
+如图~\ref{fig:prove}所示，云服务器可以在数据库大小在100万关键字时，每秒钟进行43,000次 $Prove$ 操作，这意味着云服务器可以同时支持43,000个来自用户的查询请求。由$Prove$操作产生的结果证明$\rho_s$的大小也可以在图~\ref{fig:prove}和图~\ref{fig:proof}中看到，结果证明的大小随着MPT层数的增加而增长，但总体而言，只需要几千字节。
+
+我们通过累计分布函数图 (Cumulative Distribution Function, CDF)来对用户端进行的$Verify$操作进行了测试。结果显示，几乎99.7\%的情况下，用户端都可以在0.1毫秒内完成结果验证，这是可以接受的。
+
+除此以外，我们还对MPT的存储空间进行了评估。如果我们使用一个100万个关键字的数据库，MPT的存储空间大小大约为82MB，而该数据库本身所占用的空间大小为 590MB，因此MPT带来的额外存储开销不算特别大。特别需要说明的是，这里我们评估数据库大小所采用为关键字密集型的数据，即邮件数据。如果数据持有者需要加密的是媒体类型的数据，例如图片或是音乐文件等等，这些文件只包含少量的关键字和属性，因此为这些类型的数据构建验证索引时，验证索引占原数据集的比例将会很小，甚至可以忽略。
+
+
+
+\subsection{与SSE方案的对比}
+
+我们将我们的普适性可验证对称加密搜索方案\single ，与Cash等人提出的一个较为知名的动态对称加密搜索方案 (Dynamic Symmetric Searchable Encryption, DSSE)~\cite{cash2014dynamic}进行了结合，并展示了\single 为其提供结果验证服务带来的额外开销并不大。
+
+为了公平的进行性能比较，我们使用了同样的数据集，并在同样的设备参数下对两个方案联合进行了实验。如图~\ref{fig:comparison}所示，我们测量了$Init$阶段，$Search$阶段和$PreUpdate$阶段的性能开销。图中，$Init$操作使用了200万个“文件-关键字”来分别构建DSSE方案~\cite{cash2014dynamic}和方案\single 用到的索引，时间单位为秒。而其他三个操作$Search, Add, Delete$的评估采用的数据库大小为10,000个关键字，时间单位为微妙。注意，DSSE方案~\cite{cash2014dynamic}中的$Search$操作与\single 方案中的$Prove$操作对应。从图中可以看出，我们的\single 方案引入的额外开销非常小。其中，相较于DSSE方案~\cite{cash2014dynamic}而言，方案\single 在$Init$阶段引入的开销非常小，仅仅额外引入了1.9\%的额外开销。而对于一次$Search$ ($Prove$) 操作来说，\single 方案给云服务器引入的额外开销为14微秒，仅仅给DSSE方案带来了2\%的额外开销。同样的，对于一次$Add$或$Delete$操作来说，我们的\single 方案仅仅引入了27微秒的时间，仅占方案~\cite{cash2014dynamic}的 17\%。
+
+在表~\ref{tab:compareSSE}中，我们还比较了二者的通信开销。由于数据的方差较大，每一个实验结果都是50,000次实验的平均值。结果显示，DSSE方案~\cite{cash2014dynamic}的搜索结果大小平均为53KB左右，而我们的结果证明大小仅仅为3KB左右，即由\single 方案引入的额外开销低于6\%。此外，DSSE方案~\cite{cash2014dynamic}生成的令牌大小平均为390B，而\single 方案生成的令牌仅为32B，即由\single 方案引入的额外开销低于9\%。这些实验结果充分表明了，\single 方案是实用且高效的。
+
 
 
 \begin{table}[h]

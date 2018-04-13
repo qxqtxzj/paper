@@ -10,53 +10,55 @@ The style file: thuthesis-numeric.bst
 A level-1 auxiliary file: data/ack.aux
 A level-1 auxiliary file: data/resume.aux
 Database file #1: ref/refs.bib
-Warning--I didn't find a database entry for "thuthesis"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty year in merkle_patricia_tree
 Warning--empty year in RLP_code
+Warning--empty year in enron_email
 Warning--empty year in merkle_patricia_tree
 Warning--empty year in merkle_patricia_tree
 Warning--empty year in RLP_code
 Warning--empty year in RLP_code
-You've used 38 entries,
+Warning--empty year in enron_email
+Warning--empty year in enron_email
+You've used 39 entries,
             3389 wiz_defined-function locations,
-            951 strings with 12193 characters,
-and the built_in function-call counts, 261227 in all, are:
-= -- 34749
-> -- 25037
-< -- 25156
-+ -- 9164
+            954 strings with 12262 characters,
+and the built_in function-call counts, 262138 in all, are:
+= -- 34857
+> -- 25097
+< -- 25217
++ -- 9187
 - -- 323
-* -- 1142
-:= -- 29170
-add.period$ -- 112
-call.type$ -- 38
-change.case$ -- 76
-chr.to.int$ -- 8122
-cite$ -- 46
-duplicate$ -- 847
-empty$ -- 2263
+* -- 1161
+:= -- 29263
+add.period$ -- 114
+call.type$ -- 39
+change.case$ -- 78
+chr.to.int$ -- 8143
+cite$ -- 51
+duplicate$ -- 865
+empty$ -- 2315
 format.name$ -- 518
-if$ -- 79145
+if$ -- 79428
 int.to.chr$ -- 1
-int.to.str$ -- 39
+int.to.str$ -- 40
 missing$ -- 0
-newline$ -- 197
+newline$ -- 201
 num.names$ -- 108
-pop$ -- 413
+pop$ -- 425
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 39
 quote$ -- 0
-skip$ -- 33611
+skip$ -- 33706
 stack$ -- 0
-substring$ -- 8984
-swap$ -- 39
-text.length$ -- 397
+substring$ -- 9007
+swap$ -- 40
+text.length$ -- 398
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 448
-warning$ -- 6
-while$ -- 489
+type$ -- 459
+warning$ -- 9
+while$ -- 490
 width$ -- 0
-write$ -- 548
-(There were 7 warnings)
+write$ -- 558
+(There were 9 warnings)

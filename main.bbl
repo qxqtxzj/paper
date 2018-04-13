@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -166,6 +166,12 @@ Ogata W, Kurosawa K.
 \newblock Efficient no-dictionary verifiable sse\allowbreak[J].
 \newblock IACR Cryptology ePrint Archive, 2016, 2016: 981.
 
+\bibitem[Wang\ et~al.(2010)Wang, Cao, Li, Ren, and Lou]{wang2010secure}
+Wang C, Cao N, Li J, et~al.
+\newblock Secure ranked keyword search over encrypted cloud
+  data\allowbreak[C]//\allowbreak{}Proc. of ICDCS.
+\newblock [S.l.: s.n.], 2010.
+
 \bibitem[Merkle(1987)]{merkle1987digital}
 Merkle R~C.
 \newblock A digital signature based on a conventional encryption
@@ -246,10 +252,8 @@ Merkle patricia tree\allowbreak[M].
 Rlp code\allowbreak[M].
 \newblock [S.l.: s.n.].
 
-\bibitem[Wang\ et~al.(2010)Wang, Cao, Li, Ren, and Lou]{wang2010secure}
-Wang C, Cao N, Li J, et~al.
-\newblock Secure ranked keyword search over encrypted cloud
-  data\allowbreak[C]//\allowbreak{}Proc. of ICDCS.
-\newblock [S.l.: s.n.], 2010.
+\bibitem[enr()]{enron_email}
+Enron\_email dataset\allowbreak[M].
+\newblock [S.l.: s.n.].
 
 \end{thebibliography}
