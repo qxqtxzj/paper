@@ -76,8 +76,10 @@
 
 
 \subsection{时间戳验证}
-算法~\ref{alg:check}
-Algorithm~\ref{alg:check} shows the pseudo-code of the {\it Check} algorithm that is executed by a data user and verifies whether the authenticator has been replayed. Let $\pi^t_q$ denote the authenticator received at the query time $t$ and $\pi_c$ denote the authenticator received at the checkpoint, which is used to deduce the previous authenticators during the latest update interval. First, we need to verify the signature of $\pi^t_q$ and $\pi_c$ by using the public key $spk$ of the data owner. We check the authenticator $\pi^t_q$ received at the query time is not generated before the previous update time point by using $\alpha^t_q$ extract from $\pi^t_q$. Then, we decrypt the previous $rt_k||tp_k||\alpha_{k-1}$ concatenation by using $\alpha_k$ until it finds the first concatenation with timestamp $tp_k < t$ or $\alpha_k = \emptyset$. We compare $\alpha_k$ with $\alpha^t_q$ and $\emptyset$. If it is not equal to either of them, a data freshness attack is detected. Otherwise, $\alpha^t_q$ is considered correct.
+算法~\ref{alg:check}展示了$Check$算法的伪代码，该算法由数据搜索用户执行，用以确保鉴别符没有被重放。
+假设$\pi^t_q$为用户在搜索时刻$t$收到的鉴别符， $\pi_c$为用户在检测点收到的鉴别符。首先我们需要通过签名公钥$spk$确保两个鉴别符都来自于数据持有者。接着，我们需要通过鉴别符$\pi^t_q$中的$\alpha^t_q$来确保该鉴别符的时间戳不会早于该更新周期。随后，我们需要通过$\pi_c$中的$\alpha_c$不断解密得到$rt_k||tp_k||\alpha_{k-1}$，直到我们找到某个时间戳$tp_k < t$，或者找到$\alpha_k = \emptyset$。我们将  $\alpha_k$与$\alpha^t_q$和$\emptyset$进行对比。如果$\alpha_k$与两者均不相等，则证明产生了数据新鲜性攻击。否则，$\alpha^t_q$就被认为是正确的，即其中包含的根哈希可以用作数据新鲜性和数据完整性的见证。
+
+
 
 \begin{algorithm}[t]
   \caption{Check}
