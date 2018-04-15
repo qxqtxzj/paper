@@ -86,37 +86,35 @@
   %\setcounter{algorithm}{2.1}
   \label{alg:check}
   \begin{algorithmic}[1]
-    \REQUIRE {$K_3$: the symmetric key; $spk$: the public key for verifying signature; $\pi^t_q$: the authenticator received in the query time $t$; $\pi_c$: the authenticator received in the checkpoint.}
-    \ENSURE {$b \in \{0,1\}$, if $b=1$, the {\it Check} algorithm succeeds, otherwise, it fails.}
-              \STATE{let $\pi^t_q = \{\alpha^t_q, Sig^t_q\}$ and $\pi_c = \{\alpha_c, Sig_c\}$}
+    \REQUIRE {$K_3$: 对称秘钥; $spk$: 验证签名的公钥; $\pi^t_q$: 在搜索时刻 $t$返回给数据搜索用户的鉴别符; $\pi_c$: 在检测点返回给用户的鉴别符。}
+    \ENSURE {$b \in \{0,1\}$, 如果 $b=1$, $Check$算法成功，否则失败。}
+              \STATE{令 $\pi^t_q = \{\alpha^t_q, Sig^t_q\}$， $\pi_c = \{\alpha_c, Sig_c\}$}
               \IF{$\alpha^t_q \neq (Sig^t_q)_{spk}$ $\vert \vert$ $\alpha_c \neq (Sig_c)_{spk}$}
                 \RETURN{$b = 0$}
               \ENDIF
               \STATE {$(rt^t_q, tp^t_q, \alpha) \leftarrow Dec_{K_3}(\alpha^t_q)$}
-              \IF{$tp^t_q$ is not before the previous update time point}
-                \STATE {let $\alpha_k = \alpha_c$}
-                \FOR {$\alpha_k \neq \emptyset$}
+              \IF{$tp^t_q$ 早于最近一个更新时间点}
+                \RETURN {$b = 0$}
+              \ENDIF
+              \STATE {令 $\alpha_k = \alpha_c$}
+              \FOR {$\alpha_k \neq \emptyset$}
                     \STATE {$(rt_k, tp_k, \alpha_{k-1}) \leftarrow Dec_{K_3}(\alpha_k)$}
                     \IF {$tp_k < t$}
-                      \BREAK
+                      \STATE{break}
                     \ENDIF
-                    \STATE {let $\alpha_k = \alpha_{k-1}$}
-                \ENDFOR
-                \IF {$\alpha_k = \alpha^t_q ||\alpha_k = \emptyset$}
+                    \STATE {令 $\alpha_k = \alpha_{k-1}$}
+              \ENDFOR
+              \IF {$\alpha_k = \alpha^t_q ||\alpha_k = \emptyset$}
                   \RETURN {$b = 1$}
-                \ELSE
-                  \RETURN {$b = 0$}
-                \ENDIF
               \ELSE
-                \RETURN {$b = 0$}
+                  \RETURN {$b = 0$}
               \ENDIF
   \end{algorithmic}
 \end{algorithm}
 
-\noindent \textbf{Remark.} The update interval can be controlled by the data owner according to its update frequency. Normally, if data is frequently updated, the update interval can be set to a shorter period so that the length of the authenticator will decrease and the verification delays will be shorter. However, it will incur more communication overheads.
+\noindent \textbf{备注：}更新周期可以由数据持有者根据其更新频率来控制。 一般来说，如果数据持有者的更新频率较高，则更新周期可以设置短一些，以保证一个更新周期内的鉴别符不会过长，并且验证的时延也会减少。但这会给数据持有者带来相对较高的更新负载。在我们的实验部分\ref{{sec:experiments}}，我们将会展示用户验证时延和数据持有者带宽开销之间的关系。
 %However, if the update is not frequent, the update interval can be set longer to reduce the bandwidth consumption introduced by the fixed update.
 % incurred by the fixed update point.
-In our experiments (see Section~\ref{sec:experiments}), we will show that the verification delays and the bandwidth consumption for updating authenticators are acceptable.
 
 \subsection{实例分析}
 
@@ -124,18 +122,16 @@ In our experiments (see Section~\ref{sec:experiments}), we will show that the ve
   \centering
   \includegraphics[width=6 in]{fig/timestamp}
   \DeclareGraphicsExtensions.
-  \caption{An illustration of the timestamp-chain mechanism}
+  \caption{时间戳链的简单示例}
   \label{fig:timestamp}
 \end{figure}
 
-the authenticators in each update interval are chained together, e.g., $\pi_{i, 0}, \pi_{i, 1}$ (see Fig.~\ref{fig:timestamp}),but the authenticators are irrelevant in the two different update intervals.
+如图~\ref{fig:timestamp}所示，横向为时间轴，红色的线表示的是数据持有者的更新时间点，蓝色的线表示的是数据搜索者的查询点。$(up_1,up_2,\cdots,up_i,up_{i+1})$是更新时间点，其中$(up_i,up_{i+1}]$即为一个更新周期，$up_{i+1}$为该更新周期的检测点。
+每一个周期中，鉴别符都链式相连，例如图中的$\pi_{i, 0}, \pi_{i, 1}$，但是不同的更新周期内的鉴别符不相连。
 
-the checkpoint is referred as the next update time point closest to the user's query time $t$, e.g., $up_{i+1}$ is the checkpoint in the update interval $(up_i,up_{i+1}]$.
+让我们考虑如下几种数据搜索用户在不同时刻发起请求的情况：(i) 第一种情况，数据搜索用户在$t_1$时刻发起搜索请求，其中$t_1 < tp_{i, 0}$；(ii) 第二种情况，数据搜索用户在$t_2$时刻发起搜索请求，该请求发生在一次数据更新时刻$tp_{i, 0}$之后，且云服务器发送给用户的鉴别符为$\pi_{i, 0}$；(iii)第三种情况，数据搜索用户仍然在$t_2$时刻发起搜索请求，但是云服务器发送给用户的鉴别符为$\pi_{i-1, n}$。在最后一种情况中，一个数据新鲜性攻击产生，但是它会在检测点$up_{i+1}$被用户发现。用户将在检测点收到鉴别符$\pi_{i, 1}$，通过它用户可以验证用户在查询时刻收到的鉴别符是否正确。
 
-
-Let us consider the following cases (shown in Fig.~\ref{fig:timestamp}) when a data user initiates a query at different time points: (i) the first case is that the query occurs at $t_1$, where $t_1 < tp_{i, 0}$, the server can only send $\pi_{i-1, n}$ to the data user; (ii) the second case is that the query occurs at $t_2$ after the data update event at $tp_{i, 0}$, and the authenticator that server sends to the user is $\pi_{i, 0}$; (iii) the last case is that the query is generated at $t_2$, and the authenticator sent by the server is $\pi_{i-1, n}$. In the last case, a data freshness attack occurs, but it will be detected at the checkpoint $up_{i+1}$. The data user will obtain the last authenticator $\pi_{i, 1}$ from the server at the checkpoint to verify whether the data obtained at the query time has been replayed or not.
-
-Now we use the three cases above to explain the algorithm. In the first case, $\pi_{i, 1}$ and $\pi_{i, 0}$ are received and $\alpha_{i,1}$ and $\alpha_{i,0}$ are extracted. We can find the field of $\alpha$ in the concatenation is $\emptyset$ after decrypting $\alpha_{i, 0}$. Therefore, the {\it Check} algorithm outputs $b=1$ and the authenticator $\pi_{i-1, n}$ received in the query time is considered correct. In the second case, $\alpha_{i, 0}$ is also decrypted by $\alpha_{i, 1}$ and the timestamp of $\alpha_{i, 0}$ is less than $t_2$. We can find that $\alpha_{i, 0}$ and $\alpha^{t_2}_q$ are equal. Hence $\alpha^{t_2}_q$ is considered correct, i.e., $\pi^{t_2}_q$ is correct. However, in the last case, we will detect a data freshness attack due to the mismatch between the correct authenticator $\pi_{i, 0}$ and the received one $\pi^{t_2}_q$, i.e., $\pi_{i-1, n}$.
+我们仍然采用上述三种情况来描述搜索用户验证鉴别符的过程。在上述第一种情况中，用户将收到鉴别符$\pi_{i, 1}$ 和 $\pi_{i, 0}$，通过它们，用户可以提取出 $\alpha_{i,1}$ 和 $\alpha_{i,0}$。通过$Check$算法，我们可以发现在解密了$\alpha_{i, 0}$后，得到的$\alpha$为$\emptyset$，因此$Check$算法将输出$b=1$ 并且在搜索时刻收到的鉴别符$\pi_{i-1, n}$是正确的。在第二种情况中，$\alpha_{i, 0}$ 同样通过 $\alpha_{i, 1}$ 被解密出，并且 $\alpha_{i, 0}$的时间戳已经早于 $t_2$. 我们可以通过对比发现解密得到的鉴别符$\alpha_{i, 0}$ 与在搜索时刻收到的鉴别符 $\alpha^{t_2}_q$ 相等. 因此 $\alpha^{t_2}_q$ 也被认为是正确的，即 $\pi^{t_2}_q$ 中包含的根哈希是正确的。然而，在最后一种情况中，我们将会发现数据新鲜性攻击，因为解密得到的鉴别符$\pi_{i, 0}$与用户在搜索时刻得到的鉴别符$\pi_{i-1, n}$不相等。
 
 \section{安全性分析}
 
@@ -155,14 +151,13 @@ Now we use the three cases above to explain the algorithm. In the first case, $\
 \centering
 \end{figure}
 
+图~\ref{fig:bandwidth}和图~\ref{fig:verify-2}评估了\multi 方案的开销，包括数据持有者的通信开销和数据搜索用户的验证开销。图中的$\eta$表示数据持有者的数据更新频率。
 
-In Fig.~\ref{fig:verify-2}, we evaluate the verification delays in data users. Note that an entire verification delay includes the delay of waiting for a checkpoint and the delay of executing the {\it Check} and the {\it Generate} algorithms. Since the execution delay of the {\it Generate} algorithm is relatively stable, around 0.1 milliseconds, we do not plot it in Fig.~\ref{fig:verify-2}. Here, $\eta$ is the update frequency of the data owner. We assume that the time that a user initiates a query is uniformly distributed during an update interval, and then the user's waiting delays are also uniformly distributed. Therefore, the expected delay is half of the update interval and the verification delays are dominated by the waiting delays. The execution delay of the {\it Check} algorithm is negligible and is proportional to the update interval, which is mainly incurred by verifying the signature and decrypting authenticators.
-Kindly note that in above measurement, we do not take into account the network transmission and propagation delays, as they vary in different specific network contexts and do not reflect the essential extra cost directly introduced by our verification design. We do, however, report the communication overhead in terms of the message size, as shown in Fig.~\ref{fig:bandwidth}. In a later experiment, we will also show that we can set an update interval so as to make a trade-off between verification delays and communication overhead.
+首先，我们考虑数据持有者端的通信开销。如图~\ref{fig:bandwidth}所示，我们主要考虑由鉴别符带来的开销。这里，每一个更新周期内的第一个鉴别符大小约为112字节，包括了32字节的验证索引根哈希开销，8字节的时间戳开销，8字节的AES-CBC扩展开销，以及128字节的RSA签名开销。总体来说，鉴别符引起的带宽开销包括以下两个部分：由固定更新点导致的鉴别符更新开销和数据更新导致的鉴别符更新开销。
+图~\ref{fig:bandwidth}中的曲线充分体现了这两种更新带来的开销。我们可以发现当更新周期接近0时，鉴别符到来的带宽开销接近每秒2KB，这是由固定更新点导致的鉴别符开销，它是与带宽开销成反比的，即更新周期越小，固定更新点越密集，带宽开销越大。此外，带宽开销又随着更新周期的增长缓慢上升，这是由鉴别符自身长度增长带来的带宽开销增长。因为更新周期越长，一个更新周期内产生的鉴别符数量越大，嵌套生成的鉴别符的长度也就越大。
 
-Fig.~\ref{fig:bandwidth} shows the bandwidth costs for authenticator update. %Here, $b$
-Here, the size of the first authenticator in each update interval is around 112 bytes, which includes 32 bytes of the root of MPT, 8 bytes of the timestamp, an 8 bytes AES-CBC extension and a 128 bytes RSA signature. Overall, the bandwidth of the authenticator includes two part: the overhead introduced by the fixed update time point and the overhead introduced by data update. We can observe that the bandwidth cost increases to about 2KB per second when the update interval decrease to zero, this is introduced by the fixed update time point which is inversely proportional to the bandwidth overhead. Moreover, the bandwidth gradually increases when the update interval becomes too long. This overhead is introduced by the length of the authenticator, because as the update interval grows, the length of the authenticator becomes larger. Overall, the cost should be acceptable to achieve \multi. According to the results, in order to make a decent tradeoff between verification delays and bandwidth costs, we suggest choosing an update interval between 500 milliseconds and 1,500 milliseconds.
+其次，我们考虑数据搜索用户端的验证开销。这部分开销包括用户等待检测点的时间以及执行$Check$算法和$Generate$算法的时间。由于$Generate$算法的开销几乎可以忽略，即0.1毫秒。因此图~\ref{fig:verify-2}中并未标注该部分开销。
+这里， $\eta$表示数据持有者的更新频率，我们假设数据搜索在一个更新周期内发起搜索请求的时刻是均匀分布的，则用户等待检测点的时间也呈均匀分布。即，等待检测点的平均时间为半个更新周期的长短，这将占整个验证时延的大部分。$Check$算法与更新周期成正比，这主要由验证鉴别符的签名和解密鉴别符这两种开销导致，但是它相对等待检测点的时间是可以忽略的。需要特别说明的是，在以上的实验中，我们没有将网络的传输时间考虑在内，因为网络传输时间在不同的环境中差异非常大，并且根据我们的方案，传输时延对方案的影响不会很大。
+从图\ref{fig:bandwidth}中我们可以看到，当更新频率在2Hz到1/60Hz不等时，数据搜索用户端的验证开销主要取决于等待检测点所需的时间，即和更新间隔的设置有关。
 
-图9和图10评估了系统的总验证开销，包括计算开销和通信开销。我们主要考虑合法用户端的验证计算开销，和数据拥有者端的通信开销。图中的η表示数据拥有者的数据更新频率。
-首先，我们考虑合法用户端的验证开销。这部分开销包括用户等待检测点的时间以及执行Check算法和Rebuild算法的时间。由于Rebuild算法的开销可以忽略，因此图9中并未标注该部分开销。如图9所示，蓝色的曲线表示合法用户等待检测点的时间，这里我们假设合法用户的查询时刻在一个更新周期内呈均匀分布，那么用户等待时间的均值就是更新间隔的一半。其余的曲线表示Check算法的执行时间，可以看到，当更新频率在2Hz到1/60Hz不等时，Check算法的执行时间也几乎可以忽略，因此合法用户端的验证开销主要取决于等待检测点所需的时间，即和更新间隔的设置有关。
-其次，我们考虑数据拥有者端的通信开销。我们主要考虑由鉴别符带来的开销。由于鉴别符的更新包含两种情况，固定更新导致的鉴别符更新和数据更新导致的鉴别符更新。图10中的曲线充分体现了这两种更新带来的开销。首先，当数据拥有者的更新间隔设置的很小时，通信开销较大，这是因为固定更新太频繁导致的鉴别符的通信开销增大；当数据拥有者的更新间隔设置的很大时，通信开销也较大，这是因为当更新频率一定时，更新间隔越大，在更新间隔内形成的鉴别符的长度会累积增大，最终导致了鉴别符的通信开销增大。
-综合以上两种情况，更新间隔可以设置为1000ms至1500ms之间。
+根据以上的实验结果，\multi 方案引入的带宽开销是可以接受的。总体来说，为了在验证时延和带宽开销之间寻找一个平衡点，我们建议可以将更新周期设置在500毫秒置1500毫秒之间。
