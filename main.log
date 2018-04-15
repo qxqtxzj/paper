@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  13 APR 2018 22:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  15 APR 2018 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2889,55 +2889,61 @@ File: expr/comparison.eps Graphic file (type eps)
 File: fig/GM-VSSE.eps Graphic file (type eps)
 <fig/GM-VSSE.eps>
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 9--11
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 12--14
  [][] 
  []
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <9.03374> not available
-
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 23.
-
-LaTeX Warning: Reference `sec:experiments' on page 27 undefined on input line 2
-3.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 24.
-
-Package natbib Warning: Citation `mills1991internet' on page 27 undefined on in
-put line 24.
-
-
-Package natbib Warning: Citation `mills2010network' on page 27 undefined on inp
-ut line 24.
-
-
-Package natbib Warning: Citation `kopetz1987clock' on page 27 undefined on inpu
-t line 27.
-
-
-Package natbib Warning: Citation `elson2002fine' on page 27 undefined on input 
-line 27.
-
-
-Package natbib Warning: Citation `zhou2007accurate' on page 27 undefined on inp
-ut line 27.
 
 [27
 
 
 
 ] [28]
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 44.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 44.
+Missing character: There is no ， in font ntx-Regular-tlf-ot1!
  [29]
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 47.
+
+
+Package natbib Warning: Citation `mills1991internet' on page 30 undefined on in
+put line 47.
+
+
+Package natbib Warning: Citation `mills2010network' on page 30 undefined on inp
+ut line 47.
+
+
+Package natbib Warning: Citation `kopetz1987clock' on page 30 undefined on inpu
+t line 47.
+
+
+Package natbib Warning: Citation `elson2002fine' on page 30 undefined on input 
+line 47.
+
+
+Package natbib Warning: Citation `zhou2007accurate' on page 30 undefined on inp
+ut line 47.
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 46--48
+[]\TU/SimSun(0)/m/n/12.045 在 方 案 开 始 工 作 前，|  先 对 方 案 的 设 定 进 行 描 述，|  首 先 数 据 
+持 有 者 需 要
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 46--48
+\TU/SimSun(0)/m/n/12.045 为 鉴 别 符 设 定 一 个 更 新 周 期 \T1/ntxtlf/m/n/12.045 (Up-date
+ In-ter-val)[][][][]\TU/SimSun(0)/m/n/12.045 ，|  即 设 置 固 定 更 新 时 间 点 为
+ []
+
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 53.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 5.39996pt on input line 53.
+[30] [31]
 ! Undefined control sequence.
-l.81                       \BREAK
+l.99                       \BREAK
                                  
 ? q
 OK, entering \batchmode...
@@ -2948,74 +2954,63 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82                     \ENDIF
-                               
+l.100                     \ENDIF
+                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+File: fig/timestamp.eps Graphic file (type eps)
+<fig/timestamp.eps>
 
-LaTeX Warning: Reference `sec:experiments' on page 30 undefined on input line 9
-9.
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 123--125
+ [][] 
+ []
 
-
-! LaTeX Error: File `timestamp' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104   \includegraphics[width=3.5 in]{timestamp}
-                                                 
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS,.pz,.eps.Z,.ps.Z,.ps.gz,.eps.gz
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ [32] [33]
 File: expr/bandwidth.eps Graphic file (type eps)
 <expr/bandwidth.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 117--118
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 144--145
 [][] 
  []
 
 File: expr/verify-2.eps Graphic file (type eps)
 <expr/verify-2.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 122--123
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 149--150
 [][] 
  []
 
- [30] [31] [32]
+ [34]
 Missing character: There is no η in font ntx-Regular-tlf-t1!
-) [33]
+) [35] [36]
 \openout2 = `data/chap05.aux'.
 
  (./data/chap05.tex
 第5章
-) [34
+) [37
 
 
 
-] (./main.bbl [35
+] (./main.bbl [38
 
 
 
 
-] [36]) [37]
+] [39]) [40]
 \openout2 = `data/ack.aux'.
 
- (./data/ack.tex [38
+ (./data/ack.tex [41
 
 
 
-]) [39
+]) [42
 
 
 ]
 \openout2 = `data/resume.aux'.
 
- (./data/resume.tex) [40
+ (./data/resume.tex) [43
 
 
 
@@ -3036,17 +3031,14 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 83.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 45835 strings out of 493007
- 893286 string characters out of 6137965
- 947014 words of memory out of 5000000
- 49029 multiletter control sequences out of 15000+600000
- 666004 words of font info for 182 fonts, out of 8000000 for 9000
+ 45829 strings out of 493007
+ 893290 string characters out of 6137965
+ 947123 words of memory out of 5000000
+ 49032 multiletter control sequences out of 15000+600000
+ 663204 words of font info for 181 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  66i,12n,96p,10438b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (51 pages).
+Output written on main.pdf (54 pages).
