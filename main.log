@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  16 APR 2018 00:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  17 APR 2018 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2773,35 +2773,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
-) [2] [3] [4]
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 11.74377pt on input line 53.
+[2] [3] [4] [5]) [6] [7]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
 第2章
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 11.74377pt on input line 5.
-[5
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/bx/n' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 11.
+
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 11.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.045pt on input line 12.
+[8
 
 
 
-] [6] [7]
+]
 File: fig/MPTUpdate.eps Graphic file (type eps)
 <fig/MPTUpdate.eps>
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 48--50
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 69--71
  [][] 
  []
 
-[8] [9]
-
-LaTeX Font Warning: Font shape `TU/SimHei(0)/bx/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 73.
-
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 73.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.045pt on input line 74.
-[10]) [11]
+[9] [10]) [11]
 \openout2 = `data/chap03.aux'.
 
  (./data/chap03.tex
@@ -2900,56 +2899,56 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 12--14
 ] [28]
 Missing character: There is no ， in font ntx-Regular-tlf-ot1!
  [29]
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 47.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 47.
 
+LaTeX Warning: Reference `{sec:experiments}' on page 30 undefined on input line
+ 48.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 49.
 
 Package natbib Warning: Citation `mills1991internet' on page 30 undefined on in
-put line 47.
+put line 49.
 
 
 Package natbib Warning: Citation `mills2010network' on page 30 undefined on inp
-ut line 47.
+ut line 49.
 
 
 Package natbib Warning: Citation `kopetz1987clock' on page 30 undefined on inpu
-t line 47.
+t line 49.
 
 
 Package natbib Warning: Citation `elson2002fine' on page 30 undefined on input 
-line 47.
+line 49.
 
 
 Package natbib Warning: Citation `zhou2007accurate' on page 30 undefined on inp
-ut line 47.
+ut line 49.
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 46--48
+Underfull \hbox (badness 2503) in paragraph at lines 48--50
 []\TU/SimSun(0)/m/n/12.045 在 方 案 开 始 工 作 前，|  先 对 方 案 的 设 定 进 行 描 述，|  首 先 数 据 
 持 有 者 需 要
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 46--48
+Underfull \hbox (badness 2126) in paragraph at lines 48--50
 \TU/SimSun(0)/m/n/12.045 为 鉴 别 符 设 定 一 个 更 新 周 期 \T1/ntxtlf/m/n/12.045 (Up-date
  In-ter-val)[][][][]\TU/SimSun(0)/m/n/12.045 ，|  即 设 置 固 定 更 新 时 间 点 为
  []
 
+[30]
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 53.
+(Font)              scaled to size 7.19995pt on input line 60.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 53.
-[30] [31]
-
-LaTeX Warning: Reference `{sec:experiments}' on page 32 undefined on input line
- 115.
-
+(Font)              scaled to size 5.39996pt on input line 60.
+ [31]
 File: fig/timestamp.eps Graphic file (type eps)
 <fig/timestamp.eps>
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 123--125
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 145--147
  [][] 
  []
 
@@ -2957,46 +2956,46 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 123--125
 File: expr/bandwidth.eps Graphic file (type eps)
 <expr/bandwidth.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 142--143
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 164--165
 [][] 
  []
 
 File: expr/verify-2.eps Graphic file (type eps)
 <expr/verify-2.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 147--148
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 169--170
 [][] 
  []
 
-[34]) [35]
+[34]) [35] [36]
 \openout2 = `data/chap05.aux'.
 
  (./data/chap05.tex
 第5章
-) [36
+) [37
 
 
 
-] (./main.bbl [37
+] (./main.bbl [38
 
 
 
 
-] [38]) [39]
+] [39]) [40]
 \openout2 = `data/ack.aux'.
 
- (./data/ack.tex [40
+ (./data/ack.tex [41
 
 
 
-]) [41
+]) [42
 
 
 ]
 \openout2 = `data/resume.aux'.
 
 
-(./data/resume.tex) [42
+(./data/resume.tex) [43
 
 
 
@@ -3022,17 +3021,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 45831 strings out of 493007
- 893321 string characters out of 6137965
- 947121 words of memory out of 5000000
- 49034 multiletter control sequences out of 15000+600000
+ 45832 strings out of 493007
+ 893334 string characters out of 6137965
+ 949113 words of memory out of 5000000
+ 49035 multiletter control sequences out of 15000+600000
  663204 words of font info for 181 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  66i,12n,96p,10438b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (53 pages).
+Output written on main.pdf (54 pages).
