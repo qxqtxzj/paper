@@ -26,9 +26,9 @@
 \contentsline {subsection}{\numberline {3.4.3}结果验证}{17}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}实例分析}{18}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}安全性分析}{20}{section.3.5}
-\contentsline {section}{\numberline {3.6}实验结果}{24}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}实验设置}{24}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}实验结果}{24}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.6}实验结果}{23}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}实验设置}{23}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}实验结果}{23}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}与SSE方案的对比}{25}{subsection.3.6.3}
 \contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}引言}{27}{section.4.1}
@@ -38,14 +38,14 @@
 \contentsline {subsection}{\numberline {4.4.1}构建及更新时间戳链}{30}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}结果验证}{32}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}实例分析}{33}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}安全性分析}{35}{section.4.5}
+\contentsline {section}{\numberline {4.5}安全性分析}{34}{section.4.5}
 \contentsline {section}{\numberline {4.6}实验结果}{35}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}实验设置}{35}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}实验结果}{35}{subsection.4.6.2}
 \contentsline {chapter}{\numberline {第5章}总结与展望}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}论文工作总结}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来工作展望}{37}{section.5.2}
-\contentsline {chapter}{参考文献}{38}{section*.21}
-\contentsline {chapter}{致\hspace {1em}谢}{41}{section*.23}
-\contentsline {chapter}{声\hspace {1em}明}{42}{section*.25}
-\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{43}{section*.27}
+\contentsline {section}{\numberline {5.2}未来工作展望}{38}{section.5.2}
+\contentsline {chapter}{参考文献}{39}{section*.22}
+\contentsline {chapter}{致\hspace {1em}谢}{42}{section*.24}
+\contentsline {chapter}{声\hspace {1em}明}{43}{section*.26}
+\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{44}{section*.28}

@@ -185,8 +185,15 @@
 
 \section{安全性分析}
 在本节中，我们将对方案的安全性进行证明。方案的安全性主要分为两个部分，一个是机密性，另一个是可验证性。机密性是指敌手无法从验证索引$\lambda$和用户发送的令牌$\tau$中获取文件和关键字的明文信息。可验证性是指当服务器返回不完整或者错误的结果时，用户不会验证通过。
+\begin{figure}[t]
+\centering
+\includegraphics[width=6 in]{fig/security.png}
+\DeclareGraphicsExtensions.
+\caption{基于仿真博弈的安全性证明方案}
+\label{fig:security}
+\end{figure}
 
-首先，我们采用基于仿真的博弈 (Simulation-based Game) 来证明方案的机密性。
+首先，我们采用基于仿真博弈 (Simulation-based Game)的安全性方案来证明方案的机密性。该方案的图形解释如图~\ref{fig:security}所示，我们需要确保一个敌手无法区分出$\mathbf{Real}$ World 和$\mathbf{Ideal}$ World 的输出。具体的定义如下：
 
 \begin{definition}[\single 机密性]
   {\itshape
