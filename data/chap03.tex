@@ -13,24 +13,39 @@
 \label{fig:GS-VSSE}
 \end{figure}
 
+
 \section{方案流程}
+由于\single 方案的主要目标是为对称加密搜索方案提供结果验证功能，因此在开始讲述\single 方案的流程前，我们先回顾对称加密搜索方案的常见定义。
+\begin{definition}[\textbf{SSE} 方案]\label{def:SSE}
+  {
+    在一个支持文件更新的$SSE$方案，参与方包括两个，分别为数据持有者本身和半可信的云服务器。数据持有者向云服务器提供加密数据集和搜索索引，使得云服务器可以在密文上进行搜索，从而确保数据的隐私性。一个$SSE$方案可以定义为如下六个算法的集合：
+    \begin{itemize}
+      \item $KGen_{\mathcal{SSE}}(1^k) \rightarrow \{\mathcal{K}\}$: 是由数据持有者执行的秘钥生成算法。它将一个安全参数作为输入，输出一系列对称秘钥$\mathcal{K}$。
+      \item $Init_{\mathcal{SSE}}(\mathcal{K}, \mathcal{D}) \rightarrow \{\gamma, \mathcal{C}\}$: 是由数据持有者执行的初始化算法。它将对称秘钥$\mathcal{K}$和明文文件集$\mathcal{D}$作为输入，输出搜索索引$\gamma$和密文文件集$\mathcal{C}$。数据持有者将搜索索引$\gamma$和密文文件集$\mathcal{C}$上传给云服务器。
+      \item $UpdateToken_{\mathcal{SSE}}(\mathcal{K}, d) \rightarrow \{\tau_u\}$: 是由数据持有者执行的更新令牌生成算法。它将对称秘钥$\mathcal{K}$和需要更新的文件$d$作为输入，输出一系列更新令牌$\tau_u$。数据持有者将更新令牌$\tau_u$上传给云服务器。
+      \item $Update_{\mathcal{SSE}}(\gamma, \tau_u) \rightarrow \{\gamma'\}$: 是由云服务器执行的更新算法。它将搜索索引$\gamma$和更新令牌$\tau_u$作为输入，输出更新后的搜索索引$\gamma'$。
+      \item $SearchToken_{\mathcal{SSE}}(\mathcal{K}, w) \rightarrow \{\tau_{w}\}$: 是由数据持有者执行的搜索令牌生成算法。它将对称秘钥$\mathcal{K}$和某一关键字$w$作为输入，输出与该关键字相关搜索令牌$\tau_{w}$。数据持有者将该搜索令牌 $\tau_{w}$上传给云服务器进行搜索。
+      \item $Search_{\mathcal{SSE}}(\gamma, \tau_{w}) \rightarrow \{C_w\}$: 是由云服务器执行的搜索算法。它将搜索索引$\gamma$和搜索令牌$\tau_{w}$作为输入，输出搜索结果$C_w$。云服务器将搜索结果$C_w$返回给数据持有者。
+    \end{itemize}
+  }
+\end{definition}
 
 \begin{definition}[\textbf{\single 方案}]\label{def:single}
   {\itshape
-      在\single 方案中，参与方有两个，分别为数据持有者本身和不可信的云服务器。数据持有者向云服务器提供加密数据集和验证索引，使得云服务器在用户搜索时可以向其返回结果证明，用于确保加密搜索结果的新鲜性和完整性。一个\single 方案是以下八个算法的集合：
+      在\single 方案中，参与方有两个，分别为数据持有者本身和不可信的云服务器。数据持有者向云服务器提供验证索引，使得云服务器在用户搜索时可以向其返回结果证明，用于确保加密搜索结果的新鲜性和完整性。一个\single 方案是以下八个算法的集合：
       \begin{itemize}
         \item $KGen(1^k) \rightarrow \{K_1,K_2\}$: 是由数据持有者执行的秘钥生成算法。它将一个安全参数作为输入，输出对称秘钥$K_1,K_2$。
         \item $Init(K_1,K_2, \mathcal{D}) \rightarrow \{\lambda\}$: 是由数据持有者执行的初始化算法。它将对称秘钥$K_1,K_2$和明文文件集$\mathcal{D}$作为输入，输出验证索引$\lambda$。数据持有者在本地保存验证索引$\lambda$的根节点哈希$rt$，并将验证索引$\lambda$上传给云服务器。
         \item $UpdateToken(K_1,K_2, d) \rightarrow \{\tau_u\}$: 是由数据持有者执行的更新令牌生成算法。它将对称秘钥$K_1,K_2$和需要更新的文件$d$作为输入，输出一系列更新令牌$\tau_u$。数据持有者将更新令牌$\tau_u$上传给云服务器。
-        \item $PreUpdate(\lambda, \tau_u) \rightarrow \{\lambda',\rho_u\}$: 是由云服务器执行的预更新算法。它将验证索引$\lambda$和更新令牌$\tau_u$作为输入，输出更新后的验证索引$\lambda'$和更新证明$\rho_u$。云服务器将更新证明$\rho_u$返回给用户。
-        \item $Update(rt,\tau_u,\rho_u) \rightarrow \{rt'\}$：是由数据持有者执行的更新算法。它将验证索引的根哈希 $rt$，更新令牌$\tau_u$和服务器返回的更新证明 $\rho_u$ 作为输入，输出新的根哈希$rt'$。若更新证明$\rho_u$验证通过，则输出更新后的根哈希$rt'$，若更新证明验证失败，则输出的根哈希$rt'$与原始根哈希$rt$相同。
+        \item $Update(\lambda, \tau_u) \rightarrow \{\lambda',\rho_u\}$: 是由云服务器执行的预更新算法。它将验证索引$\lambda$和更新令牌$\tau_u$作为输入，输出更新后的验证索引$\lambda'$和更新证明$\rho_u$。云服务器将更新证明$\rho_u$返回给用户。
+        \item $VerifyUpdate(rt,\tau_u,\rho_u) \rightarrow \{rt'\}$：是由数据持有者执行的更新算法。它将验证索引的根哈希 $rt$，更新令牌$\tau_u$和服务器返回的更新证明 $\rho_u$ 作为输入，输出新的根哈希$rt'$。若更新证明$\rho_u$验证通过，则输出更新后的根哈希$rt'$，若更新证明验证失败，则输出的根哈希$rt'$与原始根哈希$rt$相同。
         \item $SearchToken(K_1, w) \rightarrow \{\tau_{w}\}$: 是由数据持有者执行的搜索令牌生成算法。它将对称秘钥$K_1$和某一关键字$w$作为输入，输出与该关键字相关搜索令牌$\tau_{w}$。数据持有者将该搜索令牌 $\tau_{w}$上传给云服务器进行搜索。
         \item $Prove(\lambda, \tau_{w}) \rightarrow \{\rho_s\}$: 是由云服务器执行的结果证明生成算法。它将验证索引$\lambda$和搜索令牌$\tau_{w}$作为输入，输出结果证明$\rho$。云服务器将结果证明$\rho$返回给数据持有者。
         \item $Verify(K_1,K_2, C_w, \rho_s,\tau_{w}, rt) \rightarrow \{b\}$: 是由数据持有者执行的验证算法。它将对称秘钥$K_1,K_2$，加密搜索结果$C_w$，结果证明$\rho_s$搜索令牌$\tau_{w}$和保留的验证索引根哈希$rt$作为输入，输出一个比特$b$，代表接受或者拒绝该搜索结果。
       \end{itemize}
       }
 \end{definition}
-注意，上述流程中的每一个算法(除了$Verify$算法)，都与加密搜索流程中的算法一一对应。例如$Init$，$UpdateToken$，$PreUpdate$算法可以与加密搜索中的初始化和更新操作同时进行，$Prove$算法可以与加密搜索中的搜索操作同时进行。该可验证加密搜索方案带来的额外算法是$Verify$算法，它用于用户收到搜索结果后的验证操作。正式因为\single 方案的每一个算法都从加密搜索方案中解耦了出来，才使得该方案可以将加密搜索方案当做黑盒，并为任意加密搜索方案提供结果验证服务。
+注意，上述流程中的每一个算法(除了$VerifyUpdate$，$Verify$算法)，都与加密搜索流程中的算法一一对应。例如$Init$，$UpdateToken$，$Update$算法可以与加密搜索中的初始化和更新操作同时进行，$Prove$算法可以与加密搜索中的搜索操作同时进行。该可验证加密搜索方案带来的额外算法是$Verify$算法，它用于用户收到搜索结果后的验证操作。正式因为\single 方案的每一个算法都从加密搜索方案中解耦了出来，才使得该方案可以将加密搜索方案当做黑盒，并为任意加密搜索方案提供结果验证服务。
 
 \section{具体方案}
 本节，我们将具体阐述\single 方案，即单用户场景下的可验证加密搜索框架。首先我们将描述如何建立并更新验证索引，然后我们将给出服务器生成结果证明的方法，并详细解释用户如何利用结果证明来确保搜索结果的正确性。
@@ -54,8 +69,8 @@
 算法~\ref{alg:Init} 给出了建立验证索引的伪代码。首先数据持有者根据明文文件集$\mathcal{D}$计算出倒排索引$\Delta$，其中倒排索引$\Delta$是指关键字$w_i$与包含该关键字的文件$D_{w_i}$组成的索引。对倒排索引中的每一个关键字$w_i$，我们计算他的"键值对"，其中“键”是每一个关键字通过伪随机函数生成的令牌，而“值”是包含该关键字的文件的增量哈希和。我们通过将这些“键值对”插入MPT中来形成验证索引。
 
 \begin{algorithm}[ht]
-  \caption{$Update$ 算法}
-  \label{alg:update}
+  \caption{$VerifyUpdate$ 算法}
+  \label{alg:verifyupdate}
   \begin{algorithmic}[1]
     \REQUIRE ~~\\{$rt$: 验证索引的根哈希； $\tau_u$：更新令牌；$\rho_u$: 更新证明；}
     \ENSURE ~~\\{$rt'$: 更新后的根哈希。}
@@ -74,7 +89,7 @@
 对验证索引的更新操作支持三种方式，即插入、删除和编辑文件，其中编辑文件相当于删除一个文件后再新增一个文件。对于插入新文件操作，我们首先解析该文件$d$，得到该文件包含的关键字集合$W_d$，对每一个关键字$w_i \in W_d$，我们都用伪随机函数生成他的令牌$\tau_(w_i )$，并将文件的伪随机结果$G_{K_2}(d)$同时上传给云。云服务器收到后通过更新令牌$\tau_(w_i )$找到对应的叶子节点，并将$IH(G_{K_2}(d))$与原有的叶子节点的值相加。删除操作同样，只是将原有的叶子节点的值减去$IH(G_{K_2}(d))$。云服务器在更新每一个令牌时，都需要将该令牌对应的搜索路径保存在更新证明$\rho_u$中，用于后续发回给用户进行更新验证。
 
 
-算法\ref{alg:update}展示了数据持有者在收到云服务器返回的更新证明$\rho_u$后，执行的更新验证操作。由于数据持有者本身在本地并不保留验证索引$\lambda$，只保留验证索引的根哈希$rt$，因此在数据产生更新时，如何更新该根哈希$rt$十分重要。因为云服务器是不可信的，数据持有者在提交了更新令牌$\tau_u$后，无法确保服务器执行了正确的更新操作，因此他需要云服务器返回更新证明$\rho_u$来进行验证。服务器返回的更新证明$\rho_u$包含了更新令牌$\tau_u$中每一个关键字令牌对应在验证索引$\lambda$上的路径。用户在接受到该更新证明后，首先将自身生成的更新令牌$\tau_u$解析为($\tau_{w_i}$,$G_{K_2}(d)$)，随后对每一个令牌$\tau_{w_i}$，验证是否根据更新证明$\rho_u$生成原始根哈希$rt$。若每个令牌都能验证成功，则用户通过更新令牌$\tau_u$和更新验证$\rho_u$构建新的根哈希$rt'$，否则验证失败，用户保留原有根哈希$rt$。
+算法\ref{alg:verifyupdate}展示了数据持有者在收到云服务器返回的更新证明$\rho_u$后，执行的更新验证操作。由于数据持有者本身在本地并不保留验证索引$\lambda$，只保留验证索引的根哈希$rt$，因此在数据产生更新时，如何更新该根哈希$rt$十分重要。因为云服务器是不可信的，数据持有者在提交了更新令牌$\tau_u$后，无法确保服务器执行了正确的更新操作，因此他需要云服务器返回更新证明$\rho_u$来进行验证。服务器返回的更新证明$\rho_u$包含了更新令牌$\tau_u$中每一个关键字令牌对应在验证索引$\lambda$上的路径。用户在接受到该更新证明后，首先将自身生成的更新令牌$\tau_u$解析为($\tau_{w_i}$,$G_{K_2}(d)$)，随后对每一个令牌$\tau_{w_i}$，验证是否根据更新证明$\rho_u$生成原始根哈希$rt$。若每个令牌都能验证成功，则用户通过更新令牌$\tau_u$和更新验证$\rho_u$构建新的根哈希$rt'$，否则验证失败，用户保留原有根哈希$rt$。
 在本章第\ref{sec:example}节，我们将通过一个例子来说明建立和更新验证索引的过程。
 
 
@@ -279,7 +294,7 @@
   \end{minipage}
   \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/update}
-    \caption{$PreUpdate$ throughput}
+    \caption{$Update$ throughput}
     \label{fig:update}
   \end{minipage}
 
@@ -343,7 +358,7 @@
 
 我们将我们的普适性可验证对称加密搜索方案\single ，与Cash等人提出的一个较为知名的动态对称加密搜索方案 (Dynamic Symmetric Searchable Encryption, DSSE)~\cite{cash2014dynamic}进行了结合，并展示了\single 为其提供结果验证服务带来的额外开销并不大。
 
-为了公平的进行性能比较，我们使用了同样的数据集，并在同样的设备参数下对两个方案联合进行了实验。如图~\ref{fig:comparison}所示，我们测量了$Init$阶段，$Search$阶段和$PreUpdate$阶段的性能开销。图中，$Init$操作使用了200万个“文件-关键字”来分别构建DSSE方案~\cite{cash2014dynamic}和方案\single 用到的索引，时间单位为秒。而其他三个操作$Search, Add, Delete$的评估采用的数据库大小为10,000个关键字，时间单位为微妙。注意，DSSE方案~\cite{cash2014dynamic}中的$Search$操作与\single 方案中的$Prove$操作对应。从图中可以看出，我们的\single 方案引入的额外开销非常小。其中，相较于DSSE方案~\cite{cash2014dynamic}而言，方案\single 在$Init$阶段引入的开销非常小，仅仅额外引入了1.9\%的额外开销。而对于一次$Search$ ($Prove$) 操作来说，\single 方案给云服务器引入的额外开销为14微秒，仅仅给DSSE方案带来了2\%的额外开销。同样的，对于一次$Add$或$Delete$操作来说，我们的\single 方案仅仅引入了27微秒的时间，仅占方案~\cite{cash2014dynamic}的 17\%。
+为了公平的进行性能比较，我们使用了同样的数据集，并在同样的设备参数下对两个方案联合进行了实验。如图~\ref{fig:comparison}所示，我们测量了$Init$阶段，$Search$阶段和$Update$阶段的性能开销。图中，$Init$操作使用了200万个“文件-关键字”来分别构建DSSE方案~\cite{cash2014dynamic}和方案\single 用到的索引，时间单位为秒。而其他三个操作$Search, Add, Delete$的评估采用的数据库大小为10,000个关键字，时间单位为微妙。注意，DSSE方案~\cite{cash2014dynamic}中的$Search$操作与\single 方案中的$Prove$操作对应。从图中可以看出，我们的\single 方案引入的额外开销非常小。其中，相较于DSSE方案~\cite{cash2014dynamic}而言，方案\single 在$Init$阶段引入的开销非常小，仅仅额外引入了1.9\%的额外开销。而对于一次$Search$ ($Prove$) 操作来说，\single 方案给云服务器引入的额外开销为14微秒，仅仅给DSSE方案带来了2\%的额外开销。同样的，对于一次$Add$或$Delete$操作来说，我们的\single 方案仅仅引入了27微秒的时间，仅占方案~\cite{cash2014dynamic}的 17\%。
 
 在表~\ref{tab:compareSSE}中，我们还比较了二者的通信开销。由于数据的方差较大，每一个实验结果都是50,000次实验的平均值。结果显示，DSSE方案~\cite{cash2014dynamic}的搜索结果大小平均为53KB左右，而我们的结果证明大小仅仅为3KB左右，即由\single 方案引入的额外开销低于6\%。此外，DSSE方案~\cite{cash2014dynamic}生成的令牌大小平均为390B，而\single 方案生成的令牌仅为32B，即由\single 方案引入的额外开销低于9\%。这些实验结果充分表明了，\single 方案是实用且高效的。
 
