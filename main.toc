@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.2}研究现状}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}安全云存储方案}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}安全加密搜索方案}{2}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}可验证数据结构}{3}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.3}可验证数据结构}{4}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}可验证对称加密搜索方案}{4}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}可验证公钥加密搜索方案}{5}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}多用户加密搜索方案}{5}{subsection.1.2.6}

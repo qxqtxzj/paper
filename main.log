@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  19 APR 2018 13:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  19 APR 2018 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2735,32 +2735,37 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 12.
+(Font)              scaled to size 8.0pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 12.
+(Font)              scaled to size 6.52437pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 12.
+(Font)              scaled to size 9.03374pt on input line 13.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 12.
+(Font)              scaled to size 9.03374pt on input line 13.
 [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 17.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 20
+(Font)              scaled to size 11.04124pt on input line 18.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 21
 .
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 20.
+(Font)              scaled to size 11.04124pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 20.
+(Font)              scaled to size 8.06006pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.07271pt on input line 20.
+(Font)              scaled to size 6.07271pt on input line 21.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 24.
+(Font)              scaled to size 8.06006pt on input line 25.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 24.
+(Font)              scaled to size 11.04124pt on input line 25.
+
+Overfull \hbox (0.86737pt too wide) in paragraph at lines 21--42
+ [] 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
@@ -2768,7 +2773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 11.74377pt on input line 53.
-[2] [3] [4] [5]) [6] [7]
+[2] [3] [4] [5] [6]) [7]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
@@ -2793,7 +2798,13 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 69--71
  [][] 
  []
 
-[9] [10]) [11]
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+[]\TU/SimSun(0)/m/n/12.045 注 意，|  默 克 尔 帕 特 里 夏 树 中 的 每 一 个 节 点 都 通 过 可 递 归 长 度
+ 前 缀
+ []
+
+[10]) [11]
 \openout2 = `data/chap03.aux'.
 
  (./data/chap03.tex
@@ -2994,14 +3005,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 83.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  45855 strings out of 493007
  893783 string characters out of 6137965
- 949558 words of memory out of 5000000
+ 945547 words of memory out of 5000000
  49056 multiletter control sequences out of 15000+600000
  660404 words of font info for 180 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
