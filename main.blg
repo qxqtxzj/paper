@@ -20,45 +20,45 @@ Warning--empty year in RLP_code
 Warning--empty year in RLP_code
 Warning--empty year in enron_email
 Warning--empty year in enron_email
-You've used 44 entries,
+You've used 45 entries,
             3389 wiz_defined-function locations,
-            987 strings with 13057 characters,
-and the built_in function-call counts, 292154 in all, are:
-= -- 38835
-> -- 27935
-< -- 28071
-+ -- 10223
-- -- 361
-* -- 1331
-:= -- 32618
-add.period$ -- 129
-call.type$ -- 44
-change.case$ -- 88
-chr.to.int$ -- 9075
-cite$ -- 56
-duplicate$ -- 979
-empty$ -- 2599
-format.name$ -- 574
-if$ -- 88466
+            995 strings with 13291 characters,
+and the built_in function-call counts, 298852 in all, are:
+= -- 39716
+> -- 28581
+< -- 28711
++ -- 10460
+- -- 372
+* -- 1368
+:= -- 33387
+add.period$ -- 132
+call.type$ -- 45
+change.case$ -- 90
+chr.to.int$ -- 9281
+cite$ -- 57
+duplicate$ -- 1000
+empty$ -- 2654
+format.name$ -- 594
+if$ -- 90475
 int.to.chr$ -- 1
-int.to.str$ -- 45
+int.to.str$ -- 46
 missing$ -- 0
-newline$ -- 226
-num.names$ -- 123
-pop$ -- 473
+newline$ -- 231
+num.names$ -- 126
+pop$ -- 484
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 45
 quote$ -- 0
-skip$ -- 37529
+skip$ -- 38381
 stack$ -- 0
-substring$ -- 10115
-swap$ -- 46
-text.length$ -- 444
+substring$ -- 10343
+swap$ -- 47
+text.length$ -- 457
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 526
+type$ -- 540
 warning$ -- 9
-while$ -- 553
+while$ -- 569
 width$ -- 0
-write$ -- 635
+write$ -- 649
 (There were 9 warnings)
