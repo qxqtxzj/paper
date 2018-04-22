@@ -7,7 +7,7 @@
 单用户场景下的可验证对称加密搜索方案系统架构如图~\ref{fig:GS-VSSE}所示，数据持有者即为数据搜索用户本身。初始化时需要数据持有者对自身的数据集进行加密，并对该数据集构建加密的验证索引，用于后续结果验证。数据持有者将加密文件集和验证索引上传给云服务器存储，并在需要时更新数据集和验证索引。当用户需要进行关键字搜索时，他将会构建出一个与关键字相关的搜索令牌，提交给云服务器进行搜索。云服务器接收到该搜索令牌后，通过某个加密搜索方案取得加密搜索结果，同时通过搜索验证索引取得一个结果证明，最后将加密搜索结果和结果证明返回给用户。用户在收到搜索结果和结果证明后，对其进行结果验证，若验证失败，则丢弃该结果。
 \begin{figure}[t]
 \centering
-\includegraphics[width=6.5 in]{fig/GS-VSSE}
+\includegraphics[width=6 in]{fig/GS-VSSE}
 \DeclareGraphicsExtensions.
 \caption{单用户场景下的可验证对称加密搜索框架\single}
 \label{fig:GS-VSSE}
@@ -319,10 +319,27 @@
     \label{fig:init}
   \end{minipage}
   \begin{minipage}[b]{0.48 \textwidth}
+    \includegraphics[width=\textwidth]{expr/proof}
+    \caption{更新证明和结果证明的通信开销}
+    \label{fig:proof}
+  \end{minipage}
+
+
+  \hspace{-40.0pt}
+  \par \vspace{-10.pt}
+  \hspace{-36.0pt}
+
+  \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/update}
     \caption{$Update$ 算法的吞吐量}
     \label{fig:update}
   \end{minipage}
+  \begin{minipage}[b]{0.48 \textwidth}
+    \includegraphics[width=\textwidth]{expr/verify}
+    \caption{$VerifyUpdate$ 算法的开销}
+    \label{fig:verifyupdate}
+  \end{minipage}
+
 
   \hspace{-40.0pt}
   \par \vspace{-10.pt}
@@ -330,23 +347,25 @@
 
   \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/prove}
-    \caption{$Prove$ 算法的开销}
+    \caption{$Prove$ 算法的吞吐量}
     \label{fig:prove}
   \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/proof}
-    \caption{结果证明的通信开销}
-    \label{fig:proof}
-  \end{minipage}
-
-  \hspace{-40.0pt}
-  \par \vspace{-10.pt}
-  \hspace{-36.0pt}
-
   \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/verify}
     \caption{$Verify$ 算法的开销}
     \label{fig:verify}
+  \end{minipage}
+
+\centering
+\end{figure}
+
+
+\begin{figure}[bhpt]
+\centering
+  \begin{minipage}[b]{0.48 \textwidth}
+    \includegraphics[width=\textwidth]{expr/storage}
+    \caption{验证索引$\lambda$的存储开销 }
+    \label{fig:storage}
   \end{minipage}
   \begin{minipage}[b]{0.48 \textwidth}
     \includegraphics[width=\textwidth]{expr/comparison}
@@ -359,7 +378,7 @@
 \subsection{实验设置}
 为了证明方案\single 的有效性，我们通过 Crypto++ 5.6.5 库实现了方案的原型。原型系统包含大约2200行代码。我们使用 HMAC-SHA256 作为两个随机预言 (random-oracle)，使用 SHA3-256 作为哈希函数，使用 MuHash 作为增量哈希函数。我们的实验在一台处理器为 Intel Core i5 2.5GHz，内存为 4G 的笔记本上进行，使用单线程实现。
 
-我们使用一个开源数据集Enron email dataset~\cite{enron_email}作为实验的测试数据集，使用了其中从“allen-p”到“kaminski-v”之间的数据。我们从该数据集中提取出了大量的“文件-关键字”对 (document-keyword pairs)，并通过python脚本为他们构建出了明文的倒排索引。注意，从文件中提取关键字的时延并没有被考虑在实验评估中，因为该问题与我们研究的\single 方案是一个独立的问题。
+我们使用一个开源数据集Enron email dataset~\cite{enronemail}作为实验的测试数据集，使用了其中从“allen-p”到“kaminski-v”之间的数据。我们从该数据集中提取出了大量的“文件-关键字”对 (document-keyword pairs)，并通过python脚本为他们构建出了明文的倒排索引。注意，从文件中提取关键字的时延并没有被考虑在实验评估中，因为该问题与我们研究的\single 方案是一个独立的问题。
 
 下文中，我们首先评估了\single 方案的算法效率，然后将\single 方案与一个著名的对称加密搜索方案~\cite{cash2014dynamic}进行了结合，以此来证明\single 方案引入的结果验证的开销并不大。注意，如无特别说明，下文中的每一个实验结果都是十次实验的平均值。
 
@@ -369,14 +388,17 @@
 
 %The delays of generating the proof index are proportional to the size of the document-keyword pairs, since \name performs the same number of insertions to the number of the document-keyword pairs. Overall, the initialization consumes around 25 seconds where the documents include four million keywords, which is acceptable.
 % for the initialization process.
-云服务器更新验证索引的时间如图~\ref{fig:update}所示，更新的时延与数据库的大小有关，即与验证索引的大小有关，而验证索引的大小由它包含的关键字数量来衡量。严格意义上来说，一次更新的时延与MPT树的层数有关。为了更好的展示更新时延与验证索引大小的关系，我们使用了大量的关键字来评估更新时延。由于每一个文件包含的关键字个数不同，这里我们采用吞吐量(throughput)来衡量每秒钟云服务器可以更新的“文件-关键字”对。从图中可以看到，$Add$和$Del$操作的性能几乎相同。当数据库的大小增大时，吞吐量将会降低。当数据库的大小为100万个关键字时，云服务器每秒钟可以同时支持110,000次更新操作。同时，我们也测量了用户端$UpdateToken$算法引入的带宽开销，更新令牌$\tau_u$中每一个关键字对应的密文带来的平均开销大小在 32字节左右，而更新令牌的总大小与待更新文件$d$包含的关键字个数有关。
+云服务器更新验证索引的时间如图~\ref{fig:update}所示，更新算法$Update$的时延与数据库的大小有关，即与验证索引的大小有关，而验证索引的大小由它包含的关键字数量来衡量。严格意义上来说，一次更新的时延与MPT树的层数有关。为了更好的展示更新时延与验证索引大小的关系，我们使用了大量的关键字来评估更新时延。由于每一个文件包含的关键字个数不同，这里我们采用吞吐量(throughput)来衡量每秒钟云服务器可以更新的“文件-关键字”对。从图中可以看到，$Add$和$Del$操作的性能几乎相同。当数据库的大小增大时，吞吐量将会降低。当数据库的大小为100万个关键字时，云服务器每秒钟可以同时支持30,000次更新操作。同时，我们也测量了用户端$UpdateToken$算法引入的带宽开销，更新令牌$\tau_u$中每一个关键字对应的密文带来的平均开销大小在 32字节左右，而更新令牌的总大小与待更新文件$d$包含的关键字个数有关。
 
+由于更新验证算法$VerifyUpdate$的执行时间与用户更新文件所包含的关键字个数相关，因此我们这里采用了单个关键字更新验证需要的平均时间来进行评估。如图~\ref{fig:verifyupdate}所示，当数据库的大小为50万个关键字时，一个关键字的更新验证操作平均需要55微秒的时间。即，在验证索引包含50万个关键字时，用户更新一个包含1千个关键字的文件，也只需要55微秒的时间。
 
 如图~\ref{fig:prove}所示，云服务器可以在数据库大小在100万关键字时，每秒钟进行43,000次 $Prove$ 操作，这意味着云服务器可以同时支持43,000个来自用户的查询请求。由$Prove$操作产生的结果证明$\rho_s$的大小也可以在图~\ref{fig:prove}和图~\ref{fig:proof}中看到，结果证明的大小随着MPT层数的增加而增长，但总体而言，只需要几KB。
 
 我们通过累计分布函数图 (Cumulative Distribution Function, CDF)来对用户端进行的$Verify$操作进行了测试。结果显示，几乎99.7\%的情况下，用户端都可以在0.1毫秒内完成结果验证，这是可以接受的。
 
-除此以外，我们还对MPT的存储空间进行了评估。如果我们使用一个100万个关键字的数据库，MPT的存储空间大小大约为82MB，而该数据库本身所占用的空间大小为 590MB，因此MPT带来的额外存储开销不算特别大。特别需要说明的是，这里我们评估MPT大小所采用数据集为关键字密集型的数据，即邮件数据。如果数据持有者需要加密的是媒体类型的数据，例如图片或是音乐文件等等，这些文件只包含少量的关键字和属性，因此为这些类型的数据构建验证索引时，验证索引占原数据集的比例将会很小，甚至可以忽略。
+由$Update$算法和$Prove$算法引入的更新证明和结果证明的开销如图~\ref{fig:proof}所示。这里因为更新证明和结果证明的大小与MPT的层数直接相关，因此我们将MPT的层数作为参数来对其进行了衡量。另外，由于更新证明和结果证明的结构相同，因此我们采用了一个实验来衡量单个关键字产生的更新证明(结果证明)的通信开销。从图中可以看到，一个关键字带来的平均更新证明开销为2.5KB左右，即如果用户更新的文件包含1千个关键字，那么更新证明的开销就为2.5MB左右。而对于结果证明，由于每次用户只搜索一个关键字，因此结果证明的开销即为2.5KB。
+
+除此以外，我们还对MPT的存储空间进行了评估。如图~\ref{fig:storage}所示，如果我们使用一个100万个关键字的数据库，MPT的存储空间大小大约为82MB，而该数据库本身所占用的空间大小为 590MB，因此MPT带来的额外存储开销不算特别大。特别需要说明的是，这里我们评估MPT大小所采用数据集为关键字密集型的数据，即邮件数据。如果数据持有者需要加密的是媒体类型的数据，例如图片或是音乐文件等等，这些文件只包含少量的关键字和属性，因此为这些类型的数据构建验证索引时，验证索引占原数据集的比例将会很小，甚至可以忽略。
 
 
 
@@ -414,5 +436,5 @@
   \item 功能完善。\single 方案同时解决了数据新鲜性和数据完整性的验证。特别地，对于不可信云服务器故意返回空结果来规避结果验证的情况，\single 也提出了解决方案，并且不需要用户在本地维护关键字集合。该问题是一个严重的安全漏洞，但现有的许多工作都忽略了该问题。\single 方案首次对该问题进行了强调并进行了解决。
   \item 安全性。传统加密搜索方案以云服务器半可信为前提来提出解决方案，而\single 方案以云服务器不可信为前提。这种更真实的前提假定使\single 方案可以面对一个更强的敌手，因此也使得基于该假定设计的\single 方案具有更强的安全性。
   \item 高效性。\single 方案的高效性体现在两个方面，一方面\single 方案的算法操作可与加密搜索方案的算法操作并行执行，在与加密搜索方案解耦的前提下，又在流程上与其紧密结合，提升了整体的执行效率。另一方面，从与加密搜索方案的对比实验中可以看出，\single 方案的效率很高，每一步操作给整体方案带来的额外开销很小，并且\single 方案执行结果验证的效率也很高，几乎可以忽略不计。
-  \item 普适性。\single 方案通过索引解耦，将结果验证功能从加密搜索方案中独立出来，使得\single 方案可以为任何加密搜索方案提供结果验证功能，包括对称加密搜索方案甚至是公钥加密搜索方案。
+  \item 通用性。\single 方案通过索引解耦，将结果验证功能从加密搜索方案中独立出来，使得\single 方案可以为任何加密搜索方案提供结果验证功能，包括对称加密搜索方案甚至是公钥加密搜索方案。
 \end{itemize}

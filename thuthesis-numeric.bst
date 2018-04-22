@@ -5,22 +5,22 @@
 %% The original source files were:
 %%
 %% gbt-7714-2015.dtx  (with options: `numerical')
-%% 
+%%
 %% Copyright (C) 2016-2017 by Zeping Lee <zepinglee AT gmail.com>
-%% 
+%%
 %% This file may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either
 %% version 1.2 of this license or (at your option) any later
 %% version. The latest version of this license is in:
-%% 
+%%
 %%     http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% and version 1.2 or later is part of all distributions of
 %% LaTeX version 1999/12/01 or later.
-%% 
+%%
 %% This BibTeX style file is derived from `plainnat.bst' by Patrick W Daly,
 %% which was designed for use with the `natbib.sty' package.
-%% 
+%%
 ENTRY
   { address
     author
@@ -849,7 +849,7 @@ FUNCTION {format.edition}
 FUNCTION {format.sine.loco}
 { is.in.chinese
     { "[出版地不详]" }
-    { "[S.l.]" }
+    { " " *} % { ".[S.l.]: [s.n.] " *}
   if$
 }
 
@@ -885,7 +885,7 @@ FUNCTION {format.publisher}
 FUNCTION {format.sine.loco.sine.nomine}
 { is.in.chinese
     { "[出版地不详: 出版者不详]" }
-    { "[S.l.: s.n.]" }
+    { " " *} % { "[S.l.: s.n.]" *}
   if$
 }
 
@@ -1201,6 +1201,7 @@ FUNCTION {misc}
     { article.in.journal }
     { booktitle empty$ not
         { incollection }
+
         { url empty$ not
             { online }
             { monograph }

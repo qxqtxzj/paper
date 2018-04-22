@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  22 APR 2018 15:54
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  22 APR 2018 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2363,77 +2363,77 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip99
 \algorithmicindent=\skip100
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 24
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 25
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 24.
+(Font)              scaled to size 12.045pt on input line 25.
  (./main.aux
 (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/chap04.aux)
 (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 24.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 24
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 25.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 25
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 25.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
 
 (c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 24
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 25
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 25.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 2
-4.
+5.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 24.
+LaTeX Info: Redefining \selectfont on input line 25.
 \c@mv@tabular=\count403
 \c@mv@boldtabular=\count404
 Package caption Info: Begin \AtBeginDocument code.
@@ -2456,7 +2456,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
 )
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 25.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2466,9 +2466,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count405
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -2512,7 +2512,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 
 ABD: EveryShipout initializing macros (./data/cover.tex)
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 33.
+(Font)              scaled to size 26.09749pt on input line 34.
 \g__fontspec_family_SimHei_int=\count406
 .................................................
 . fontspec info: "no-font-shape"
@@ -2529,13 +2529,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . 
 . Could not resolve font "SimHei/I" (it probably doesn't exist).
 .................................................
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 33.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 34.
 
 (c:/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 33.
+(Font)              scaled to size 10.84042pt on input line 34.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2548,11 +2548,11 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 23.48758pt on input line 33.
+(Font)              scaled to size 23.48758pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 33.
+(Font)              scaled to size 18.06749pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 33.
+(Font)              scaled to size 16.06pt on input line 34.
 \g__fontspec_family_FangSong_GB2312_int=\count407
 .................................................
 . fontspec info: "no-font-shape"
@@ -2582,30 +2582,30 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 3
-3.
+4.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 33.
+(Font)              scaled to size 16.06pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 33.
+(Font)              scaled to size 14.05249pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 33.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 33.
+(Font)              scaled to size 10.53937pt on input line 34.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 34.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 33.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 34.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 33.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 34.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsyc.fd
@@ -2647,67 +2647,67 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 22.08249pt on input line 33.
+(Font)              scaled to size 22.08249pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <22.08249> not availabl
 e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 22.08249pt on input line 33.
+(Font)              scaled to size 22.08249pt on input line 34.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <22.08249> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 19.8741pt on input line 33.
+(Font)              scaled to size 19.8741pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.06pt on input line 33.
+(Font)              scaled to size 16.06pt on input line 34.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 14.45389pt on input line 33.
+(Font)              scaled to size 14.45389pt on input line 34.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 14.45389pt on input line 33.
+(Font)              scaled to size 14.45389pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 33.
+(Font)              scaled to size 15.05624pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 33.
+(Font)              scaled to size 15.05624pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 33.
+(Font)              scaled to size 12.045pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 33.
+(Font)              scaled to size 9.03374pt on input line 34.
  [3] [4
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 33.
+(Font)              scaled to size 14.05249pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.05249> not availabl
 e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 33.
+(Font)              scaled to size 14.05249pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 33.
+(Font)              scaled to size 8.0pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 33.
+(Font)              scaled to size 6.0pt on input line 34.
 
 [5] [6
 
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 3
-3.
+4.
  (c:/texlive/2017/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 33.
+(Font)              scaled to size 12.045pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12.045> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 33.
+(Font)              scaled to size 12.045pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 33.
+(Font)              scaled to size 10.53937pt on input line 34.
  [1
 
 
@@ -2734,46 +2734,46 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 12.64714pt on input line 3.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 13.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 13.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 13.
-[1
-
-
-
-]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 18.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 21
+(Font)              scaled to size 11.04124pt on input line 14.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 17
 .
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 21.
+(Font)              scaled to size 11.04124pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 21.
+(Font)              scaled to size 8.06006pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.07271pt on input line 21.
+(Font)              scaled to size 6.07271pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 25.
+(Font)              scaled to size 8.06006pt on input line 21.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 25.
+(Font)              scaled to size 11.04124pt on input line 21.
 
-Overfull \hbox (0.86737pt too wide) in paragraph at lines 21--42
+Overfull \hbox (0.86737pt too wide) in paragraph at lines 17--38
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--49
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
 
  []
 
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.52437pt on input line 48.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 48.
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 48.
+[1
+
+
+
+] [2]
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 11.74377pt on input line 53.
-[2] [3] [4] [5] [6]) [7]
+(Font)              scaled to size 11.74377pt on input line 54.
+ [3] [4] [5]) [6] [7]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
@@ -2798,13 +2798,7 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 69--71
  [][] 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-[]\TU/SimSun(0)/m/n/12.045 注 意，|  默 克 尔 帕 特 里 夏 树 中 的 每 一 个 节 点 都 通 过 可 递 归 长 度
- 前 缀
- []
-
-[10]) [11]
+[9] [10]) [11]
 \openout2 = `data/chap03.aux'.
 
  (./data/chap03.tex
@@ -2812,7 +2806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 File: fig/GS-VSSE.eps Graphic file (type eps)
 <fig/GS-VSSE.eps>
 
-Overfull \hbox (42.96364pt too wide) in paragraph at lines 10--12
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 10--12
  [][] 
  []
 
@@ -2880,96 +2874,76 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.06006pt on input line 318.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.07271pt on input line 318.
-File: expr/update.eps Graphic file (type eps)
-<expr/update.eps>
-File: expr/prove.eps Graphic file (type eps)
-<expr/prove.eps>
 File: expr/proof.eps Graphic file (type eps)
 <expr/proof.eps>
+File: expr/update.eps Graphic file (type eps)
+<expr/update.eps>
 File: expr/verify.eps Graphic file (type eps)
 <expr/verify.eps>
+File: expr/prove.eps Graphic file (type eps)
+<expr/prove.eps>
+File: expr/verify.eps Graphic file (type eps)
+<expr/verify.eps>
+File: expr/storage.eps Graphic file (type eps)
+<expr/storage.eps>
 File: expr/comparison.eps Graphic file (type eps)
 <expr/comparison.eps>
- [25] [26] [27] [28]) [29]
+ [25] [26] [27] [28] [29]) [30]
 \openout2 = `data/chap04.aux'.
 
  (./data/chap04.tex
 第4章
 File: fig/GM-VSSE.eps Graphic file (type eps)
 <fig/GM-VSSE.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 12--14
- [][] 
- []
-
-[30
+[31
 
 
 
-] [31] [32]
-Missing character: There is no ， in font ntx-Regular-tlf-ot1!
- [33]
-Underfull \hbox (badness 2503) in paragraph at lines 65--67
-[]\TU/SimSun(0)/m/n/12.045 在 方 案 开 始 工 作 前，|  先 对 方 案 的 设 定 进 行 描 述，|  首 先 数 据 
-持 有 者 需 要
- []
-
-
-Underfull \hbox (badness 2126) in paragraph at lines 65--67
-\TU/SimSun(0)/m/n/12.045 为 鉴 别 符 设 定 一 个 更 新 周 期 \T1/ntxtlf/m/n/12.045 (Up-date
- In-ter-val)[][][][]\TU/SimSun(0)/m/n/12.045 ，|  即 设 置 固 定 更 新 时 间 点 为
- []
-
-[34]
+] [32] [33] [34] [35]
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 77.
+(Font)              scaled to size 7.19995pt on input line 80.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 77.
- [35] [36]
+(Font)              scaled to size 5.39996pt on input line 80.
+ [36]
 File: fig/timestamp.eps Graphic file (type eps)
 <fig/timestamp.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 165--167
- [][] 
- []
-
-[37] [38]
+ [37] [38] [39]
 File: expr/bandwidth.eps Graphic file (type eps)
 <expr/bandwidth.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 198--199
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 201--202
 [][] 
  []
 
 File: expr/verify-2.eps Graphic file (type eps)
 <expr/verify-2.eps>
 
-Overfull \hbox (7.6799pt too wide) in paragraph at lines 203--204
+Overfull \hbox (7.6799pt too wide) in paragraph at lines 206--207
 [][] 
  []
 
-[39] [40]) [41]
+[40] [41]) [42]
 \openout2 = `data/chap05.aux'.
 
  (./data/chap05.tex
 第5章
-[42
+[43
 
 
 
-]) [43] (./main.bbl [44
+]) [44] (./main.bbl [45
 
 
 
 
-] [45]) [46]
+] [46]) [47]
 \openout2 = `data/ack.aux'.
 
- (./data/ack.tex [47
+ (./data/ack.tex [48
 
 
 
-]) [48
+]) [49
 
 
 ]
@@ -2982,7 +2956,7 @@ Underfull \hbox (badness 1668) in paragraph at lines 23--24
 DS), 2018:1-1, DOI:
  []
 
-) [49
+) [50
 
 
 
@@ -2991,24 +2965,27 @@ DS), 2018:1-1, DOI:
 \tf@thm=\write6
 \openout6 = `main.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux)
 (./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 85.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 85.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 86.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 45870 strings out of 493007
- 894696 string characters out of 6137965
- 946513 words of memory out of 5000000
- 49072 multiletter control sequences out of 15000+600000
+ 45872 strings out of 493007
+ 894726 string characters out of 6137965
+ 949539 words of memory out of 5000000
+ 49073 multiletter control sequences out of 15000+600000
  660404 words of font info for 180 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  66i,12n,96p,10438b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (60 pages).
+Output written on main.pdf (61 pages).

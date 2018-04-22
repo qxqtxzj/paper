@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {第1章}绪论}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}研究背景及选题意义}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}研究现状}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}安全云存储方案}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}安全加密搜索方案}{2}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.2}研究现状}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}安全云存储方案}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}安全加密搜索方案}{3}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}可验证数据结构}{4}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}可验证对称加密搜索方案}{4}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}可验证公钥加密搜索方案}{5}{subsection.1.2.5}
@@ -29,25 +29,25 @@
 \contentsline {section}{\numberline {3.6}实验结果}{25}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}实验设置}{25}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}实验结果}{25}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}与SSE方案的对比}{27}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}本章总结}{28}{section.3.7}
-\contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}系统架构}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}方案流程}{30}{section.4.3}
-\contentsline {section}{\numberline {4.4}具体方案}{33}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}构建及更新时间戳链}{34}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}结果验证}{36}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}实例分析}{37}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}安全性分析}{38}{section.4.5}
-\contentsline {section}{\numberline {4.6}实验结果}{39}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}实验设置}{39}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}实验结果}{39}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}本章总结}{40}{section.4.7}
-\contentsline {chapter}{\numberline {第5章}总结与展望}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}论文工作总结}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来工作展望}{43}{section.5.2}
-\contentsline {chapter}{参考文献}{44}{section*.22}
-\contentsline {chapter}{致\hspace {1em}谢}{47}{section*.24}
-\contentsline {chapter}{声\hspace {1em}明}{48}{section*.26}
-\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{49}{section*.28}
+\contentsline {subsection}{\numberline {3.6.3}与SSE方案的对比}{28}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}本章总结}{29}{section.3.7}
+\contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}系统架构}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}方案流程}{31}{section.4.3}
+\contentsline {section}{\numberline {4.4}具体方案}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}构建及更新时间戳链}{35}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}结果验证}{37}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}实例分析}{38}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}安全性分析}{40}{section.4.5}
+\contentsline {section}{\numberline {4.6}实验结果}{40}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}实验设置}{40}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}实验结果}{40}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}本章总结}{42}{section.4.7}
+\contentsline {chapter}{\numberline {第5章}总结与展望}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}论文工作总结}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}未来工作展望}{44}{section.5.2}
+\contentsline {chapter}{参考文献}{45}{section*.23}
+\contentsline {chapter}{致\hspace {1em}谢}{48}{section*.25}
+\contentsline {chapter}{声\hspace {1em}明}{49}{section*.27}
+\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{50}{section*.29}

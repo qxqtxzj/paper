@@ -9,10 +9,6 @@
 
 加密搜索的提出，使得用户可以在上传数据给云服务器之前，对其进行加密，并且使得云服务器可以在加密数据上进行搜索。从而既保证了数据的隐私性，又保证了数据的可搜索性。目前，由于效率问题，应用较为广泛的为对称加密搜索技术。然而，大部分的对称加密搜索方案都基于服务器是半可信的假设~\cite{curtmola2011searchable, kamara2012dynamic, cash2014dynamic}，即服务器会遵循协议但是可以从用户的查询中推断相关信息。这种假设在实际应用场景中往往是不成立的。因为云服务器可能会因为外部攻击，内部配置错误，软件错误等等问题而导致其违反原有协议~\cite{sun2015catch,bost2016verifiable}。这种协议违反所导致的最常见问题就是服务器返回的搜索结果不完整。例如，云服务器有可能为了节省计算开销和通信开销而返回少量搜索结果给用户，甚至有可能不返回搜索结果给用户。
 
-为了解决该问题，可验证对称加密搜索 (Verifiable Searchable Symmetric Encryption, VSSE) 技术也相应提出\cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,cheng2015verifiable,bost2016verifiable,ogataefficient}。可验证对称加密搜索技术允许用户对搜索结果进行验证，从而来检测云服务器的不诚信行为，保障加密搜索的正确性。然而，据我们所知，现有的可验证对称加密搜索方案都是不完善的。例如，有的方案~\cite{kurosawa2012uc,chai2012verifiable,cheng2015verifiable,ogataefficient}不支持数据更新，只能作用在静态数据库中，数据库若有变化则需要重建整个索引。有的方案~\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}无法防止服务器故意返回空结果来规避结果验证。即，这些方案\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}在用户提交的关键字不存在于数据库中时，是不返回任何搜索结果的。这就导致了服务器可以对任意关键字返回空结果来规避结果验证，除非用户在本地保留数据库的所有关键字集合。另外，大部分的可验证对称加密搜索方案~\cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,
-cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户场景下工作，即数据持有者自己写自己读的场景，而现实情况中，数据往往有共享需求，即一方写多方读的多用户场景\footnote{本文所述的多用户场景指一方写入，多方读取的场景，下文中若不做特别说明，均指这种情况。}。表格~\ref{tab:comparison}比较了现有可验证对称加密搜索方案的功能。
-
-
 \begin{table*}[t]
   \begin{center}
   \caption{现有可验证对称加密搜索方案比较}
@@ -48,6 +44,11 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
   $^5$ 一个通用的可验证对称加密搜索方案是指该方案可以为任何加密搜索方案提供结果验证的功能，而非通用的可验证对称加密搜索方案表示该方案仅支持在特定的加密搜索方案下工作。\\
 \end{table*}
 
+为了解决该问题，可验证对称加密搜索 (Verifiable Searchable Symmetric Encryption, VSSE) 技术也相应提出\cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,cheng2015verifiable,bost2016verifiable,ogataefficient}。可验证对称加密搜索技术允许用户对搜索结果进行验证，从而来检测云服务器的不诚信行为，保障加密搜索的正确性。然而，据我们所知，现有的可验证对称加密搜索方案都是不完善的。例如，有的方案~\cite{kurosawa2012uc,chai2012verifiable,cheng2015verifiable,ogataefficient}不支持数据更新，只能作用在静态数据库中，数据库若有变化则需要重建整个索引。有的方案~\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}无法防止服务器故意返回空结果来规避结果验证。即，这些方案\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}在用户提交的关键字不存在于数据库中时，是不返回任何搜索结果的。这就导致了服务器可以对任意关键字返回空结果来规避结果验证，除非用户在本地保留数据库的所有关键字集合。另外，大部分的可验证对称加密搜索方案~\cite{kamara2011cs2,kurosawa2012uc,chai2012verifiable,kurosawa2013update,stefanov2014practical,
+cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户场景下工作，即数据持有者自己写自己读的场景，而现实情况中，数据往往有共享需求，即一方写多方读的多用户场景\footnote{本文所述的多用户场景指一方写入，多方读取的场景，下文中若不做特别说明，均指这种情况。}。表格~\ref{tab:comparison}比较了现有可验证对称加密搜索方案的功能。
+
+
+
 
 \section{研究现状}
 \subsection{安全云存储方案}
@@ -58,13 +59,13 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 
 
 \subsection{可验证数据结构}
-可验证数据结构 (Authenticated Data Structure, ADS) 在不可信的云存储环境中，主要被用于验证数据块的完整性。典型的可验证数据结构包括：默克尔树 (Merkle Tree, MT)~\cite{merkle1987digital}, 可验证哈希表( Authenticated Hash Table, AHT)~\cite{papamanthou2008authenticated} 以及可验证跳表 (Authenticated Skip List, ASL)~\cite{pugh1990skip,goodrich2001implementation}。其中，默克尔树是最常见的用于验证数据完整性的数据结构，但是默克尔树对数据更新的支持不够灵活。采用默克尔树实现的可验证对称加密搜索方案~\cite{kamara2011cs2}由于没法在中间节点存储关键字信息，因此也不支持与关键字相关的搜索。可验证哈希表采用了RSA累加器 (RSA Accumulator)~\footnote{RSA为提出该算法的三个密码学家名字的首字母，分别为Ron Rivest, Adi Shamir, 和Leonard Adleman}  方法来实现数据验证，但是它的搜索和更新性能都较低。具体而言，可验证哈希表的搜索与更新速度在毫秒级别，而我们采用的默克尔帕特里夏树 (Merkle Patricia Tree, MPT) 的搜索更新速度在微秒级别。可验证跳表采用了类似多级链表的方式来实现，一定程度上提升了搜索性能，但如果它将关键字信息存储于搜索路径上，存储空间将比默克尔帕特里夏树大很多。
+可验证数据结构 (Authenticated Data Structure, ADS) 在不可信的云存储环境中，主要被用于验证数据块的完整性。典型的可验证数据结构包括：默克尔树 (Merkle Tree, MT)~\cite{merkle1987digital}, 可验证哈希表( Authenticated Hash Table, AHT)~\cite{papamanthou2008authenticated} 以及可验证跳表 (Authenticated Skip List, ASL)~\cite{pugh1990skip,goodrich2001implementation}。其中，默克尔树是最常见的用于验证数据完整性的数据结构，但是默克尔树对数据更新的支持不够灵活。采用默克尔树实现的可验证对称加密搜索方案~\cite{kamara2011cs2}由于没法在中间节点存储关键字信息，因此也不支持与关键字相关的搜索。可验证哈希表采用了RSA累加器 (RSA Accumulator)~\footnote{RSA为提出该算法的三个密码学家名字的首字母，分别为Ron Rivest, Adi Shamir, 和Leonard Adleman}  方法来实现数据验证，但是它的搜索和更新性能都较低。具体而言，可验证哈希表的搜索与更新速度在毫秒级别，而我们采用的默克尔帕特里夏树 (Merkle Patricia Tree, MPT) 的搜索更新速度在微秒级别。可验证跳表采用了类似多级链表的方式来实现，一定程度上提升了搜索性能，但如果它将关键字信息存储于搜索路径上，存储空间将比MPT大很多。
 
 
 \subsection{可验证对称加密搜索方案}
 由Kamara等人提出的CS2方案~\cite{kamara2011cs2}通过使用默克尔树构建验证索引来支持用户对搜索结果的验证。具体的做法是，以加密的关键字作为“键”，以该关键字对应的加密文件集合作为“值”，将该“键值对”存储在默克尔树的叶子结点上。用户在本地需要保留默克尔树的根哈希作为一个指纹信息。在进行结果验证时，用户需要通过其搜索的关键字本身及服务器返回的该关键字对应在默克尔树上的路径来重构出该根哈希，并与保留的根哈希进行比对，从而来进行结果验证。但是他们的方案无法检测服务器恶意返回空结果的情况。关键的原因是，当用户搜索的关键字不存在时，默克尔树上不会存在该关键字对应的路径，因此服务器无法返回任何信息给用户。解决该问题的一个简单的方法是在构建默克尔树时，将整个字典空间中所有可能的关键字集合都存储在默克尔树中，但这样做会导致大量的空间浪费。
 
-近期，Kurosawa等人提出了一系列可验证对称加密搜索方案~\cite{kurosawa2012uc,kurosawa2013update,ogataefficient}。但是他们的方案要么效率很低~\cite{kurosawa2012uc,kurosawa2013update}，要么不支持用户数据动态更新~\cite{kurosawa2012uc,ogataefficient}。其中方案~\cite{kurosawa2012uc}需要线性搜索时间并且不支持数据动态更新。他们的扩展方案~\cite{kurosawa2013update}支持了用户数据更新，该方案通过消息验证码 (Message Authenticated Code, MAC)来确保了数据完整性，通过RSA累计器确保了数据新鲜性，但是方案的搜索复杂度超过了线性时间，并且该方案需要用户在本地维护一个关键字集合来探测服务器故意返回空结果的情况，这将引入较大的空间开销。Ogata等人也提出了一个通用的可验证对称加密搜索框架~\cite{ogataefficient}，该方案可以为任何对称加密搜索方案提供结果验证服务，并且不需要用户自己在本地维护一个关键字集合，但是他们的方案仍然是一个静态的方案，即不支持用户数据更新。同样，方案~\cite{chai2012verifiable} \cite{cheng2015verifiable}也只是静态方案。
+近期，Kurosawa等人提出了一系列可验证对称加密搜索方案~\cite{kurosawa2012uc,kurosawa2013update,ogataefficient}。但是他们的方案要么效率很低~\cite{kurosawa2012uc,kurosawa2013update}，要么不支持用户数据动态更新~\cite{kurosawa2012uc,ogataefficient}。其中方案~\cite{kurosawa2012uc}需要线性搜索时间并且不支持数据动态更新。他们的扩展方案~\cite{kurosawa2013update}支持了用户数据更新，该方案通过消息验证码 (Message Authenticated Code, MAC)来确保了数据完整性，通过RSA累计器确保了数据新鲜性，但是方案的搜索复杂度超过了线性时间，并且该方案需要用户在本地维护一个关键字集合来探测服务器故意返回空结果的情况，这将引入较大的空间开销。Ogata等人也提出了一个通用的可验证对称加密搜索方案~\cite{ogataefficient}，该方案可以为任何对称加密搜索方案提供结果验证服务，并且不需要用户自己在本地维护一个关键字集合，但是他们的方案仍然是一个静态的方案，即不支持用户数据更新。同样，方案~\cite{chai2012verifiable} \cite{cheng2015verifiable}也只是静态方案。
 
 由Stefanov等人提出的方案~\cite{stefanov2014practical}采用了时间戳和消息验证码机制来实现了结果验证，但是他们的方案没法防御服务器故意返回空结果来规避结果验证的情况。Bost等人提出的方案~\cite{bost2016verifiable}是目前为止最完善的通用可验证对称加密搜索方案，但他们的方案在搜索时需要与服务器进行两轮通信，即用户需要在拿到加密搜索的结果后再与服务器进行通信来验证搜索结果。加密搜索和结果验证过程在云服务器端无法并行进行，这将导致较大的验证时延和通信开销，并且他们的方案同样也不支持多用户场景下的结果验证。
 
@@ -81,10 +82,10 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 
 
 \section{本文的主要内容}
-本文首先基于默克尔帕特里夏树和增量哈希 (Incremental Hash, IH) 技术，提出了一种单用户场景下的通用可验证对称加密搜索方案。该方案将验证索引从对称加密搜索方案中解耦，使其可以与任何对称加密搜索方案结合，包括但不限于论文~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic}中的方案。该验证索引基于支持动态更新的数据结构默克尔帕特里夏树构建，因此支持用户动态更新其数据集，而不需要重新构建验证索引。该验证索引将加密后的关键字和其对应的文件存储于叶子节点中，从而使得MPT的根节点成为用户数据完整性的见证，用于后续支持结果验证。
+本文首先基于MPT和增量哈希 (Incremental Hash, IH) 技术，提出了一种单用户场景下的通用可验证对称加密搜索方案。该方案将验证索引从对称加密搜索方案中解耦，使其可以与任何对称加密搜索方案结合，包括但不限于论文~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic}中的方案。该验证索引基于支持动态更新的数据结构MPT构建，因此支持用户动态更新其数据集，而不需要重新构建验证索引。该验证索引将加密后的关键字和其对应的文件存储于叶子节点中，从而使得MPT的根节点成为用户数据完整性的见证，用于后续支持结果验证。
 同时，本文还提出了基于该验证索引的一系列验证机制，来确保数据完整性和数据新鲜性的验证。与以往的方案不同~\cite{kamara2011cs2,kurosawa2013update,stefanov2014practical}，我们的方案要求服务器不管搜索关键字存在与否，都需要给用户返回一个“证明”，用于让用户验证服务器是故意返回了空结果还是搜索关键字的确不存在与现有数据集中。需要特别说明的是，我们的方案不需要用户在本地维护文件集对应的关键字集合。
 
-此外，基于以上方案，本文利用时间戳链(Timestamp Chain)和公钥加密机制，首次提出了一种多用户场景下的通用可验证加密搜索方案。该方案通过时间戳链和公钥加密机制构建了出了与默克尔帕特里夏树根哈希相关的鉴别符，解决了多用户共享数据情况下的数据新鲜性验证问题，实现了多用户下的结果验证。
+此外，基于以上方案，本文利用时间戳链(Timestamp Chain)和公钥加密机制，首次提出了一种多用户场景下的通用可验证加密搜索方案。该方案通过时间戳链和公钥加密机制构建了出了与MPT根哈希相关的鉴别符，解决了多用户共享数据情况下的数据新鲜性验证问题，实现了多用户下的结果验证。
 
 本文通过严格的安全性证明，确保了方案不泄露用户的数据隐私信息。另外，本文通过实验表明，单用户场景和多用户场景下的可验证加密搜索方案效率很高，与加密搜索法方案结合时，给加密搜索引入的额外开销很小，几乎可以忽略不计。
 

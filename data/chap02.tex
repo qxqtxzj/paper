@@ -62,19 +62,19 @@
 %【IH】Thank the reviewer for pointing out this issue. We reviewed the incremental hash in Section 2. An incremental hash function is a collision-resistant function, which was first proposed by Bellare et al. [22]. We revised the description of the incremental hash in Section 2.
 %In our scheme, if a file collection of a data owner is changed, the data owner uses the incremental hash function to quickly calculate a collision-resistance hash value of the changed data, which achieves high efficiency in computing hash values. Another advantage is that, when a file is added or deleted, a collision-resistance hash value ensures the security of our scheme during update.
 \subsection{默克尔帕特里夏树}
-默克尔帕特里夏树最早在以太坊~ \cite{wood2014ethereum, merkle_patricia_tree} (Ethereum) 中提出，它将传统的字典树 (Trie Tree) 和默克尔树结合，使得该树同时具有查找和验证的功能。MPT具有三种类型的节点，分别为叶子节点（Leaf Node，LN），分支节点（Branch Node，BN）和扩展节点（Extension Node，EN）。其中叶子节点存储了键值对，扩展节点也存储了键值对，但扩展节点的“键值”分别为其子节点的公共前缀和子节点的哈希值。分支节点有17个元素，其中前16个元素代表了该节点上有可能的分支，即16个十六进制数字，第17个元素为值。当某一个“键”在该分支节点匹配完成时，该“键”对应的“值”就存储该元素中。
+默克尔帕特里夏树，即MPT，最早在以太坊~ \cite{wood2014ethereum, merklepatriciatree} (Ethereum) 中提出，它将传统的字典树 (Trie Tree) 和默克尔树结合，使得该树同时具有查找和验证的功能。MPT具有三种类型的节点，分别为叶子节点（Leaf Node，LN），分支节点（Branch Node，BN）和扩展节点（Extension Node，EN）。其中叶子节点存储了键值对，扩展节点也存储了键值对，但扩展节点的“键值”分别为其子节点的公共前缀和子节点的哈希值。分支节点有17个元素，其中前16个元素代表了该节点上有可能的分支，即16个十六进制数字，第17个元素为值。当某一个“键”在该分支节点匹配完成时，该“键”对应的“值”就存储该元素中。
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=6 in]{fig/MPTUpdate}
 \DeclareGraphicsExtensions.
-\caption{默克尔帕特里夏树的更新过程}
+\caption{MPT的更新过程}
 \label{fig:MPTUpdate}
 \end{figure}
 
-图~\ref{fig:MPTUpdate} 通过四个简单的例子展示了默克尔帕特里夏树的插入过程。首先是将一个“键值对”插入到分支节点的情况，有两种可能。如果当前的键空间已经为空，我们可以直接将“值”插入到分支节点的第17个位置，如图\ref{fig:MPTUpdate}(1)所示。否则，在经过了分支节点匹配后，键空间中“剩余键”和“值”将会存储在分支节点指向的一个新的叶子节点中，如图\ref{fig:MPTUpdate}(2)所示。其次是将“键值对”插入到叶子节点的情况，也有两种可能。如果当前键空间中“剩余键”与叶子节点中的“键”正好匹配，直接将叶子节点中的“值”修改为新的“值”即可，如图\ref{fig:MPTUpdate}(3)所示。否则，我们将找到当前键空间“剩余键”和叶子节点“键”的共同前缀，将其作为一个新建的扩展节点的“键”，并新建一个分支节点，指向该扩展节点。我们将匹配完扩展节点和分支节点后的“剩余键”作为一个新建叶子节点的键，并将原有的叶子节点和这个新建的叶子节点作为子节点插入到分支节点对应的元素空间中，如图\ref{fig:MPTUpdate}(4)所示。
+图~\ref{fig:MPTUpdate} 通过四个简单的例子展示了MPT的插入过程。首先是将一个“键值对”插入到分支节点的情况，有两种可能。如果当前的键空间已经为空，我们可以直接将“值”插入到分支节点的第17个位置，如图\ref{fig:MPTUpdate}(1)所示。否则，在经过了分支节点匹配后，键空间中“剩余键”和“值”将会存储在分支节点指向的一个新的叶子节点中，如图\ref{fig:MPTUpdate}(2)所示。其次是将“键值对”插入到叶子节点的情况，也有两种可能。如果当前键空间中“剩余键”与叶子节点中的“键”正好匹配，直接将叶子节点中的“值”修改为新的“值”即可，如图\ref{fig:MPTUpdate}(3)所示。否则，我们将找到当前键空间“剩余键”和叶子节点“键”的共同前缀，将其作为一个新建的扩展节点的“键”，并新建一个分支节点，指向该扩展节点。我们将匹配完扩展节点和分支节点后的“剩余键”作为一个新建叶子节点的键，并将原有的叶子节点和这个新建的叶子节点作为子节点插入到分支节点对应的元素空间中，如图\ref{fig:MPTUpdate}(4)所示。
 
-注意，默克尔帕特里夏树中的每一个节点都通过可递归长度前缀法~\cite{RLP_code}(Recursive Length Prefix, RLP) 进行了编码并对编码值再进行了哈希。数据库中存储了每个节点的“键值对”，其中“键”为该节点RLP编码的哈希，“值”为该节点的RLP编码。这样每个节点可以通过他的哈希值被引用，同时保证了默克尔帕特里夏树的可搜索性和可验证性。通过这种方式，默克尔帕特里夏树的根哈希成为了整棵树的指纹信息，根哈希的值由所有下层节点的哈希值所决定，任何节点的微小改变都会导致根哈希的值发生变化。此外，默克尔帕特里夏树与默克尔树不同，默克尔帕特里夏树是完全确定性的，即一组相同的“键值对”采用不同的顺序插入到默克尔帕特里夏树中，最终得到的根节点哈希值是相同的，而默克尔树不具有这个性质。
+注意，MPT中的每一个节点都通过可递归长度前缀法~\cite{RLPcode}(Recursive Length Prefix, RLP) 进行了编码并对编码值再进行了哈希。数据库中存储了每个节点的“键值对”，其中“键”为该节点RLP编码的哈希，“值”为该节点的RLP编码。这样每个节点可以通过他的哈希值被引用，同时保证了MPT的可搜索性和可验证性。通过这种方式，MPT的根哈希成为了整棵树的指纹信息，根哈希的值由所有下层节点的哈希值所决定，任何节点的微小改变都会导致根哈希的值发生变化。此外，MPT与默克尔树不同，MPT是完全确定性的，即一组相同的“键值对”采用不同的顺序插入到MPT中，最终得到的根节点哈希值是相同的，而默克尔树不具有这个性质。
 %The Merkle Patricia Tree (MPT) is first proposed in Ethereum~ \cite{wood2014ethereum, merkle_patricia_tree}, which combines the Trie Tree and the Merkle Tree for data update efficiency. There are three kinds of nodes in an MPT to achieve the goal. Leaf Nodes(LN) represents [key,value] pairs. Extension Nodes(EN) represent [key,value] pairs where keys are the public prefixes and their values are the hashes of the next nodes. The Branch Nodes (BN) are used to store possible branches when the prefixes of the keywords differ, which is presented with 17 elements. Among the 17 elements, the first 16 elements represent the 16 possible hex characters in a key and the last element stores a value if a key in a [key,value] pair matches the node.
 
 %Note that, each node of the MPT is represented by its hash and is encoded using Recursive Length Prefix (RLP) code that is mainly used to encode arbitrarily binary data~\cite{RLP_code}, which ensures the cryptographically security of the search operations. The root hash in MPT becomes a fingerprint of the entire tree and is computed based on all hashes of nodes below. Therefore, any modification in a node would incur recomputation of the root hash. Note that, the MPT is fully deterministic, meaning that an MPT with the same [key,value] pairs is exactly the same regardless of the order of insertion, which is different from the Merkle Tree.

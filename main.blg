@@ -11,54 +11,114 @@ A level-1 auxiliary file: data/ack.aux
 A level-1 auxiliary file: data/resume.aux
 Database file #1: ref/refs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty year in merkle_patricia_tree
-Warning--empty year in RLP_code
-Warning--empty year in enron_email
-Warning--empty year in merkle_patricia_tree
-Warning--empty year in merkle_patricia_tree
-Warning--empty year in RLP_code
-Warning--empty year in RLP_code
-Warning--empty year in enron_email
-Warning--empty year in enron_email
-You've used 45 entries,
-            3389 wiz_defined-function locations,
-            995 strings with 13291 characters,
-and the built_in function-call counts, 298852 in all, are:
-= -- 39716
-> -- 28581
-< -- 28711
-+ -- 10460
-- -- 372
-* -- 1368
-:= -- 33387
-add.period$ -- 132
-call.type$ -- 45
-change.case$ -- 90
-chr.to.int$ -- 9281
-cite$ -- 57
-duplicate$ -- 1000
-empty$ -- 2654
-format.name$ -- 594
-if$ -- 90475
+Warning--empty year in merklepatriciatree
+Warning--empty year in RLPcode
+Warning--empty year in enronemail
+You can't pop an empty literal stack for entry juels2007pors
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry ateniese2008scalable
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry kamara2011cs2
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry stefanov2012iris
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry kamara2013parallel
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry sun2015catch
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry ateniese2007provable
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry bowers2009proofs
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry song2000practical
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry kamara2012dynamic
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry cash2014dynamic
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry boneh2004public
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry kurosawa2012uc
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry chai2012verifiable
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry kurosawa2013update
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry stefanov2014practical
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry cheng2015verifiable
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry wang2010secure
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry merkle1987digital
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry papamanthou2008authenticated
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry goodrich2001implementation
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry zheng2014vabks
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry liu2014efficient
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry jarecki2013outsourced
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry sun2016efficient
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry bellare1994incremental
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry merklepatriciatree
+while executing---line 3235 of file thuthesis-numeric.bst
+Warning--empty year in merklepatriciatree
+Warning--empty year in merklepatriciatree
+You can't pop an empty literal stack for entry RLPcode
+while executing---line 3235 of file thuthesis-numeric.bst
+Warning--empty year in RLPcode
+Warning--empty year in RLPcode
+You can't pop an empty literal stack for entry enronemail
+while executing---line 3235 of file thuthesis-numeric.bst
+Warning--empty year in enronemail
+Warning--empty year in enronemail
+You can't pop an empty literal stack for entry mills2010network
+while executing---line 3235 of file thuthesis-numeric.bst
+You've used 44 entries,
+            3391 wiz_defined-function locations,
+            985 strings with 13034 characters,
+and the built_in function-call counts, 292184 in all, are:
+= -- 38835
+> -- 27935
+< -- 28071
++ -- 10223
+- -- 361
+* -- 1361
+:= -- 32618
+add.period$ -- 129
+call.type$ -- 44
+change.case$ -- 88
+chr.to.int$ -- 9075
+cite$ -- 56
+duplicate$ -- 979
+empty$ -- 2599
+format.name$ -- 574
+if$ -- 88466
 int.to.chr$ -- 1
-int.to.str$ -- 46
+int.to.str$ -- 45
 missing$ -- 0
-newline$ -- 231
-num.names$ -- 126
-pop$ -- 484
+newline$ -- 226
+num.names$ -- 123
+pop$ -- 473
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 44
 quote$ -- 0
-skip$ -- 38381
+skip$ -- 37529
 stack$ -- 0
-substring$ -- 10343
-swap$ -- 47
-text.length$ -- 457
+substring$ -- 10115
+swap$ -- 46
+text.length$ -- 444
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 540
+type$ -- 526
 warning$ -- 9
-while$ -- 569
+while$ -- 553
 width$ -- 0
-write$ -- 649
-(There were 9 warnings)
+write$ -- 635
+(There were 30 error messages)
