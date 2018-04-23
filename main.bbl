@@ -241,16 +241,16 @@ Wood G.
 \newblock Ethereum Project Yellow Paper, 2014, 151: 1--32.
 
 \bibitem[mer()]{merklepatriciatree}
-Merkle patricia tree
-\newblock \allowbreak[M] .
+Merkle patricia tree\allowbreak[EB/OL].
+\newblock \url{https://github.com/ethereum/wiki/wiki/Patricia-Tree}.
 
 \bibitem[RLP()]{RLPcode}
-Rlp code
-\newblock \allowbreak[M] .
+Rlp code\allowbreak[EB/OL].
+\newblock \url{https://github.com/ethereum/wiki/wiki/RLP}.
 
 \bibitem[enr()]{enronemail}
-Enron\_email dataset
-\newblock \allowbreak[M] .
+Enron\_email dataset\allowbreak[EB/OL].
+\newblock \url{https://www.cs.cmu.edu/~enron/}.
 
 \bibitem[Mills(1991)]{mills1991internet}
 Mills D~L.

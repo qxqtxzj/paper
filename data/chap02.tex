@@ -79,7 +79,16 @@
 
 %Note that, each node of the MPT is represented by its hash and is encoded using Recursive Length Prefix (RLP) code that is mainly used to encode arbitrarily binary data~\cite{RLP_code}, which ensures the cryptographically security of the search operations. The root hash in MPT becomes a fingerprint of the entire tree and is computed based on all hashes of nodes below. Therefore, any modification in a node would incur recomputation of the root hash. Note that, the MPT is fully deterministic, meaning that an MPT with the same [key,value] pairs is exactly the same regardless of the order of insertion, which is different from the Merkle Tree.
 
-
+\subsection{对称加密搜索}
+\begin{figure}[t]
+\centering
+\includegraphics[width=6 in]{fig/SSE}
+\DeclareGraphicsExtensions.
+\caption{对称加密搜索方案的框架}
+\label{fig:SSE}
+\end{figure}
+云存储的出现使得用户可以在云端对数据进行备份，并且节省了用户本地存储的开销。因此越来越多的用户选择将他们的数据上传给云服务器。但由于云服务存在诸多安全风险，数据应该加密后再上传，但这使得用户失去了对其数据的搜索能力。一个简单的解决方案是，用户将密文数据全部下载下来以后，对其进行解密，然后在明文数据上进行搜索。但这种解决方案需要用户下载整个数据库，带来的通信开销和存储开销很大，在许多设备上势必是不可能实现的，例如移动设备由于流量和存储空间都有限，就不可能采用这种简单的方案。加密搜索的提出将这种搜索功能转移到了云端，并且同时不造成明文数据泄露。
+目前，大部分的对称加密搜索方案都采用了建立一个加密索引$\gamma$的方式来解决此问题。该加密索引根据用户数据集$\mathcal{D}$来构建。用户首先需要从该数据集中提取出所有的关键字集合$\mathcal{W}$，并将$\mathcal{W}$中的每一个关键字$w_i$与包含该关键字的文件$D_w$相关联，其中$i \in \{1,\cdots, |W|\}$。最后用户通过加密每一个$(w_i, D_w)$对，建立搜索索引$\gamma$，而加密后的关键字$w_i$将会被用户用于后续搜索。一个对称加密搜索方案的常见框架如图~\ref{fig:SSE}所示。用户需要对自身持有的明文数据集进行加密并上传到云端，与此同时，用户还需要根据该数据集生成一个加密索引。该加密索引保证了云服务器可以在不解密加密索引和密文数据集的情况下，对用户的密文数据进行搜索。当用户需要搜索数据时，他将生成一个令牌，该令牌与搜索关键字相关，使得用户可以在不暴露关键字内容的情况下进行内容搜索。
 
 %Searchable Encryption was first proposed by Song et al. \cite{song2000practical}, their solution allows a user to outsource its encrypted data to cloud services, and meanwhile retaining the ability to search over it. Normally, searchable encryption has been divided into two categories, i.e.,  Searchable Symmetric Encryption(SSE) and Public Key Encryption with keyword search(PKE). The most classical SSE scheme was proposed by Curtmola et al. in~\cite{curtmola2011searchable}. They defined  privacy against passive adversaries (i.e., honest but curious servers) and developed their scheme by using an inverted index. There exist various SSE schemes with different secure searching functionalities. For example, dynamic SSE schemes~\cite{kamara2012dynamic,cash2014dynamic,stefanov2014practical} allow a user to update his dataset and ranked keyword search scheme~\cite{wang2010secure} that allow a user to retrieve  ranked search results from the server. The most famous PKE scheme was proposed by Boneh et al.~\cite{boneh2004public} with the bilinear map. Normally, the efficiency of the PKE schemes are much lower than the SSE schemes.
 

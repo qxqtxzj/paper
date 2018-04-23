@@ -66,59 +66,47 @@ You can't pop an empty literal stack for entry sun2016efficient
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry bellare1994incremental
 while executing---line 3235 of file thuthesis-numeric.bst
-You can't pop an empty literal stack for entry merklepatriciatree
-while executing---line 3235 of file thuthesis-numeric.bst
-Warning--empty year in merklepatriciatree
-Warning--empty year in merklepatriciatree
-You can't pop an empty literal stack for entry RLPcode
-while executing---line 3235 of file thuthesis-numeric.bst
-Warning--empty year in RLPcode
-Warning--empty year in RLPcode
-You can't pop an empty literal stack for entry enronemail
-while executing---line 3235 of file thuthesis-numeric.bst
-Warning--empty year in enronemail
-Warning--empty year in enronemail
 You can't pop an empty literal stack for entry mills2010network
 while executing---line 3235 of file thuthesis-numeric.bst
 You've used 44 entries,
             3391 wiz_defined-function locations,
-            985 strings with 13034 characters,
-and the built_in function-call counts, 292184 in all, are:
-= -- 38835
+            985 strings with 13016 characters,
+and the built_in function-call counts, 292211 in all, are:
+= -- 38838
 > -- 27935
 < -- 28071
 + -- 10223
 - -- 361
-* -- 1361
-:= -- 32618
+* -- 1352
+:= -- 32621
 add.period$ -- 129
 call.type$ -- 44
 change.case$ -- 88
 chr.to.int$ -- 9075
-cite$ -- 56
-duplicate$ -- 979
-empty$ -- 2599
+cite$ -- 50
+duplicate$ -- 982
+empty$ -- 2605
 format.name$ -- 574
-if$ -- 88466
+if$ -- 88478
 int.to.chr$ -- 1
 int.to.str$ -- 45
 missing$ -- 0
 newline$ -- 226
 num.names$ -- 123
-pop$ -- 473
+pop$ -- 479
 preamble$ -- 1
 purify$ -- 44
 quote$ -- 0
-skip$ -- 37529
+skip$ -- 37535
 stack$ -- 0
 substring$ -- 10115
 swap$ -- 46
 text.length$ -- 444
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 526
-warning$ -- 9
+type$ -- 535
+warning$ -- 3
 while$ -- 553
 width$ -- 0
 write$ -- 635
-(There were 30 error messages)
+(There were 27 error messages)

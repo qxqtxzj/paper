@@ -11,7 +11,7 @@ ylabel('Throughput');
 p = [p1, p2];
 legend(p, 'Add', 'Del');
 legend boxoff
-axis([0, 1e06, 0.8e5, 1.4e5]);
+axis([0, 1e06, 1e4, 5e4]);
 set(gca,'FontSize',18);
 set (gca,'position',[0.15,0.175,0.75,0.75] );
 grid on;
