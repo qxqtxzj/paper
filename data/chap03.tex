@@ -311,69 +311,7 @@
 
 \section{实验结果}
 
-\begin{figure}[bhpt]
-\centering
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/initialization}
-    \caption{$Init$ 算法的开销}
-    \label{fig:init}
-  \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/proof}
-    \caption{更新证明和结果证明的通信开销}
-    \label{fig:proof}
-  \end{minipage}
 
-
-  \hspace{-40.0pt}
-  \par \vspace{-10.pt}
-  \hspace{-36.0pt}
-
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/update}
-    \caption{$Update$ 算法的吞吐量}
-    \label{fig:update}
-  \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/verifyupdate}
-    \caption{$VerifyUpdate$ 算法的开销}
-    \label{fig:verifyupdate}
-  \end{minipage}
-
-
-  \hspace{-40.0pt}
-  \par \vspace{-10.pt}
-  \hspace{-36.0pt}
-
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/prove}
-    \caption{$Prove$ 算法的吞吐量}
-    \label{fig:prove}
-  \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/verify}
-    \caption{$Verify$ 算法的开销}
-    \label{fig:verify}
-  \end{minipage}
-
-\centering
-\end{figure}
-
-
-\begin{figure}[bhpt]
-\centering
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/storage}
-    \caption{验证索引$\lambda$的存储开销 }
-    \label{fig:storage}
-  \end{minipage}
-  \begin{minipage}[b]{0.48 \textwidth}
-    \includegraphics[width=\textwidth]{expr/comparison}
-    \caption{与DSSE方案~\cite{cash2014dynamic}的对比}
-    \label{fig:comparison}
-  \end{minipage}
-\centering
-\end{figure}
 
 \subsection{实验设置}
 为了证明方案\single 的有效性，我们通过 Crypto++ 5.6.5 库实现了方案的原型。原型系统包含大约2200行代码。我们使用 HMAC-SHA256 作为两个随机预言 (random-oracle)，使用 SHA3-256 作为哈希函数，使用 MuHash 作为增量哈希函数。我们的实验在一台处理器为 Intel Core i5 2.5GHz，内存为 4G 的笔记本上进行，使用单线程实现。
@@ -384,28 +322,87 @@
 
 
 \subsection{实验结果}
-首先，我们评估了$Init$算法的时延，即数据持有者生成验证索引$\lambda$所需的时间。如图~\ref{fig:init}所示，生成验证索引$\lambda$所需的时间与“文件-关键字”对的数量大小成正比，因为向MPT中执行的插入操作次数与“文件-关键字”对的数量相同。总体来说，$Init$ 算法在 “文件-关键字”对达到400万的时候，可以在25秒内执行完毕。由于$Init$算法仅需要在初始化时执行一次，因此这个开销是可以接受的。
 
+首先，我们评估了$Init$算法的时延，即数据持有者生成验证索引$\lambda$所需的时间。$Init$算法需要数据持有者对每一个“文件-关键字”对生成键值对，其中“键”为关键字的伪随机值，“值”为包含该关键字的所有文件的增量哈希和。如图~\ref{fig:init}所示，由于验证索引$\lambda$的生成需要对每一个“文件-关键字”操作，即加密后向MPT中执行的插入操作，因此其所需时间与“文件-关键字”对的数量大小成正比。总体来说，$Init$ 算法在 “文件-关键字”对达到400万的时候，可以在25秒内执行完毕。由于$Init$算法仅需要在数据持有者在初始化时执行一次，因此这个开销是可以接受的。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/initialization}
+\DeclareGraphicsExtensions.
+\caption{$Init$ 算法的开销}
+\label{fig:init}
+\end{figure}
 %The delays of generating the proof index are proportional to the size of the document-keyword pairs, since \name performs the same number of insertions to the number of the document-keyword pairs. Overall, the initialization consumes around 25 seconds where the documents include four million keywords, which is acceptable.
 % for the initialization process.
-云服务器更新验证索引的时间如图~\ref{fig:update}所示，更新算法$Update$的时延与数据库的大小有关，即与验证索引的大小有关，而验证索引的大小由它包含的关键字数量来衡量。严格意义上来说，一次更新的时延与MPT树的层数有关。为了更好的展示更新时延与验证索引大小的关系，我们使用了大量的关键字来评估更新时延。由于每一个文件包含的关键字个数不同，这里我们采用吞吐量(throughput)来衡量每秒钟云服务器可以更新的“文件-关键字”对。从图中可以看到，$Add$和$Del$操作的性能几乎相同。当数据库的大小增大时，吞吐量将会降低。当数据库的大小为100万个关键字时，云服务器每秒钟可以同时支持30,000次更新操作。同时，我们也测量了用户端$UpdateToken$算法引入的带宽开销，更新令牌$\tau_u$中每一个关键字对应的密文带来的平均开销大小在 32字节左右，而更新令牌的总大小与待更新文件$d$包含的关键字个数有关。
 
-由于更新验证算法$VerifyUpdate$的执行时间与用户更新文件所包含的关键字个数相关，因此我们这里采用了单个关键字更新验证需要的平均时间来进行评估。如图~\ref{fig:verifyupdate}所示，当数据库的大小为50万个关键字时，一个关键字的更新验证操作平均需要55微秒的时间。即，在验证索引包含50万个关键字时，用户更新一个包含1千个关键字的文件，也只需要55毫秒的时间。
-
-如图~\ref{fig:prove}所示，云服务器可以在数据库大小在100万关键字时，每秒钟进行43,000次 $Prove$ 操作，这意味着云服务器可以同时支持43,000个来自用户的查询请求。由$Prove$操作产生的结果证明$\rho_s$的大小也可以在图~\ref{fig:prove}和图~\ref{fig:proof}中看到，结果证明的大小随着MPT层数的增加而增长，但总体而言，只需要几KB。
-
-我们通过累计分布函数图 (Cumulative Distribution Function, CDF)来对用户端进行的$Verify$操作进行了测试。结果显示，几乎99.7\%的情况下，用户端都可以在0.1毫秒内完成结果验证，这是可以接受的。
-
-由$Update$算法和$Prove$算法引入的更新证明和结果证明的开销如图~\ref{fig:proof}所示。这里因为更新证明和结果证明的大小与MPT的层数直接相关，因此我们将MPT的层数作为参数来对其进行了衡量。另外，由于更新证明和结果证明的结构相同，因此我们采用了一个实验来衡量单个关键字产生的更新证明(结果证明)的通信开销。从图中可以看到，一个关键字带来的平均更新证明开销为2.5KB左右，即如果用户更新的文件包含1千个关键字，那么更新证明的开销就为2.5MB左右。而对于结果证明，由于每次用户只搜索一个关键字，因此结果证明的开销即为2.5KB。
-
-除此以外，我们还对MPT的存储空间进行了评估。如图~\ref{fig:storage}所示，如果我们使用一个100万个关键字的数据库，MPT的存储空间大小大约为82MB，而该数据库本身所占用的空间大小为 590MB，因此MPT带来的额外存储开销不算特别大。特别需要说明的是，这里我们评估MPT大小所采用数据集为关键字密集型的数据，即邮件数据。如果数据持有者需要加密的是媒体类型的数据，例如图片或是音乐文件等等，这些文件只包含少量的关键字和属性，因此为这些类型的数据构建验证索引时，验证索引占原数据集的比例将会很小，甚至可以忽略。
+云服务器更新验证索引的时间如图~\ref{fig:update}所示，更新算法$Update$的时延与数据库的大小有关，即与验证索引的大小有关，而验证索引的大小由它包含的关键字数量来衡量。严格意义上来说，一次更新的时延与MPT树的层数有关。为了更好的展示更新时延与验证索引大小的关系，我们使用了不同大小的数据库大小来评估更新时延。由于每一个文件包含的关键字个数不同，这里我们采用吞吐量(throughput)来衡量每秒钟云服务器可以更新的“文件-关键字”对。需要注意的是，$Update$操作包括$Add$和$Del$两种操作，每一个关键字的更新不仅需要服务器更新相应的叶子节点，还需要服务器返回相应的搜索路径作为更新证明。从图中可以看到，$Add$和$Del$操作的性能几乎相同。当数据库的大小增大时，吞吐量将会降低。当数据库的大小为100万个关键字时，云服务器每秒钟可以同时支持30,000次更新操作。同时，我们也测量了用户端$UpdateToken$算法引入的带宽开销，更新令牌$\tau_u$中每一个关键字对应的密文带来的平均开销大小在 32字节左右，而更新令牌的总大小与待更新文件$d$包含的关键字个数有关。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/update}
+\DeclareGraphicsExtensions.
+\caption{$Update$ 算法的吞吐量}
+\label{fig:update}
+\end{figure}
 
 
+
+更新验证算法$VerifyUpdate$的执行时间与用户更新文件所包含的关键字个数相关，因此我们采用了单个关键字更新验证需要的平均时间来进行评估。注意，数据持有者验证更新的操作包括对每一个更新令牌生成根哈希进行比对，当所有的更新令牌都验证通过后，最后在进行根哈希的生成。这里，我们只评估了验证每一个根哈希所需要的开销，因为相对生成更新后的根哈希，验证每一个更新令牌是否准确是该算法的主要开销。我们采用了数据库大小分别为5万，10万，50万和100万来衡量数据持有者验证更新证明的时间开销。 如图~\ref{fig:verifyupdate}所示，数据持有者验证每一个搜索令牌的开销随着数据库的增大而逐渐增长，并且逐渐趋于平缓。当数据库的大小为50万个关键字时，一个关键字的更新验证操作平均需要55微秒的时间。即，在验证索引包含50万个关键字时，数据持有者更新一个包含1千个关键字的文件，也只需要55毫秒的时间。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/verifyupdate}
+\DeclareGraphicsExtensions.
+\caption{$VerifyUpdate$ 算法的开销}
+\label{fig:verifyupdate}
+\end{figure}
+
+
+$Prove$算法由云服务器执行，在数据持有者提交搜索请求时，云服务器需要根据搜索令牌在验证索引中查找到该关键字，并将其搜索路径作为结果证明返回。图~\ref{fig:prove}中显示了该算法的开销，包括计算开销和通信开销。其中红色的线表示云服务器执行$Prove$算法的计算开销，而蓝色的线表示云服务器生成的结果证明的大小，即通信开销。从图中可以看到，云服务器可以在数据库大小在100万关键字时，每秒钟进行43,000次 $Prove$ 操作，这意味着云服务器可以同时支持43,000个来自用户的查询请求。由$Prove$操作产生的结果证明$\rho_s$的大小也可以在图中看到，结果证明的大小随着数据库的增长而逐渐增长，趋于平缓。但总体而言，当数据库的大小在100万关键字时，结果证明的大小也只需要2.5KB左右。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/prove}
+\DeclareGraphicsExtensions.
+\caption{$Prove$ 算法的吞吐量}
+\label{fig:prove}
+\end{figure}
+
+$Verify$算法由数据持有者执行，数据持有者在收到云服务器返回的搜索结果和结果证明以后，需要重构出根哈希，并通过与自身保留的根哈希进行对比来确保搜索结果完整性。这里，我们通过累计分布函数图 (Cumulative Distribution Function, CDF)来对用户端进行的$Verify$算法进行测试。这里采用的数据库大小为10万个关键字，即在验证索引大小为10万个关键字的情况下，数据持有者最快可以在0.05毫秒内完成验证操作，最长需要0.1毫秒以上的时间。总体来说，该算法需要的验证时间分布较为集中，在99.7\%的概率下，数据持有者可以在0.1毫秒内完成结果验证，如图所示。对于一个非频繁搜索的数据持有者来说，0.1毫秒的时间是完全可以接受的。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/verify}
+\DeclareGraphicsExtensions.
+\caption{$Verify$ 算法的开销}
+\label{fig:verify}
+\end{figure}
+
+除了计算开销以外，我们还对算法引入的通信开销进行了评估，即由$Update$算法和$Prove$算法引入的更新证明和结果证明的开销。需要注意的是，由于更新证明和结果证明本质上都是搜索令牌在验证索引上的搜索路径，因此其大小与验证索引的层数直接相关，即与MPT的层数相关。如图~\ref{fig:proof}所示，这里我们将MPT的层数作为参数来对其进行了衡量。另外，由于更新证明和结果证明的结构相同，因此我们采用了一个实验来衡量单个关键字产生的更新证明(结果证明)的通信开销。从图中可以看到，随着关键字个数的增长，结果证明(更新证明)的开销呈现对数形式增长。这是因为当验证索引达到10层时，并不是每一个“文件-关键字”对都存储于验证索引的第10层，而是根据关键字令牌的分布情况，散落在验证索引的各个层次。因此虽然验证索引的层数逐渐增长，但平均情况下，每一个关键字令牌产生的更新证明(结果证明)增长较为缓慢。从图中可以看到，一个关键字带来的平均更新证明开销为2.5KB左右，即如果用户更新的文件包含1千个关键字，那么更新证明的开销就为2.5MB左右。而对于结果证明，由于每次用户只搜索一个关键字，因此结果证明的开销即为2.5KB。
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/proof}
+\DeclareGraphicsExtensions.
+\caption{更新证明和结果证明的通信开销}
+\label{fig:proof}
+\end{figure}
+
+
+除此以外，我们还对基于MPT构建的验证索引的的存储空间进行了评估。由$Init$算法可知，存储在MPT中的数据为每一个“文件-关键字”对的加密形式，其中“键”为每一个关键字的伪随机值，而“值”为包含该关键字的所有文件的增量哈希和。如图~\ref{fig:storage}所示，如果我们使用一个100万个关键字的数据库，验证索引的存储空间大小大约为82MB，而该数据库本身所占用的空间大小为 590MB，相对而言，基于MPT构建的验证索引带来的额外存储开销不算特别大。特别需要说明的是，这里我们评估验证索引的大小所采用数据集为关键字密集型的数据，即邮件数据。如果数据持有者需要加密的是媒体类型的数据，例如图片或是音乐文件等等，这些文件只包含少量的关键字和属性，因此为这些类型的数据构建验证索引时，验证索引占原数据集的比例将会很小，甚至可以忽略。
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/storage}
+\DeclareGraphicsExtensions.
+\caption{验证索引$\lambda$的存储开销 }
+\label{fig:storage}
+\end{figure}
 
 \subsection{与SSE方案的对比}
-
 我们将我们的通用可验证对称加密搜索方案\single ，与Cash等人提出的一个较为知名的动态对称加密搜索方案 (Dynamic Symmetric Searchable Encryption, DSSE)~\cite{cash2014dynamic}进行了结合，并展示了\single 为其提供结果验证服务带来的额外开销，如图~\ref{fig:comparison}所示。
-
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/comparison}
+\DeclareGraphicsExtensions.
+\caption{与DSSE方案~\cite{cash2014dynamic}的对比}
+\label{fig:comparison}
+\end{figure}
 为了公平的进行性能比较，我们使用了同样的数据集，并在同样的设备参数下对两个方案联合进行了实验。如图~\ref{fig:comparison}所示，我们测量了$Init$阶段，$Search(Prove)$阶段和$Update$阶段的性能开销。图中，$Init$操作使用了200万个“文件-关键字”来分别构建DSSE方案~\cite{cash2014dynamic}和方案\single 用到的索引，时间单位为秒。而其他三个操作$Search(Prove), Add, Delete$的评估采用的数据库大小为10,000个关键字，时间单位为微秒。注意，DSSE方案中的$Search$操作与\single 方案中的$Prove$操作对应。从图中可以看出，我们的\single 方案引入的额外开销非常小。其中，相较于DSSE方案而言，方案\single 在$Init$阶段引入的开销非常小，仅仅额外引入了1.9\%的额外开销。而对于一次$Search(Prove)$ 操作来说，\single 方案给云服务器引入的额外开销为14微秒，仅仅给DSSE方案带来了2\%的额外开销。同样的，对于一次$Add$或$Delete$操作来说，我们的\single 方案仅仅引入了27微秒的时间，仅占方案~\cite{cash2014dynamic}的 17\%。
 
 在表~\ref{tab:compareSSE}中，我们还比较了二者的通信开销。由于数据的方差较大，每一个实验结果都是50,000次实验的平均值。结果显示，DSSE方案的搜索结果大小平均为53KB左右，而我们的结果证明大小仅仅为3KB左右，即由\single 方案引入的额外开销低于6\%。此外，DSSE方案~\cite{cash2014dynamic}生成的令牌大小平均为390B，而\single 方案生成的令牌仅为32B，即由\single 方案引入的额外开销低于9\%。这些实验结果充分表明了，\single 方案是实用且高效的。

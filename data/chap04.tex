@@ -192,40 +192,42 @@
 
 \section{实验结果}
 \subsection{实验设置}
-为了证明\multi 方案的有效性，我们在一台处理器为Inter Core i5 2.3GHz，内存为4G的笔记本上进行了实验，实验采用单线程执行。这里，我们的签名秘钥对采用了RSA签名，实验的数据为十次实验的平均值。
+为了证明\multi 方案的有效性，我们在一台处理器为Inter Core i5 2.5GHz，内存为4G的笔记本上进行了实验，实验采用单线程执行。这里，我们的签名秘钥对采用了RSA签名，与\single 方案相同，我们同样使用了Crypto++ 5.6.5 库来实现对称加密算法。实验的数据为十次实验的平均值。
 下文中，我们首先对\multi 方案引入的数据持有者端的带宽开销进行了验证，随后对\multi 方案所需的结果验证时间进行了评估。
 \subsection{实验结果}
 \label{sec:experiments}
-\begin{figure}[ht]
-  \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width= 3 in]{expr/bandwidth}
-    \caption{带宽开销}
-    \label{fig:bandwidth}
-  \end{minipage}
-  \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width= 3 in]{expr/verify-2}
-    \caption{总验证时间开销}
-    \label{fig:verify-2}
-  \end{minipage}
-\centering
-\end{figure}
 
 图~\ref{fig:bandwidth}和图~\ref{fig:verify-2}评估了\multi 方案的开销，包括数据持有者的通信开销和合法用户的验证开销。图中的$\eta$表示数据持有者的数据更新频率。
 %To evaluate the relationship between the bandwidth of the authenticator and the update interval on the data owner, we first give the formula of the bandwidth cost introduced by the authenticator as follows: $$bandwidth=\frac{\eta^2b}{2}\times \alpha + \frac{b}{\alpha}+\frac{3\eta b}{2}$$
 %where $b$ is the length of the concatenation $rt||tp$. The bandwidth of the authenticator includes two part: the overhead introduced by the fixed update point and the overhead introduced by the data update.
 %We present the bandwidth cost of the update frequency $\eta$ at different values as shown in
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/bandwidth}
+\DeclareGraphicsExtensions.
+\caption{带宽开销}
+\label{fig:bandwidth}
+\end{figure}
 首先，我们考虑数据持有者端的通信开销。如图~\ref{fig:bandwidth}所示，我们主要考虑由鉴别符带来的开销。这里，每一个更新周期内的第一个鉴别符大小约为176字节，包括了32字节的验证索引根哈希开销，8字节的时间戳开销，8字节的AES-CBC扩展开销，以及128字节的RSA签名开销。总体来说，鉴别符引起的带宽开销包括以下两个部分：由固定更新点导致的鉴别符更新开销和数据更新导致的鉴别符更新开销。
-图~\ref{fig:bandwidth}中的曲线充分体现了这两种更新带来的开销。我们可以发现当更新周期接近0时，鉴别符到来的带宽开销接近每秒2KB，这是由固定更新点导致的鉴别符开销，它是与带宽开销成反比的，即更新周期越小，固定更新点越密集，带宽开销越大。此外，带宽开销又随着更新周期的增长缓慢上升，这是由鉴别符自身长度增长带来的带宽开销增长。因为更新周期越长，一个更新周期内产生的鉴别符数量越多，嵌套生成的鉴别符的长度也就越大。
+图~\ref{fig:bandwidth}中的曲线充分体现了这两种更新带来的开销。我们可以发现当更新周期接近0时，鉴别符到来的带宽开销接近每秒2KB，这是由固定更新点导致的鉴别符开销，因为数据持有者需要在每一个固定更新点到来时，选取当前的时间戳来重新构建鉴别符并上传。它是与带宽开销成反比的，即更新周期越小，固定更新点越密集，带宽开销越大。此外，带宽开销又随着更新周期的增长缓慢上升，这是由鉴别符自身长度增长带来的带宽开销增长。因为在数据持有者的更新频率一定的情况下，更新周期越长，一个更新周期内产生的数据更新次数将会更多。而每一次数据更新都会导致验证索引根哈希的变化，因此数据持有者需要重新选取时间戳来对更新后的根哈希进行加密上传，而一个更新周期内的鉴别符都是以链式生成的。因此更新周期越长，该更新周期内生成的鉴别符的数量也会越多，而鉴别符的长度也随着时间戳链的增长而逐渐变大。
 
-其次，我们考虑合法用户端的验证开销。这部分开销包括用户等待检测点的时间 (wait time) 以及执行$Check$算法和$Generate$算法的时间。根据实验测量，$Generate$算法的开销为0.1毫秒，几乎可以忽略。因此图~\ref{fig:verify-2}中并未标注该部分开销。
-这里， $\eta$表示数据持有者的更新频率，我们假设合法用户在一个更新周期内发起搜索请求的时刻是均匀分布的，则用户等待检测点的时间也呈均匀分布。即，等待检测点的平均时间为半个更新周期的长度，这将占整个验证时延的大部分。$Check$算法的开销与更新周期成正比，这主要由验证鉴别符的签名和解密鉴别符这两种开销导致，但是它相对等待检测点的时间是可以忽略的。需要特别说明的是，在以上的实验中，我们没有将网络的传输时间考虑在内，因为网络传输时间在不同的环境中差异非常大，并且根据我们的方案，传输时延对方案的影响不会很大。
-从图\ref{fig:bandwidth}中我们可以看到，当更新频率在2Hz到1/60Hz不等时，合法用户端的验证开销主要取决于等待检测点所需的时间，即和更新间隔的设置有关。$Check$算法的开销几乎可以忽略不计。
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5 in]{expr/verify-2}
+\DeclareGraphicsExtensions.
+\caption{总验证时间开销}
+\label{fig:verify-2}
+\end{figure}
+其次，我们考虑合法用户端的验证开销。这部分开销包括用户等待检测点的时间 (wait time) 以及执行$Check$算法和$Generate$算法的时间，即$Verify$算法的时间。根据实验测量，$Generate$算法的开销为0.1毫秒，几乎可以忽略。因此图~\ref{fig:verify-2}中并未标注该部分开销。
+这里， $\eta$表示数据持有者的更新频率，我们假设合法用户在一个更新周期内发起搜索请求的时刻是均匀分布的，则该用户等待检测点的时间也呈均匀分布。即等待检测点的平均时间为半个更新周期的长度，这将占整个验证时延的大部分。$Check$算法的开销与更新周期成正比，这主要由验证鉴别符的签名和解密鉴别符这两种开销导致，但是它相对等待检测点的时间是可以忽略的。需要特别说明的是，在以上的实验中，我们没有将网络的传输时间考虑在内，因为网络传输时间在不同的环境中差异非常大，并且根据我们的方案，传输时延对方案的影响不会很大。
+从图\ref{fig:bandwidth}中我们可以看到，当更新频率在2Hz到1/60Hz不等时，即数据持有者的更新频率在每秒钟两次至每一分钟一次时，合法用户端的验证开销主要取决于等待检测点所需的时间，即和更新间隔的设置有关，而$Check$算法的开销几乎可以忽略不计。
 
-根据以上的实验结果，\multi 方案引入的带宽开销和验证时延都是可以接受的。总体来说，为了在验证时延和带宽开销之间寻找一个平衡点，我们建议可以将更新周期设置在500毫秒置1500毫秒之间。
+综合以上的实验结果，\multi 方案引入的带宽开销和验证时延都是可以接受的。总体来说，为了在验证时延和带宽开销之间寻找一个平衡点，我们建议可以将更新周期设置在500毫秒置1500毫秒之间。在该更新周期下，数据持有者的平均带宽开销在1KB以内，而合法用户的验证时延也在200ms和800ms之间，总体来说都是可以接受的。
 
 \section{本章总结}
 本章通过方案定义，方案描述，安全性分析和实验分析等方面对\multi 方案进行了分析与阐述，\multi 方案基于不可信云存储环境，为用户提供了一种数据共享场景下的可验证对称加密搜索解决方案，总体来说，\multi 方案的贡献有以下几点：
 \begin{itemize}
-  \item 完善性。\multi 方案首次为数据共享场景下的可验证加密搜索提出了解决方案，该方案使得可验证加密搜索方案的功能性更加完善，适用场景更加广泛，通用性得到了进一步提升。
+  \item 功能完善。\multi 方案提供了一种多用户场景下的可验证对称加密搜索方案，该方案支持在单方写/多方读的场景下工作，为数据共享场景下的可验证加密搜索提出了解决方案，使得可验证加密搜索方案的功能性更加完善。
+  \item 通用性。\multi 方案可以为实现了多用户场景的对称加密搜索方案提供结果验证功能，同时确保数据新鲜性和数据完整性，使其通用性得到了进一步提升。
   \item 高效性。通过实验验证，\multi 方案为数据持有者和合法用户带来的通信开销和计算开销都很小，在方案有效的前提下保证了其高效性。
 \end{itemize}

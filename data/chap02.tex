@@ -90,6 +90,21 @@
 云存储的出现使得用户可以在云端对数据进行备份，并且节省了用户本地存储的开销。因此越来越多的用户选择将他们的数据上传给云服务器。但由于云服务存在诸多安全风险，数据应该加密后再上传，但这使得用户失去了对其数据的搜索能力。一个简单的解决方案是，用户将密文数据全部下载下来以后，对其进行解密，然后在明文数据上进行搜索。但这种解决方案需要用户下载整个数据库，带来的通信开销和存储开销很大，在许多设备上势必是不可能实现的，例如移动设备由于流量和存储空间都有限，就不可能采用这种简单的方案。加密搜索的提出将这种搜索功能转移到了云端，并且同时不造成明文数据泄露。
 目前，大部分的对称加密搜索方案都采用了建立一个加密索引$\gamma$的方式来解决此问题。该加密索引根据用户数据集$\mathcal{D}$来构建。用户首先需要从该数据集中提取出所有的关键字集合$\mathcal{W}$，并将$\mathcal{W}$中的每一个关键字$w_i$与包含该关键字的文件$D_w$相关联，其中$i \in \{1,\cdots, |W|\}$。最后用户通过加密每一个$(w_i, D_w)$对，建立搜索索引$\gamma$，而加密后的关键字$w_i$将会被用户用于后续搜索。一个对称加密搜索方案的常见框架如图~\ref{fig:SSE}所示。用户需要对自身持有的明文数据集进行加密并上传到云端，与此同时，用户还需要根据该数据集生成一个加密索引。该加密索引保证了云服务器可以在不解密加密索引和密文数据集的情况下，对用户的密文数据进行搜索。当用户需要搜索数据时，他将生成一个令牌，该令牌与搜索关键字相关，使得用户可以在不暴露关键字内容的情况下进行内容搜索。
 
-%Searchable Encryption was first proposed by Song et al. \cite{song2000practical}, their solution allows a user to outsource its encrypted data to cloud services, and meanwhile retaining the ability to search over it. Normally, searchable encryption has been divided into two categories, i.e.,  Searchable Symmetric Encryption(SSE) and Public Key Encryption with keyword search(PKE). The most classical SSE scheme was proposed by Curtmola et al. in~\cite{curtmola2011searchable}. They defined  privacy against passive adversaries (i.e., honest but curious servers) and developed their scheme by using an inverted index. There exist various SSE schemes with different secure searching functionalities. For example, dynamic SSE schemes~\cite{kamara2012dynamic,cash2014dynamic,stefanov2014practical} allow a user to update his dataset and ranked keyword search scheme~\cite{wang2010secure} that allow a user to retrieve  ranked search results from the server. The most famous PKE scheme was proposed by Boneh et al.~\cite{boneh2004public} with the bilinear map. Normally, the efficiency of the PKE schemes are much lower than the SSE schemes.
 
-%【SSE】Thanks for the suggestions. We explained the secure searchable encryption schemes in Section 2. Searchable encryption allows the server to perform search operations without seeing plaintext data. It empowers the server an ability to search over ciphertext and ensures the security of data on the server. In this revised manuscript, we discussed the existing categories of searchable encryption in Section 2.
+\subsection{多用户对称加密搜索}
+\begin{figure}[t]
+\centering
+\includegraphics[width=6 in]{fig/MSSE}
+\DeclareGraphicsExtensions.
+\caption{多用户下的对称加密搜索方案的框架}
+\label{fig:MSSE}
+\end{figure}
+
+根据Bosch等人提出的综述~\cite{bosch2015survey}，现有的加密搜索方案可以分为四种类别：单方写入/单方读取 (single writer/single reader, S/S)， 单方写入/多方读取(single writer/multi-reader, S/M)，多方写入/单方读取(multi- writer/single reader, M/S) 以及多方写入/多方读取(multi-writer/multi-reader, M/M)。在本文中我们主要针对单方写入/多方读取这种多用户场景，因为该场景多用于个人用户的存储与数据共享场景中，而多方写入/单方读取的场景多用于邮件数据存储，多方写入/多方读取场景主要用户企业级云存储方案中。
+
+本文并不致力于研究一种访问控制方案来实现多用户的加密搜索方案，因为针对用户的访问控制问题目前已有许多研究，例如基于角色的访问控制策略( Role-based Access Control Policies)~\cite{sandhu1996role,ferraiolo2001proposed}等等细粒度的访问控制方案。数据持有者可以根据每个用户的不同职责来为其分配不同的访问权限，每个角色对应于一种访问权限，例如只读等等。本方案可以为实现了这种数据访问控制的多用户加密搜索方案提供结果验证功能。目前已有相关研究提出了这种支持单方写入/多方读取的多用户加密搜索方案~\cite{curtmola2011searchable, jarecki2013outsourced,sun2016efficient}，例如广播加密方案(Broadcase Encryption, BE)和基于属性加密搜索方案(Attribute-Based Encryption, ABE)等等。
+
+本文以广播加密方案~\cite{curtmola2011searchable}为例，阐述数据持有者如何对数据搜索用户进行访问控制。如图~\ref{fig:MSSE}所示，
+数据持有者通过私钥$K_O$和用户身份信息生成用户私钥$K_U$，他将用户私钥$K_U$发送给该用户$U$，并将一个状态$st_S$更新给云服务器，其中$st_S$由数据持有者的合法用户群$G$和一个对称秘钥$r$计算得到。为了搜索一个关键字$w$， 用户需要从服务器上获取状态$st_S$，并通过用户私钥$K_U$解密出其中包含的对称秘钥$r$，随后用户通过计算$\Phi_r(\tau_w)$并上传给服务器来进行访问控制验证。云服务器在收到$\Phi_r(\tau_w)$，可以通过计算$\tau_w = \Phi_r^{-1}(\Phi_r(\tau_w))$提取出其中包含的搜索令牌$\tau_w$。
+注意，如果数据持有者需要剔除一个用户$U$，他仅需要重新选择一个对称秘钥$r'$，然后根据新的用户群$G'= G \backslash U$重新生成一个状态$st^{'}_S$即可。只要云服务器和被剔除的用户不存在共谋，一个被剔除的用户不再属于用户群$G'$，因此他将无法从从状态$st^{'}_S$中解密出对称秘钥$r'$，因此也无法生成一个合法的搜索令牌。
+通过这种广播加密方案，数据持有者可以方便的控制他的合法搜索用户，并且不需要再每次剔除一个用户时重新生成验证索引。

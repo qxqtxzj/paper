@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -10,15 +10,15 @@
 Juels A, Kaliski~Jr B~S.
 \newblock Pors: Proofs of retrievability for large
   files\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CCS , 2007: 584--597.
+\newblock Proc. of Computer and Communications Security(CCS) , 2007: 584--597.
 
 \bibitem[Ateniese\ et~al.(2008)Ateniese, Di~Pietro, Mancini, and
   Tsudik]{ateniese2008scalable}
 Ateniese G, Di~Pietro R, Mancini L~V, et~al.
 \newblock Scalable and efficient provable data
   possession\allowbreak[C]//\allowbreak{}
-\newblock Proc. of Security and privacy in communication netowrks (SecureComm)
-  , 2008.
+\newblock Proc. of the International Conference on Security and privacy in
+  communication netowrks (SecureComm) , 2008: 9.
 
 \bibitem[Kamara\ et~al.(2011)Kamara, Papamanthou, and Roeder]{kamara2011cs2}
 Kamara S, Papamanthou C, Roeder T.
@@ -30,7 +30,8 @@ Kamara S, Papamanthou C, Roeder T.
 Wang Q, Wang C, Ren K, et~al.
 \newblock Enabling public auditability and data dynamics for storage security
   in cloud computing\allowbreak[J].
-\newblock IEEE TPDS, 2011, 22\penalty0 (5): 847--859.
+\newblock IEEE Transactions on Parallel and Distributed Systems(TPDS), 2011,
+  22\penalty0 (5): 847--859.
 
 \bibitem[Stefanov\ et~al.(2012)Stefanov, van Dijk, Juels, and
   Oprea]{stefanov2012iris}
@@ -45,32 +46,35 @@ Kamara S, Papamanthou C.
 \newblock Parallel and dynamic searchable symmetric
   encryption\allowbreak[C]//\allowbreak{}
 \newblock Proc. of International Conference on Financial Cryptography and Data
-  Security(FC) , 2013.
+  Security(FC) : Springer, 2013: 258--274.
 
 \bibitem[Sun\ et~al.(2015)Sun, Liu, Lou, Hou, and Li]{sun2015catch}
 Sun W, Liu X, Lou W, et~al.
 \newblock Catch you if you lie to me: Efficient verifiable conjunctive keyword
   search over large dynamic encrypted cloud data\allowbreak[C]//\allowbreak{}
-\newblock Proc. of INFOCOM , 2015.
+\newblock Proc. of IEEE International Conference on Computer
+  Communications(INFOCOM) : IEEE, 2015: 2110--2118.
 
 \bibitem[Ateniese\ et~al.(2007)Ateniese, Burns, Curtmola, Herring, Kissner,
   Peterson, and Song]{ateniese2007provable}
 Ateniese G, Burns R, Curtmola R, et~al.
 \newblock Provable data possession at untrusted
   stores\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CCS , 2007.
+\newblock Proc. of Computer and Communications Security(CCS) , 2007: 598--609.
 
 \bibitem[Erway\ et~al.(2015)Erway, K{\"u}p{\c{c}}{\"u}, Papamanthou, and
   Tamassia]{erway2015dynamic}
 Erway C~C, K{\"u}p{\c{c}}{\"u} A, Papamanthou C, et~al.
 \newblock Dynamic provable data possession\allowbreak[J].
-\newblock ACM TISSEC, 2015, 17\penalty0 (4): 15.
+\newblock ACM Transactions on Information and System Security (TISSEC), 2015,
+  17\penalty0 (4): 15.
 
 \bibitem[Zhu\ et~al.(2012)Zhu, Hu, Ahn, and Yu]{zhu2012cooperative}
 Zhu Y, Hu H, Ahn G~J, et~al.
 \newblock Cooperative provable data possession for integrity verification in
   multicloud storage\allowbreak[J].
-\newblock IEEE TPDS, 2012, 23\penalty0 (12): 2231--2244.
+\newblock IEEE Transactions on Parallel and Distributed Systems(TPDS), 2012,
+  23\penalty0 (12): 2231--2244.
 
 \bibitem[Bowers\ et~al.(2009)Bowers, Juels, and Oprea]{bowers2009proofs}
 Bowers K~D, Juels A, Oprea A.
@@ -82,7 +86,7 @@ Bowers K~D, Juels A, Oprea A.
 Song D~X, Wagner D, Perrig A.
 \newblock Practical techniques for searches on encrypted
   data\allowbreak[C]//\allowbreak{}
-\newblock Proc. of S\&P , 2000.
+\newblock Proc. of Security and Privacy(S\&P) : IEEE, 2000: 44--55.
 
 \bibitem[Curtmola\ et~al.(2011)Curtmola, Garay, Kamara, and
   Ostrovsky]{curtmola2011searchable}
@@ -95,27 +99,30 @@ Curtmola R, Garay J, Kamara S, et~al.
   Roeder]{kamara2012dynamic}
 Kamara S, Papamanthou C, Roeder T.
 \newblock Dynamic searchable symmetric encryption\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CCS , 2012: 965--976.
+\newblock Proc. of Computer and Communications Security(CCS) : ACM, 2012:
+  965--976.
 
 \bibitem[Cash\ et~al.(2014)Cash, Jaeger, Jarecki, Jutla, Krawczyk, Rosu, and
   Steiner]{cash2014dynamic}
 Cash D, Jaeger J, Jarecki S, et~al.
 \newblock Dynamic searchable encryption in very-large databases: Data
-  structures and implementation.\allowbreak[C]//\allowbreak{}
-\newblock NDSS: volume~14 , 2014: 23--26.
+  structures and implementation\allowbreak[C]//\allowbreak{}
+\newblock Proc. of the Network and Distributed System Security Symposium
+  (NDSS): volume~14 : Citeseer, 2014: 23--26.
 
 \bibitem[Wang\ et~al.(2016)Wang, He, Du, Chow, Lai, and
   Zou]{wang2016searchable}
 Wang Q, He M, Du M, et~al.
 \newblock Searchable encryption over feature-rich data\allowbreak[J].
-\newblock IEEE Transactions on Dependable and Secure Computing, 2016.
+\newblock IEEE Transactions on Dependable and Secure Computing(TDSC), 2016.
 
 \bibitem[Boneh\ et~al.(2004)Boneh, Di~Crescenzo, Ostrovsky, and
   Persiano]{boneh2004public}
 Boneh D, Di~Crescenzo G, Ostrovsky R, et~al.
 \newblock Public key encryption with keyword
   search\allowbreak[C]//\allowbreak{}
-\newblock Proc. of EUROCRYPT , 2004.
+\newblock International conference on the theory and applications of
+  cryptographic techniques(EUROCRYPT) : Springer, 2004: 506--522.
 
 \bibitem[Bost\ et~al.(2016)Bost, Fouque, and Pointcheval]{bost2016verifiable}
 Bost R, Fouque P~A, Pointcheval D.
@@ -148,37 +155,63 @@ Kurosawa K, Ohtaki Y.
 Stefanov E, Papamanthou C, Shi E.
 \newblock Practical dynamic searchable encryption with small
   leakage\allowbreak[C]//\allowbreak{}
-\newblock Proc. of NDSS , 2014.
+\newblock Proc. of the Network and Distributed System Security Symposium
+  (NDSS): volume~71 , 2014: 72--75.
 
 \bibitem[Cheng\ et~al.(2015)Cheng, Yan, Guan, Zhang, and
   Ren]{cheng2015verifiable}
 Cheng R, Yan J, Guan C, et~al.
 \newblock Verifiable searchable symmetric encryption from indistinguishability
   obfuscation\allowbreak[C]//\allowbreak{}
-\newblock Proc. of AsiaCCS , 2015.
+\newblock Proc. of the ACM Symposium on Information, Computer and
+  Communications Security(AsiaCCS) : ACM, 2015: 621--626.
 
 \bibitem[Ogata\ et~al.(2016)Ogata and Kurosawa]{ogataefficient}
 Ogata W, Kurosawa K.
 \newblock Efficient no-dictionary verifiable sse\allowbreak[J].
 \newblock IACR Cryptology ePrint Archive, 2016, 2016: 981.
 
-\bibitem[Wang\ et~al.(2010)Wang, Cao, Li, Ren, and Lou]{wang2010secure}
+\bibitem[Wang\ et~al.(2013)Wang, Chow, Wang, Ren, and Lou]{wang2013privacy}
+Wang C, Chow S~S, Wang Q, et~al.
+\newblock Privacy-preserving public auditing for secure cloud
+  storage\allowbreak[J].
+\newblock IEEE Transactions on Computers, 2013, 62\penalty0 (2): 362--375.
+
+\bibitem[Wang\ et~al.(2010{\natexlab{a}})Wang, Wang, Ren, and
+  Lou]{wang2010privacy}
+Wang C, Wang Q, Ren K, et~al.
+\newblock Privacy-preserving public auditing for data storage security in cloud
+  computing\allowbreak[M]//\allowbreak{}
+\newblock Proc. of IEEE International Conference on Computer
+  Communications(INFOCOM) : IEEE, 2010{\natexlab{a}}: 1--9.
+
+\bibitem[Wang\ et~al.(2010{\natexlab{b}})Wang, Ren, Lou, and
+  Li]{wang2010toward}
+Wang C, Ren K, Lou W, et~al.
+\newblock Toward publicly auditable secure cloud data storage
+  services\allowbreak[J].
+\newblock IEEE Network, 2010, 24\penalty0 (4).
+
+\bibitem[Wang\ et~al.(2010{\natexlab{c}})Wang, Cao, Li, Ren, and
+  Lou]{wang2010secure}
 Wang C, Cao N, Li J, et~al.
 \newblock Secure ranked keyword search over encrypted cloud
   data\allowbreak[C]//\allowbreak{}
-\newblock Proc. of ICDCS , 2010.
+\newblock Proc. of IEEE International Conference on Distributed Computing
+  Systems (ICDCS) , 2010{\natexlab{c}}.
 
 \bibitem[Merkle(1987)]{merkle1987digital}
 Merkle R~C.
 \newblock A digital signature based on a conventional encryption
   function\allowbreak[C]//\allowbreak{}
-\newblock Proc. of EUROCRYPT , 1987.
+\newblock International conference on the theory and applications of
+  cryptographic techniques(EUROCRYPT) , 1987.
 
 \bibitem[Papamanthou\ et~al.(2008)Papamanthou, Tamassia, and
   Triandopoulos]{papamanthou2008authenticated}
 Papamanthou C, Tamassia R, Triandopoulos N.
 \newblock Authenticated hash tables\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CCS , 2008.
+\newblock Proc. of Computer and Communications Security(CCS) , 2008.
 
 \bibitem[Pugh(1990)]{pugh1990skip}
 Pugh W.
@@ -198,7 +231,8 @@ Goodrich M~T, Tamassia R, Schwerin A.
 Zheng Q, Xu S, Ateniese G.
 \newblock Vabks: verifiable attribute-based keyword search over outsourced
   encrypted data\allowbreak[C]//\allowbreak{}
-\newblock Proc. of INFOCOM , 2014.
+\newblock Proc. of IEEE International Conference on Computer
+  Communications(INFOCOM) , 2014.
 
 \bibitem[Liu\ et~al.(2014)Liu, Wang, Ma, and Nie]{liu2014efficient}
 Liu P, Wang J, Ma H, et~al.
@@ -218,21 +252,24 @@ Yang Y, Bao F, Ding X, et~al.
 Jarecki S, Jutla C, Krawczyk H, et~al.
 \newblock Outsourced symmetric private information
   retrieval\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CCS , 2013.
+\newblock Proc. of Computer and Communications Security(CCS) : ACM, 2013:
+  875--888.
 
 \bibitem[Sun\ et~al.(2016)Sun, Liu, Sakzad, Steinfeld, and
   Yuen]{sun2016efficient}
 Sun S~F, Liu J~K, Sakzad A, et~al.
 \newblock An efficient non-interactive multi-client searchable encryption with
   support for boolean queries\allowbreak[C]//\allowbreak{}
-\newblock Proc. of ESORICS , 2016.
+\newblock Proc. of European Symposium on Research in Computer Security(ESORICS)
+  : Springer, 2016: 154--172.
 
 \bibitem[Bellare\ et~al.(1994)Bellare, Goldreich, and
   Goldwasser]{bellare1994incremental}
 Bellare M, Goldreich O, Goldwasser S.
 \newblock Incremental cryptography: The case of hashing and
   signing\allowbreak[C]//\allowbreak{}
-\newblock Proc. of CRYPTO , 1994.
+\newblock Annual International Cryptology Conference(CRYPTO) : Springer, 1994:
+  216--233.
 
 \bibitem[Wood(2014)]{wood2014ethereum}
 Wood G.
@@ -248,6 +285,25 @@ Merkle patricia tree\allowbreak[EB/OL].
 Rlp code\allowbreak[EB/OL].
 \newblock \url{https://github.com/ethereum/wiki/wiki/RLP}.
 
+\bibitem[B{\"o}sch\ et~al.(2015)B{\"o}sch, Hartel, Jonker, and
+  Peter]{bosch2015survey}
+B{\"o}sch C, Hartel P, Jonker W, et~al.
+\newblock A survey of provably secure searchable encryption\allowbreak[J].
+\newblock ACM Computing Surveys (CSUR), 2015, 47\penalty0 (2): 18.
+
+\bibitem[Sandhu\ et~al.(1996)Sandhu, Coyne, Feinstein, and
+  Youman]{sandhu1996role}
+Sandhu R~S, Coyne E~J, Feinstein H~L, et~al.
+\newblock Role-based access control models\allowbreak[J].
+\newblock IEEE Transactions on Computer, 1996, 29\penalty0 (2): 38--47.
+
+\bibitem[Ferraiolo\ et~al.(2001)Ferraiolo, Sandhu, Gavrila, Kuhn, and
+  Chandramouli]{ferraiolo2001proposed}
+Ferraiolo D~F, Sandhu R, Gavrila S, et~al.
+\newblock Proposed nist standard for role-based access control\allowbreak[J].
+\newblock ACM Transactions on Information and System Security (TISSEC), 2001,
+  4\penalty0 (3): 224--274.
+
 \bibitem[enr()]{enronemail}
 Enron\_email dataset\allowbreak[EB/OL].
 \newblock \url{https://www.cs.cmu.edu/~enron/}.
@@ -256,7 +312,8 @@ Enron\_email dataset\allowbreak[EB/OL].
 Mills D~L.
 \newblock Internet time synchronization: the network time
   protocol\allowbreak[J].
-\newblock IEEE Trans. on Communications, 1991, 39\penalty0 (10): 1482--1493.
+\newblock IEEE Transactions on Communications, 1991, 39\penalty0 (10):
+  1482--1493.
 
 \bibitem[Mills\ et~al.(2010)Mills, Martin, Burbank, and
   Kasch]{mills2010network}
@@ -268,19 +325,20 @@ Mills D, Martin J, Burbank J, et~al.
 \bibitem[Kopetz\ et~al.(1987)Kopetz and Ochsenreiter]{kopetz1987clock}
 Kopetz H, Ochsenreiter W.
 \newblock Clock synchronization in distributed real-time systems\allowbreak[J].
-\newblock IEEE Trans. on Computers, 1987, 100\penalty0 (8): 933--940.
+\newblock IEEE Transactions on Computers, 1987, 100\penalty0 (8): 933--940.
 
 \bibitem[Elson\ et~al.(2002)Elson, Girod, and Estrin]{elson2002fine}
 Elson J, Girod L, Estrin D.
 \newblock Fine-grained network time synchronization using reference
   broadcasts\allowbreak[J].
-\newblock ACM Trans. on Operating Systems Review (SIGOPS), 2002, 36\penalty0
-  (SI): 147--163.
+\newblock ACM Transactions on Operating Systems Review (SIGOPS), 2002,
+  36\penalty0 (SI): 147--163.
 
 \bibitem[Zhou\ et~al.(2007)Zhou and Lai]{zhou2007accurate}
 Zhou D, Lai T~H.
 \newblock An accurate and scalable clock synchronization protocol for ieee
   802.11-based multihop ad hoc networks\allowbreak[J].
-\newblock IEEE TPDS, 2007, 18\penalty0 (12): 1797--1808.
+\newblock IEEE Transactions on Parallel and Distributed Systems(TPDS), 2007,
+  18\penalty0 (12): 1797--1808.
 
 \end{thebibliography}

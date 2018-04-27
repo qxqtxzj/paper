@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  26 APR 2018 16:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  24 APR 2018 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./main.tex
-(./main.tex
+**./shuji.tex
+(./shuji.tex
 LaTeX2e <2017-04-15>
 Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
 (./thuthesis.cls
@@ -1962,459 +1962,77 @@ File: thuthesis.cfg 2017/12/24 5.4.3 Tsinghua University Thesis Template
 \c@currconjecturectr=\count358
 \c@endconjecturectr=\count359
 \c@conjecture=\count360
-) (./thuthesis.sty
-Package: thuthesis 2007/11/30 4.1 put any packages you would like to use here
- (c:/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip96
-\multirow@cntb=\count361
-\multirow@dima=\skip97
-\bigstrutjot=\dimen288
 )
-(c:/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
-\TX@col@width=\dimen289
-\TX@old@table=\dimen290
-\TX@old@col=\dimen291
-\TX@target=\dimen292
-\TX@delta=\dimen293
-\TX@cols=\count362
-\TX@ftn=\toks51
-)
-(c:/texlive/2017/texmf-dist/tex/latex/diagbox/diagbox.sty
-Package: diagbox 2016/12/28 v2.2 Making table heads with diagonal lines
-
-(c:/texlive/2017/texmf-dist/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
-
-(c:/texlive/2017/texmf-dist/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
-)
-Package pict2e Info: Driver file: xetex.def on input line 119.
-Package pict2e Info: Driver file for pict2e: p2e-xetex.def on input line 121.
-
-(c:/texlive/2017/texmf-dist/tex/latex/pict2e/p2e-xetex.def
-File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
-)
-\pIIe@GRAPH=\toks52
-\@arclen=\dimen294
-\@arcrad=\dimen295
-\@tempdimd=\dimen296
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp.sty
-Package: fp 1995/04/02
-
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(c:/texlive/2017/texmf-dist/tex/latex/fp/defpattern.sty
-Package: defpattern 1994/10/12
-\actioncount=\count363
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-basic.sty
-Package: fp-basic 1996/05/13
-\FP@xs=\count364
-\FP@xia=\count365
-\FP@xib=\count366
-\FP@xfa=\count367
-\FP@xfb=\count368
-\FP@rega=\count369
-\FP@regb=\count370
-\FP@regs=\count371
-\FP@times=\count372
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-addons.sty
-Package: fp-addons 1995/03/15
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-snap.sty
-Package: fp-snap 1995/04/05
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-exp.sty
-Package: fp-exp 1995/04/03
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-trigo.sty
-Package: fp-trigo 1995/04/14
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-pas.sty
-Package: fp-pas 1994/08/29
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-random.sty
-Package: fp-random 1995/02/23
-\FPseed=\count373
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eqn.sty
-Package: fp-eqn 1995/04/03
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-upn.sty
-Package: fp-upn 1996/10/21
-)
-(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eval.sty
-Package: fp-eval 1995/04/03
-))
-\diagbox@boxa=\box65
-\diagbox@boxb=\box66
-\diagbox@boxm=\box67
-\diagbox@wd=\dimen297
-\diagbox@ht=\dimen298
-\diagbox@insepl=\dimen299
-\diagbox@insepr=\dimen300
-\diagbox@outsepl=\dimen301
-\diagbox@outsepr=\dimen302
-)
-(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count374
-\float@exts=\toks53
-\float@box=\box68
-\@float@everytoks=\toks54
-\@floatcapt=\box69
-))
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks55
-\pgfutil@tempdima=\dimen303
-\pgfutil@tempdimb=\dimen304
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box70
-
-(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks56
-\pgfkeys@temptoks=\toks57
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks58
-))
-\pgf@x=\dimen305
-\pgf@y=\dimen306
-\pgf@xa=\dimen307
-\pgf@ya=\dimen308
-\pgf@xb=\dimen309
-\pgf@yb=\dimen310
-\pgf@xc=\dimen311
-\pgf@yc=\dimen312
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count375
-\c@pgf@countb=\count376
-\c@pgf@countc=\count377
-\c@pgf@countd=\count378
-\t@pgf@toka=\toks59
-\t@pgf@tokb=\toks60
-\t@pgf@tokc=\toks61
- (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-xetex.def
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
-File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)
-\pgfsys@objnum=\count379
-)))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count380
-\pgfsyssoftpath@bigbuffer@items=\count381
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen313
-\pgfmath@count=\count382
-\pgfmath@box=\box71
-\pgfmath@toks=\toks62
-\pgfmath@stack@operand=\toks63
-\pgfmath@stack@operation=\toks64
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
-.code.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count383
-))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen314
-\pgf@picmaxx=\dimen315
-\pgf@picminy=\dimen316
-\pgf@picmaxy=\dimen317
-\pgf@pathminx=\dimen318
-\pgf@pathmaxx=\dimen319
-\pgf@pathminy=\dimen320
-\pgf@pathmaxy=\dimen321
-\pgf@xx=\dimen322
-\pgf@xy=\dimen323
-\pgf@yx=\dimen324
-\pgf@yy=\dimen325
-\pgf@zx=\dimen326
-\pgf@zy=\dimen327
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen328
-\pgf@path@lasty=\dimen329
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen330
-\pgf@shorten@start@additional=\dimen331
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box72
-\pgf@hbox=\box73
-\pgf@layerbox@main=\box74
-\pgf@picture@serial@count=\count384
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen332
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen333
-\pgf@pt@y=\dimen334
-\pgf@pt@temp=\dimen335
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen336
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen337
-\pgf@sys@shading@range@num=\count385
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box75
-))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box76
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen338
-\pgf@nodesepend=\dimen339
-)
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen340
-\pgffor@skip=\dimen341
-\pgffor@stack=\toks65
-\pgffor@toks=\toks66
-))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count386
-\pgfplotmarksize=\dimen342
-)
-\tikz@lastx=\dimen343
-\tikz@lasty=\dimen344
-\tikz@lastxsaved=\dimen345
-\tikz@lastysaved=\dimen346
-\tikzleveldistance=\dimen347
-\tikzsiblingdistance=\dimen348
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count387
-\tikznumberofchildren=\count388
-\tikznumberofcurrentchild=\count389
-\tikz@fig@count=\count390
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count391
-\pgfmatrixcurrentcolumn=\count392
-\pgf@matrix@numberofcolumns=\count393
-)
-\tikz@expandcount=\count394
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-(c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-\@float@every@algorithm=\toks67
-\c@algorithm=\count395
-)
-(c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count396
-\c@ALC@line=\count397
-\c@ALC@rem=\count398
-\c@ALC@depth=\count399
-\ALC@tlm=\skip98
-\algorithmicindent=\skip99
-)
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 25
-.
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 7.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 25.
- (./main.aux
-(./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/chap04.aux)
-(./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
-\openout1 = `main.aux'.
+(Font)              scaled to size 12.045pt on input line 7.
+ (./shuji.aux)
+\openout1 = `shuji.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 25.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 25
-.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 7.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 7.
+
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 25.
-
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 7.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 7.
 
 (c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 25
-.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 7.
+
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 2
-5.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 7
+.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 25.
-\c@mv@tabular=\count400
-\c@mv@boldtabular=\count401
+LaTeX Info: Redefining \selectfont on input line 7.
+\c@mv@tabular=\count361
+\c@mv@boldtabular=\count362
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -2422,7 +2040,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box81
+\AtBeginShipoutBox=\box65
 
 (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -2433,7 +2051,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
 )
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 7.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2441,15 +2059,15 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count402
+\c@section@level=\count363
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
 
-(./main.out) (./main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+(./shuji.out) (./shuji.out)
+\@outlinefile=\write3
+\openout3 = `shuji.out'.
 
 
 *geometry* driver: auto-detecting
@@ -2487,50 +2105,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-ABD: EveryShipout initializing macros (./data/cover.tex)
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 34.
-\g__fontspec_family_SimHei_int=\count403
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimHei/BI" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimHei/B" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimHei/I" (it probably doesn't exist).
-.................................................
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 34.
-
-(c:/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
-File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-)
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 34.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimHei(0)' created for font 'SimHei' with options
-. [Script={CJK}].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"SimHei/OT:script=hani;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 23.48758pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
-\g__fontspec_family_FangSong_GB2312_int=\count404
+\g__fontspec_family_FangSong_GB2312_int=\count364
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -2558,457 +2133,85 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . <->"FangSong_GB2312/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 3
-4.
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong_GB2312/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong_GB2312/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong_GB2312/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FangSong_GB2312(1)' created for font 'FangSong_GB2312' with
+. options [Script={CJK},RawFeature={vertical:}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"FangSong_GB2312/OT:script=hani;language=DFLT;vertical:;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 14.
+Unknown feature `' in font `FangSong_GB2312'.
+[1
 
-(c:/texlive/2017/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+] [2] [3]
+LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 2
+0.
+ (c:/texlive/2017/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
+(Font)              scaled to size 15.05624pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
+(Font)              scaled to size 12.045pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 34.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 34.
+(Font)              scaled to size 9.03374pt on input line 20.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 20.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 34.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 20.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 34.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 20.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimSun/BI" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimSun/B" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "SimSun/I" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(1)' created for font 'SimSun' with options
-. [Script={CJK}].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"SimSun/OT:script=hani;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
- [1
-
-
-
-
-] [2
-
-
-]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 22.08249pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <22.08249> not availabl
-e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 22.08249pt on input line 34.
-LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <22.08249> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 19.8741pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
-LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 14.45389pt on input line 34.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 14.45389pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 34.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 34.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 34.
- [3] [4
-
-
-]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.05249> not availabl
-e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 34.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 34.
-
-[5] [6
-
-
-]
-LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 3
-4.
- (c:/texlive/2017/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12.045> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 34.
- [1
-
-
-] [2
-
-
-]
-[3] (./main.toc [4
-
-
-])
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
- (./data/denotation.tex [5]) [6
-
-
-]
-\openout2 = `data/chap01.aux'.
-
- (./data/chap01.tex
-第1章
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 12.64714pt on input line 3.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
-[1
-
-
-
-]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 14.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 17
-.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.07271pt on input line 17.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 21.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 21.
-
-Overfull \hbox (0.86737pt too wide) in paragraph at lines 17--38
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--45
-
- []
-
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 48.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 48.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 11.74377pt on input line 54.
-[2] [3] [4] [5] [6]) [7] [8]
-\openout2 = `data/chap02.aux'.
-
- (./data/chap02.tex
-第2章
-
-LaTeX Font Warning: Font shape `TU/SimHei(0)/bx/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 11.
-
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 11.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.045pt on input line 12.
-[9
-
-
-
-]
-File: fig/MPTUpdate.eps Graphic file (type eps)
-<fig/MPTUpdate.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 69--71
- [][] 
- []
-
-[10] [11]
-File: fig/SSE.eps Graphic file (type eps)
-<fig/SSE.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 85--87
- [][] 
- []
-
-[12]
-File: fig/MSSE.eps Graphic file (type eps)
-<fig/MSSE.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 97--99
- [][] 
- []
-
-[13]) [14]
-\openout2 = `data/chap03.aux'.
-
- (./data/chap03.tex
-第3章
-File: fig/GS-VSSE.eps Graphic file (type eps)
-<fig/GS-VSSE.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 10--12
- [][] 
- []
-
-[15
-
-
-
-] [16]
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.045pt on input line 39.
- [17]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 57.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 81.
- [18] [19] [20] [21]
-File: fig/inverted-index.eps Graphic file (type eps)
-<fig/inverted-index.eps>
-File: fig/MPT.eps Graphic file (type eps)
-<fig/MPT.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 195--197
- [][] 
- []
-
-File: fig/updateProof.eps Graphic file (type eps)
-<fig/updateProof.eps>
-File: fig/resultProof.eps Graphic file (type eps)
-<fig/resultProof.eps>
-
-Overfull \hbox (22.13368pt too wide) in paragraph at lines 209--210
-[][] 
- []
-
-[22] [23] [24]
-File: fig/security.eps Graphic file (type eps)
-<fig/security.eps>
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 231--233
- [][] 
- []
-
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 237.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 237.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.0pt on input line 237.
-[25]
-Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
-ut line 250.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 264.
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 268.
-Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
-Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [26] [27]
-Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
-File: expr/initialization.eps Graphic file (type eps)
-<expr/initialization.eps>
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.04124pt on input line 331.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.06006pt on input line 331.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.07271pt on input line 331.
- [28]
-File: expr/update.eps Graphic file (type eps)
-<expr/update.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: expr/verifyupdate.eps Graphic file (type eps)
-<expr/verifyupdate.eps>
-[29]
-File: expr/prove.eps Graphic file (type eps)
-<expr/prove.eps>
- [30]
-File: expr/verify.eps Graphic file (type eps)
-<expr/verify.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31]
-File: expr/proof.eps Graphic file (type eps)
-<expr/proof.eps>
- [32]
-File: expr/storage.eps Graphic file (type eps)
-<expr/storage.eps>
-File: expr/comparison.eps Graphic file (type eps)
-<expr/comparison.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[33] [34]) [35]
-\openout2 = `data/chap04.aux'.
-
- (./data/chap04.tex
-第4章
-File: fig/GM-VSSE.eps Graphic file (type eps)
-<fig/GM-VSSE.eps>
-[36
-
-
-
-] [37] [38] [39] [40]
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 80.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 80.
- [41]
-File: fig/timestamp.eps Graphic file (type eps)
-<fig/timestamp.eps>
- [42] [43] [44]
-File: expr/bandwidth.eps Graphic file (type eps)
-<expr/bandwidth.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45]
-File: expr/verify-2.eps Graphic file (type eps)
-<expr/verify-2.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[46] [47]) [48]
-\openout2 = `data/chap05.aux'.
-
- (./data/chap05.tex
-第5章
-[49
-
-
-
-]) [50] (./main.bbl [51
-
-
-
-
-] [52]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 282.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 282.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 282.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 282.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.0pt on input line 282.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.48535pt on input line 282.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 282.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 282.
-) [53]
-\openout2 = `data/ack.aux'.
-
- (./data/ack.tex [54
-
-
-
-]) [55
-
-
-]
-\openout2 = `data/resume.aux'.
-
-
-(./data/resume.tex
-Underfull \hbox (badness 1668) in paragraph at lines 23--24
-\T1/ntxtlf/m/n/12.045 Trans-ac-tions on Par-al-lel and Dis-tributed Sys-tems(TP
-DS), 2018:1-1, DOI:
- []
-
-) [56
-
-
-
-
-]
-\tf@thm=\write6
-\openout6 = `main.thm'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
- (./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux)
-(./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 86.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+\tf@thm=\write4
+\openout4 = `shuji.thm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
+ (./shuji.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 45298 strings out of 492998
- 876089 string characters out of 6137851
- 926607 words of memory out of 5000000
- 48509 multiletter control sequences out of 15000+600000
- 678668 words of font info for 202 fonts, out of 8000000 for 9000
+ 33588 strings out of 492998
+ 619047 string characters out of 6137851
+ 668672 words of memory out of 5000000
+ 37213 multiletter control sequences out of 15000+600000
+ 550478 words of font info for 62 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 66i,12n,96p,10438b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,7n,96p,10439b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (68 pages).
+Output written on shuji.pdf (4 pages).
