@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {3.5}安全性分析}{25}{section.3.5}
 \contentsline {section}{\numberline {3.6}实验结果}{28}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}实验设置}{28}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}实验结果}{28}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}实验结果}{29}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}与SSE方案的对比}{33}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}本章总结}{34}{section.3.7}
 \contentsline {chapter}{\numberline {第4章}多用户下的可验证对称加密搜索方案研究}{36}{chapter.4}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  26 APR 2018 16:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.16)  27 APR 2018 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2813,9 +2813,10 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/it' will be
  [17]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 57.
+ [18]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.0pt on input line 81.
- [18] [19] [20] [21]
+ [19] [20] [21]
 File: fig/inverted-index.eps Graphic file (type eps)
 <fig/inverted-index.eps>
 File: fig/MPT.eps Graphic file (type eps)
@@ -2855,9 +2856,10 @@ Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 264.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 268.
+ [26]
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [26] [27]
+ [27]
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 File: expr/initialization.eps Graphic file (type eps)
 <expr/initialization.eps>
@@ -2870,19 +2872,21 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
  [28]
 File: expr/update.eps Graphic file (type eps)
 <expr/update.eps>
+ [29]
+File: expr/verifyupdate.eps Graphic file (type eps)
+<expr/verifyupdate.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: expr/verifyupdate.eps Graphic file (type eps)
-<expr/verifyupdate.eps>
-[29]
 File: expr/prove.eps Graphic file (type eps)
 <expr/prove.eps>
- [30]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: expr/verify.eps Graphic file (type eps)
 <expr/verify.eps>
-
+[30]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -3000,6 +3004,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 86.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
