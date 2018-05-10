@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -62,6 +62,14 @@ Ateniese G, Burns R, Curtmola R, et~al.
   stores\allowbreak[C]//\allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) , 2007: 598--609.
 
+\bibitem[Curtmola\ et~al.(2008)Curtmola, Khan, Burns, and
+  Ateniese]{curtmola2008mr}
+Curtmola R, Khan O, Burns R, et~al.
+\newblock Mr-pdp: Multiple-replica provable data
+  possession\allowbreak[C]//\allowbreak{}
+\newblock Distributed Computing Systems, 2008. ICDCS'08. The 28th International
+  Conference on : IEEE, 2008: 411--420.
+
 \bibitem[Erway\ et~al.(2015)Erway, K{\"u}p{\c{c}}{\"u}, Papamanthou, and
   Tamassia]{erway2015dynamic}
 Erway C~C, K{\"u}p{\c{c}}{\"u} A, Papamanthou C, et~al.
@@ -81,6 +89,34 @@ Bowers K~D, Juels A, Oprea A.
 \newblock Proofs of retrievability: Theory and
   implementation\allowbreak[C]//\allowbreak{}
 \newblock Proc. of the workshop on Cloud computing security (SCC) , 2009.
+
+\bibitem[Wang\ et~al.(2010{\natexlab{a}})Wang, Wang, Ren, and
+  Lou]{wang2010privacy}
+Wang C, Wang Q, Ren K, et~al.
+\newblock Privacy-preserving public auditing for data storage security in cloud
+  computing\allowbreak[M]//\allowbreak{}
+\newblock Proc. of IEEE International Conference on Computer
+  Communications(INFOCOM) : IEEE, 2010{\natexlab{a}}: 1--9.
+
+\bibitem[Wang\ et~al.(2010{\natexlab{b}})Wang, Ren, Lou, and
+  Li]{wang2010toward}
+Wang C, Ren K, Lou W, et~al.
+\newblock Toward publicly auditable secure cloud data storage
+  services\allowbreak[J].
+\newblock IEEE Network, 2010, 24\penalty0 (4).
+
+\bibitem[Wang\ et~al.(2013)Wang, Chow, Wang, Ren, and Lou]{wang2013privacy}
+Wang C, Chow S~S, Wang Q, et~al.
+\newblock Privacy-preserving public auditing for secure cloud
+  storage\allowbreak[J].
+\newblock IEEE Transactions on Computers, 2013, 62\penalty0 (2): 362--375.
+
+\bibitem[Zhu\ et~al.(2011)Zhu, Wang, Hu, Ahn, Hu, and Yau]{zhu2011dynamic}
+Zhu Y, Wang H, Hu Z, et~al.
+\newblock Dynamic audit services for integrity verification of outsourced
+  storages in clouds\allowbreak[C]//\allowbreak{}
+\newblock Proceedings of the 2011 ACM Symposium on Applied Computing : ACM,
+  2011: 1550--1557.
 
 \bibitem[Song\ et~al.(2000)Song, Wagner, and Perrig]{song2000practical}
 Song D~X, Wagner D, Perrig A.
@@ -170,27 +206,6 @@ Cheng R, Yan J, Guan C, et~al.
 Ogata W, Kurosawa K.
 \newblock Efficient no-dictionary verifiable sse\allowbreak[J].
 \newblock IACR Cryptology ePrint Archive, 2016, 2016: 981.
-
-\bibitem[Wang\ et~al.(2013)Wang, Chow, Wang, Ren, and Lou]{wang2013privacy}
-Wang C, Chow S~S, Wang Q, et~al.
-\newblock Privacy-preserving public auditing for secure cloud
-  storage\allowbreak[J].
-\newblock IEEE Transactions on Computers, 2013, 62\penalty0 (2): 362--375.
-
-\bibitem[Wang\ et~al.(2010{\natexlab{a}})Wang, Wang, Ren, and
-  Lou]{wang2010privacy}
-Wang C, Wang Q, Ren K, et~al.
-\newblock Privacy-preserving public auditing for data storage security in cloud
-  computing\allowbreak[M]//\allowbreak{}
-\newblock Proc. of IEEE International Conference on Computer
-  Communications(INFOCOM) : IEEE, 2010{\natexlab{a}}: 1--9.
-
-\bibitem[Wang\ et~al.(2010{\natexlab{b}})Wang, Ren, Lou, and
-  Li]{wang2010toward}
-Wang C, Ren K, Lou W, et~al.
-\newblock Toward publicly auditable secure cloud data storage
-  services\allowbreak[J].
-\newblock IEEE Network, 2010, 24\penalty0 (4).
 
 \bibitem[Wang\ et~al.(2010{\natexlab{c}})Wang, Cao, Li, Ren, and
   Lou]{wang2010secure}

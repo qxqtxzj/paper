@@ -3,7 +3,7 @@
 \section{研究背景及选题意义}
 随着云计算技术的发展与日渐成熟，云存储技术也被广泛提及。对个人用户来说，云存储技术通过提高存储效率，为其节省了大量本地存储空间，也便于用户随时随地存储数据，同时云存储技术还为多人之间的数据共享提供了高效的解决方案。对于企业用户来说，云存储技术通过虚拟化技术进行了资源整合，提高了存储空间的利用率，同时云存储技术具备的负载均衡、故障冗余等功能也确保了企业级数据的安全。目前，云存储技术主要分为私有云、公有云和混合云三个类别。其中私有云存储技术主要面向企业用户，为其提供一个安全、高效的云存储环境。一般来说，私有云往往部署在企业内部的数据中心内，它将数据维护在企业防火墙之内，因此安全性较高。而公有云存储业务则向互联网开放，其计算资源相对私有云有很大的优势，但其安全性相对私有云大大降低。公有云存储业务主要面向个人消费者，目前几乎任何一家大型互联网公司都在为用户提供公有云存储服务，例如，Google Drive，iCloud，Dropbox，百度云等等。但公有云存储确实导致了许多安全性问题的产生，例如，数据丢失，数据隐私泄露等等。iCloud曾在2014年出现过严重的数据泄露事件，导致用户对其信任度大大降低，Dropbox也出现过类似事件。总体来说，云存储技术虽然使得用户可以随时随地地存取数据，方便了用户之间的数据共享，降低了维护数据的成本~\cite{juels2007pors,ateniese2008scalable,kamara2011cs2,wang2011enabling,stefanov2012iris,kamara2013parallel,sun2015catch}，但其带来的安全问题也不容忽视。云存储带来的安全性问题可以分为以下两类：
 \begin{itemize}
-	\item 可用性问题。要求云服务器保证数据不丢失，用户可以将云服务器作为数据中枢进行数据备份和同步。目前，一般的云服务提供商都采用了多副本的方式来保障数据的可用性，即将数据的多个副本分别写入其他的存储节点，当一个节点发生故障时，其他节点继续提供服务，同时通过其他节点中的数据副本，快速恢复故障节点上丢失的数据。目前，针对数据可用性的相关学术研究包括数据拥有证明 (Proof of Data Possession, PDP)\cite{ateniese2007provable, ateniese2008scalable, erway2015dynamic,zhu2012cooperative} ，数据可恢复性证明 (Proof of Retrievability, PoR)\cite{juels2007pors, bowers2009proofs, stefanov2012iris}等等。
+	\item 可用性问题。要求云服务器保证数据不丢失，用户可以将云服务器作为数据中枢进行数据备份和同步。目前，一般的云服务提供商都采用了多副本的方式来保障数据的可用性，即将数据的多个副本分别写入其他的存储节点，当一个节点发生故障时，其他节点继续提供服务，同时通过其他节点中的数据副本，快速恢复故障节点上丢失的数据。目前，针对数据可用性的相关学术研究包括数据拥有证明 (Proof of Data Possession, PDP)~\cite{ateniese2007provable, ateniese2008scalable,curtmola2008mr, erway2015dynamic,zhu2012cooperative} ，数据可恢复性证明 (Proof of Retrievability, PoR)~\cite{juels2007pors, bowers2009proofs, stefanov2012iris}，数据审计 (Data Auditing)~\cite{wang2010privacy,wang2010toward,wang2013privacy,wang2011enabling,zhu2011dynamic}等等。
 	\item 隐私性问题。要求云服务器保证数据的隐私并且不泄露数据。目前，云服务提供商一般采用数据加密方式对隐私数据进行保护，但数据加密往往会导致数据可用性的降低，例如数据失去可搜索性。因此加密搜索 (Searchable Encryption, SE) 随之产生。加密搜索方案按照采用的秘钥机制不同可以分为两类，一是对称加密搜索 (Searchable Symmetric Encryption, SSE)\cite{song2000practical,curtmola2011searchable,kamara2012dynamic,cash2014dynamic,wang2016searchable}，二是公钥加密搜索 (Public Key Encryption with Keyword Search, PEKS)~\cite{boneh2004public}。
 \end{itemize}
 
@@ -52,7 +52,7 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 
 \section{研究现状}
 \subsection{安全云存储方案}
-可验证的云存储服务已经被广泛的研究过，例如，数据拥有性证明，数据可取回证明~\cite{juels2007pors, bowers2009proofs, stefanov2012iris}，数据审计~\cite{wang2013privacy,wang2010privacy,wang2010toward}等等。这些方案主要侧重于云端存储数据的完整性验证，并支持丢失数据的恢复。注意，这些方案与加密搜索场景下的结果验证是不同的。因为加密搜索的结果验证不仅需要验证某个文件本身的完整性，还需要验证整个搜索结果集合是否完整。而这些方案只能单纯验证数据块的完整性，不支持对搜索结果完整性的验证。
+可验证的云存储服务已经被广泛的研究过，例如，数据拥有性证明~\cite{ateniese2007provable, ateniese2008scalable,curtmola2008mr, erway2015dynamic,zhu2012cooperative}，数据可取回证明~\cite{juels2007pors, bowers2009proofs, stefanov2012iris}，数据审计~\cite{wang2010privacy,wang2010toward,wang2013privacy,wang2011enabling,zhu2011dynamic}等等。这些方案主要侧重于云端存储数据的完整性验证，并支持丢失数据的恢复。注意，这些方案与加密搜索场景下的结果验证是不同的。因为加密搜索的结果验证不仅需要验证某个文件本身的完整性，还需要验证整个搜索结果集合是否完整。而这些方案只能单纯验证数据块的完整性，不支持对搜索结果完整性的验证。
 
 \subsection{安全加密搜索方案}
 加密搜索的概念首次由Song等人~\cite{song2000practical}在2000年提出，他们的方案允许用户将加密后的数据集存储到云端，并同时保证用户在该加密数据集上进行搜索的能力。随后，加密搜索方案被广泛的研究，总体来说可以分为以下两个分支：对称加密搜索 (Searchable Symmetric Encryption, SSE)和公钥加密搜索 (Public Key Encryption with Keyword Search, PEKS)。其中，最经典的对称加密搜索方案~\cite{curtmola2011searchable}由Curtmola等人提出，他们对加密搜索的安全性进行了严格的定义，提出加密搜索方案至少要在面对一个被动敌手(Passive Adversary)的情况下是安全可靠的。他们的方案利用了明文搜索中的倒排索引 (Inverted Index) 思想，在效率和安全性上较已有的方案都有较大提升。目前还有许多不同的对称加密搜索方案实现了不同的搜索功能。例如，动态对称加密搜索 (Dynamic SSE) 方案~\cite{kamara2012dynamic,cash2014dynamic,stefanov2014practical}允许用户更新其数据集， 支持关键字排序 (Ranked Keyword Search) 的对称加密搜索方案~\cite{wang2010secure}允许用户获取根据某一影响因子排序后的搜索结果。最经典的公钥加密搜索方案~\cite{boneh2004public}由Boneh等人提出，他们的方案利用了双线性映射技术。总体来说，公钥加密搜索方案的性能是远远低于对称加密搜索方案的。
@@ -89,7 +89,7 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 
 此外，基于以上方案，本文利用时间戳链(Timestamp Chain)和公钥加密机制，首次提出了一种多用户场景下的通用可验证加密搜索方案。该方案基于单用户方案构建而成，利用了验证索引中的根哈希。数据的持有者需要将根哈希和时间戳绑定加密并进行签名，以此生成一个鉴别符并上传给云服务器。数据搜索用户在搜索时会从云服务器端获取到该鉴别符，并通过解密得到鉴别符中包含的根哈希和时间戳。数据搜索用户通过鉴别符中的时间戳来判断收到的根哈希是否为最新鲜的根哈希，如果验证通过，数据搜索用户即可采用单用户方案中的验证算法来对数据完整性进行验证。该方案通过时间戳链和公钥加密机制，解决了多用户共享数据情况下的数据新鲜性验证问题，实现了多用户下的结果验证。
 
-最后，本文针对以上的两个方案都进行了严格的安全性证明，确保了方案不泄露用户的数据隐私信息。另外，本文通过实验表明，单用户场景和多用户场景下的可验证加密搜索方案效率很高，与加密搜索法方案结合时，给加密搜索引入的额外开销很小，几乎可以忽略不计。
+最后，本文针对以上的两个方案都进行了严格的安全性分析，证明了方案不泄露用户的数据隐私信息。另外，本文通过实验表明，单用户场景和多用户场景下的可验证加密搜索方案效率很高，与加密搜索法方案结合时，给加密搜索引入的额外开销很小。
 
 
 \section{本文的结构安排}

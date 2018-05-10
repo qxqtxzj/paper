@@ -74,7 +74,7 @@
   \begin{itemize}
     \item 提出了一种单用户场景下的可验证对称加密搜索框架，并在此基础上设计了结果验证算法，该算法能同时保证数据新鲜性和数据完整性。该框架支持用户数据动态更新，并且将验证索引从对称加密搜索方案中解耦，使其可以为任何加密搜索方案提供结果验证功能。
     \item 提出了一种多用户场景下的可验证对称加密搜索框架。该框架支持单用户写，多用户读，确保了多用户场景下的数据新鲜性，并实现了数据共享场景下的结果验证。
-    \item 本文采用了一个开源数据集作为测试数据，在本地环境对该框架进行了实验测试。安全性分析和实验表明，本文提出的可验证对称加密搜索框架不泄露数据隐私信息，并且给对称加密搜索方案引入的额外计算开销和通信开销很小，几乎可以忽略不计。
+    \item 基于开源数据集，对该框架进行了实验测试。安全性分析和实验表明，本文提出的可验证对称加密搜索框架不泄露数据隐私信息，并且给对称加密搜索方案引入的额外计算开销和通信开销很小，几乎可以忽略不计。
   \end{itemize}
 
 \end{cabstract}
@@ -96,7 +96,7 @@
   \begin{itemize}
     \item We proposed a verifiable SSE framework in single-user model and designed the result verification algorithms. The framework seperate the verification index from the SSE construction and can provides generic verification for any SSE schemes. The algorithms guaranteed both data freshness and data integrity with support of data updates.
     \item We proposed the first verifiable SSE framework in the single-writer and multiple-reader model, which ensures data freshness across multiple users and provides result verification under data sharing scenario.
-    \item We implemented our framework in a local enviroment and fed it with an open-source data set. Rigorous analysis and experimental evaluations show that our shceme is secure and introduces small overhead for result verification.
+    \item We implemented our framework and fed it with an open-source data set. Security analysis and experimental evaluations show that our shceme is secure and introduces small overhead for result verification.
   \end{itemize}
 \end{eabstract}
 

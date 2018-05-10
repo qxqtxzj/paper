@@ -28,7 +28,13 @@ You can't pop an empty literal stack for entry sun2015catch
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry ateniese2007provable
 while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry curtmola2008mr
+while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry bowers2009proofs
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry wang2010privacy
+while executing---line 3235 of file thuthesis-numeric.bst
+You can't pop an empty literal stack for entry zhu2011dynamic
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry song2000practical
 while executing---line 3235 of file thuthesis-numeric.bst
@@ -47,8 +53,6 @@ while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry stefanov2014practical
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry cheng2015verifiable
-while executing---line 3235 of file thuthesis-numeric.bst
-You can't pop an empty literal stack for entry wang2010privacy
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry wang2010secure
 while executing---line 3235 of file thuthesis-numeric.bst
@@ -70,45 +74,45 @@ You can't pop an empty literal stack for entry bellare1994incremental
 while executing---line 3235 of file thuthesis-numeric.bst
 You can't pop an empty literal stack for entry mills2010network
 while executing---line 3235 of file thuthesis-numeric.bst
-You've used 50 entries,
+You've used 52 entries,
             3391 wiz_defined-function locations,
-            1026 strings with 14681 characters,
-and the built_in function-call counts, 338506 in all, are:
-= -- 44986
-> -- 32320
-< -- 32443
-+ -- 11810
-- -- 420
-* -- 1708
-:= -- 37812
-add.period$ -- 147
-call.type$ -- 50
-change.case$ -- 100
-chr.to.int$ -- 10493
-cite$ -- 56
-duplicate$ -- 1116
-empty$ -- 3050
-format.name$ -- 674
-if$ -- 102387
+            1036 strings with 15164 characters,
+and the built_in function-call counts, 355101 in all, are:
+= -- 47194
+> -- 33909
+< -- 34034
++ -- 12391
+- -- 442
+* -- 1800
+:= -- 39669
+add.period$ -- 153
+call.type$ -- 52
+change.case$ -- 104
+chr.to.int$ -- 11006
+cite$ -- 58
+duplicate$ -- 1162
+empty$ -- 3198
+format.name$ -- 710
+if$ -- 107406
 int.to.chr$ -- 3
-int.to.str$ -- 51
+int.to.str$ -- 53
 missing$ -- 0
-newline$ -- 256
-num.names$ -- 141
-pop$ -- 525
+newline$ -- 266
+num.names$ -- 147
+pop$ -- 545
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 52
 quote$ -- 0
-skip$ -- 43361
+skip$ -- 45479
 stack$ -- 0
-substring$ -- 11951
-swap$ -- 56
-text.length$ -- 515
+substring$ -- 12558
+swap$ -- 58
+text.length$ -- 541
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 616
+type$ -- 638
 warning$ -- 3
-while$ -- 665
+while$ -- 699
 width$ -- 0
-write$ -- 740
-(There were 28 error messages)
+write$ -- 770
+(There were 30 error messages)
