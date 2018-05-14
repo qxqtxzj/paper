@@ -8,15 +8,15 @@
 
 \bibitem[Juels\ et~al.(2007)Juels and Kaliski~Jr]{juels2007pors}
 Juels A, Kaliski~Jr B~S.
-\newblock Pors: Proofs of retrievability for large
-  files\allowbreak[C]//\allowbreak{}
+\newblock Pors: Proofs of retrievability for large files\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) , 2007: 584--597.
 
 \bibitem[Ateniese\ et~al.(2008)Ateniese, Di~Pietro, Mancini, and
   Tsudik]{ateniese2008scalable}
 Ateniese G, Di~Pietro R, Mancini L~V, et~al.
-\newblock Scalable and efficient provable data
-  possession\allowbreak[C]//\allowbreak{}
+\newblock Scalable and efficient provable data possession\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of the International Conference on Security and privacy in
   communication netowrks (SecureComm) , 2008: 9.
 
@@ -37,36 +37,36 @@ Wang Q, Wang C, Ren K, et~al.
   Oprea]{stefanov2012iris}
 Stefanov E, van Dijk M, Juels A, et~al.
 \newblock Iris: A scalable cloud file system with efficient integrity
-  checks\allowbreak[C]//\allowbreak{}
+  checks\allowbreak[C]. \allowbreak{}
 \newblock Proc. of Annual Computer Security Applications Conference (ACSAC) ,
   2012.
 
 \bibitem[Kamara\ et~al.(2013)Kamara and Papamanthou]{kamara2013parallel}
 Kamara S, Papamanthou C.
-\newblock Parallel and dynamic searchable symmetric
-  encryption\allowbreak[C]//\allowbreak{}
+\newblock Parallel and dynamic searchable symmetric encryption\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of International Conference on Financial Cryptography and Data
   Security(FC) : Springer, 2013: 258--274.
 
 \bibitem[Sun\ et~al.(2015)Sun, Liu, Lou, Hou, and Li]{sun2015catch}
 Sun W, Liu X, Lou W, et~al.
 \newblock Catch you if you lie to me: Efficient verifiable conjunctive keyword
-  search over large dynamic encrypted cloud data\allowbreak[C]//\allowbreak{}
+  search over large dynamic encrypted cloud data\allowbreak[C]. \allowbreak{}
 \newblock Proc. of IEEE International Conference on Computer
   Communications(INFOCOM) : IEEE, 2015: 2110--2118.
 
 \bibitem[Ateniese\ et~al.(2007)Ateniese, Burns, Curtmola, Herring, Kissner,
   Peterson, and Song]{ateniese2007provable}
 Ateniese G, Burns R, Curtmola R, et~al.
-\newblock Provable data possession at untrusted
-  stores\allowbreak[C]//\allowbreak{}
+\newblock Provable data possession at untrusted stores\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) , 2007: 598--609.
 
 \bibitem[Curtmola\ et~al.(2008)Curtmola, Khan, Burns, and
   Ateniese]{curtmola2008mr}
 Curtmola R, Khan O, Burns R, et~al.
-\newblock Mr-pdp: Multiple-replica provable data
-  possession\allowbreak[C]//\allowbreak{}
+\newblock Mr-pdp: Multiple-replica provable data possession\allowbreak[C].
+  \allowbreak{}
 \newblock Distributed Computing Systems, 2008. ICDCS'08. The 28th International
   Conference on : IEEE, 2008: 411--420.
 
@@ -86,15 +86,15 @@ Zhu Y, Hu H, Ahn G~J, et~al.
 
 \bibitem[Bowers\ et~al.(2009)Bowers, Juels, and Oprea]{bowers2009proofs}
 Bowers K~D, Juels A, Oprea A.
-\newblock Proofs of retrievability: Theory and
-  implementation\allowbreak[C]//\allowbreak{}
+\newblock Proofs of retrievability: Theory and implementation\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of the workshop on Cloud computing security (SCC) , 2009.
 
 \bibitem[Wang\ et~al.(2010{\natexlab{a}})Wang, Wang, Ren, and
   Lou]{wang2010privacy}
 Wang C, Wang Q, Ren K, et~al.
 \newblock Privacy-preserving public auditing for data storage security in cloud
-  computing\allowbreak[M]//\allowbreak{}
+  computing\allowbreak[M]. \allowbreak{}
 \newblock Proc. of IEEE International Conference on Computer
   Communications(INFOCOM) : IEEE, 2010{\natexlab{a}}: 1--9.
 
@@ -114,14 +114,14 @@ Wang C, Chow S~S, Wang Q, et~al.
 \bibitem[Zhu\ et~al.(2011)Zhu, Wang, Hu, Ahn, Hu, and Yau]{zhu2011dynamic}
 Zhu Y, Wang H, Hu Z, et~al.
 \newblock Dynamic audit services for integrity verification of outsourced
-  storages in clouds\allowbreak[C]//\allowbreak{}
+  storages in clouds\allowbreak[C]. \allowbreak{}
 \newblock Proceedings of the 2011 ACM Symposium on Applied Computing : ACM,
   2011: 1550--1557.
 
 \bibitem[Song\ et~al.(2000)Song, Wagner, and Perrig]{song2000practical}
 Song D~X, Wagner D, Perrig A.
-\newblock Practical techniques for searches on encrypted
-  data\allowbreak[C]//\allowbreak{}
+\newblock Practical techniques for searches on encrypted data\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of Security and Privacy(S\&P) : IEEE, 2000: 44--55.
 
 \bibitem[Curtmola\ et~al.(2011)Curtmola, Garay, Kamara, and
@@ -134,7 +134,7 @@ Curtmola R, Garay J, Kamara S, et~al.
 \bibitem[Kamara\ et~al.(2012)Kamara, Papamanthou, and
   Roeder]{kamara2012dynamic}
 Kamara S, Papamanthou C, Roeder T.
-\newblock Dynamic searchable symmetric encryption\allowbreak[C]//\allowbreak{}
+\newblock Dynamic searchable symmetric encryption\allowbreak[C]. \allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) : ACM, 2012:
   965--976.
 
@@ -142,7 +142,7 @@ Kamara S, Papamanthou C, Roeder T.
   Steiner]{cash2014dynamic}
 Cash D, Jaeger J, Jarecki S, et~al.
 \newblock Dynamic searchable encryption in very-large databases: Data
-  structures and implementation\allowbreak[C]//\allowbreak{}
+  structures and implementation\allowbreak[C]. \allowbreak{}
 \newblock Proc. of the Network and Distributed System Security Symposium
   (NDSS): volume~14 : Citeseer, 2014: 23--26.
 
@@ -155,8 +155,8 @@ Wang Q, He M, Du M, et~al.
 \bibitem[Boneh\ et~al.(2004)Boneh, Di~Crescenzo, Ostrovsky, and
   Persiano]{boneh2004public}
 Boneh D, Di~Crescenzo G, Ostrovsky R, et~al.
-\newblock Public key encryption with keyword
-  search\allowbreak[C]//\allowbreak{}
+\newblock Public key encryption with keyword search\allowbreak[C].
+  \allowbreak{}
 \newblock International conference on the theory and applications of
   cryptographic techniques(EUROCRYPT) : Springer, 2004: 506--522.
 
@@ -168,21 +168,21 @@ Bost R, Fouque P~A, Pointcheval D.
 
 \bibitem[Kurosawa\ et~al.(2012)Kurosawa and Ohtaki]{kurosawa2012uc}
 Kurosawa K, Ohtaki Y.
-\newblock Uc-secure searchable symmetric
-  encryption\allowbreak[C]//\allowbreak{}
+\newblock Uc-secure searchable symmetric encryption\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of International Conference on Financial Cryptography and Data
   Security (FC) , 2012.
 
 \bibitem[Chai\ et~al.(2012)Chai and Gong]{chai2012verifiable}
 Chai Q, Gong G.
 \newblock Verifiable symmetric searchable encryption for
-  semi-honest-but-curious cloud servers\allowbreak[C]//\allowbreak{}
+  semi-honest-but-curious cloud servers\allowbreak[C]. \allowbreak{}
 \newblock Proc. of International Conference on Communications (ICC) , 2012.
 
 \bibitem[Kurosawa\ et~al.(2013)Kurosawa and Ohtaki]{kurosawa2013update}
 Kurosawa K, Ohtaki Y.
 \newblock How to update documents verifiably in searchable symmetric
-  encryption\allowbreak[C]//\allowbreak{}
+  encryption\allowbreak[C]. \allowbreak{}
 \newblock Proc. of International Conference on Cryptology And Network Security
   (CANS) , 2013.
 
@@ -190,7 +190,7 @@ Kurosawa K, Ohtaki Y.
   Shi]{stefanov2014practical}
 Stefanov E, Papamanthou C, Shi E.
 \newblock Practical dynamic searchable encryption with small
-  leakage\allowbreak[C]//\allowbreak{}
+  leakage\allowbreak[C]. \allowbreak{}
 \newblock Proc. of the Network and Distributed System Security Symposium
   (NDSS): volume~71 , 2014: 72--75.
 
@@ -198,7 +198,7 @@ Stefanov E, Papamanthou C, Shi E.
   Ren]{cheng2015verifiable}
 Cheng R, Yan J, Guan C, et~al.
 \newblock Verifiable searchable symmetric encryption from indistinguishability
-  obfuscation\allowbreak[C]//\allowbreak{}
+  obfuscation\allowbreak[C]. \allowbreak{}
 \newblock Proc. of the ACM Symposium on Information, Computer and
   Communications Security(AsiaCCS) : ACM, 2015: 621--626.
 
@@ -210,22 +210,22 @@ Ogata W, Kurosawa K.
 \bibitem[Wang\ et~al.(2010{\natexlab{c}})Wang, Cao, Li, Ren, and
   Lou]{wang2010secure}
 Wang C, Cao N, Li J, et~al.
-\newblock Secure ranked keyword search over encrypted cloud
-  data\allowbreak[C]//\allowbreak{}
+\newblock Secure ranked keyword search over encrypted cloud data\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of IEEE International Conference on Distributed Computing
   Systems (ICDCS) , 2010{\natexlab{c}}.
 
 \bibitem[Merkle(1987)]{merkle1987digital}
 Merkle R~C.
 \newblock A digital signature based on a conventional encryption
-  function\allowbreak[C]//\allowbreak{}
+  function\allowbreak[C]. \allowbreak{}
 \newblock International conference on the theory and applications of
   cryptographic techniques(EUROCRYPT) , 1987.
 
 \bibitem[Papamanthou\ et~al.(2008)Papamanthou, Tamassia, and
   Triandopoulos]{papamanthou2008authenticated}
 Papamanthou C, Tamassia R, Triandopoulos N.
-\newblock Authenticated hash tables\allowbreak[C]//\allowbreak{}
+\newblock Authenticated hash tables\allowbreak[C]. \allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) , 2008.
 
 \bibitem[Pugh(1990)]{pugh1990skip}
@@ -238,21 +238,21 @@ Pugh W.
   Schwerin]{goodrich2001implementation}
 Goodrich M~T, Tamassia R, Schwerin A.
 \newblock Implementation of an authenticated dictionary with skip lists and
-  commutative hashing\allowbreak[C]//\allowbreak{}
+  commutative hashing\allowbreak[C]. \allowbreak{}
 \newblock Proc. of DARPA Information Survivability Conference \& Exposition
   (DISCEX) , 2001.
 
 \bibitem[Zheng\ et~al.(2014)Zheng, Xu, and Ateniese]{zheng2014vabks}
 Zheng Q, Xu S, Ateniese G.
 \newblock Vabks: verifiable attribute-based keyword search over outsourced
-  encrypted data\allowbreak[C]//\allowbreak{}
+  encrypted data\allowbreak[C]. \allowbreak{}
 \newblock Proc. of IEEE International Conference on Computer
   Communications(INFOCOM) , 2014.
 
 \bibitem[Liu\ et~al.(2014)Liu, Wang, Ma, and Nie]{liu2014efficient}
 Liu P, Wang J, Ma H, et~al.
 \newblock Efficient verifiable public key encryption with keyword search based
-  on kp-abe\allowbreak[C]//\allowbreak{}
+  on kp-abe\allowbreak[C]. \allowbreak{}
 \newblock Proc. of Broadband and Wireless Computing, Communication and
   Applications (BWCCA) , 2014.
 
@@ -265,8 +265,8 @@ Yang Y, Bao F, Ding X, et~al.
 \bibitem[Jarecki\ et~al.(2013)Jarecki, Jutla, Krawczyk, Rosu, and
   Steiner]{jarecki2013outsourced}
 Jarecki S, Jutla C, Krawczyk H, et~al.
-\newblock Outsourced symmetric private information
-  retrieval\allowbreak[C]//\allowbreak{}
+\newblock Outsourced symmetric private information retrieval\allowbreak[C].
+  \allowbreak{}
 \newblock Proc. of Computer and Communications Security(CCS) : ACM, 2013:
   875--888.
 
@@ -274,7 +274,7 @@ Jarecki S, Jutla C, Krawczyk H, et~al.
   Yuen]{sun2016efficient}
 Sun S~F, Liu J~K, Sakzad A, et~al.
 \newblock An efficient non-interactive multi-client searchable encryption with
-  support for boolean queries\allowbreak[C]//\allowbreak{}
+  support for boolean queries\allowbreak[C]. \allowbreak{}
 \newblock Proc. of European Symposium on Research in Computer Security(ESORICS)
   : Springer, 2016: 154--172.
 
@@ -282,7 +282,7 @@ Sun S~F, Liu J~K, Sakzad A, et~al.
   Goldwasser]{bellare1994incremental}
 Bellare M, Goldreich O, Goldwasser S.
 \newblock Incremental cryptography: The case of hashing and
-  signing\allowbreak[C]//\allowbreak{}
+  signing\allowbreak[C]. \allowbreak{}
 \newblock Annual International Cryptology Conference(CRYPTO) : Springer, 1994:
   216--233.
 

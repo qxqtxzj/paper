@@ -1,4 +1,4 @@
-\chapter{问题描述与先验知识}
+\chapter{问题描述与背景知识}
 \label{cha:problem}
 本章将首先对论文的攻击模型，论文需要解决的问题和论文预计达到的目标进行定义，然后对论文中需要用到的先验知识进行介绍。
 
@@ -52,7 +52,7 @@
 
   %This paper aims to provide result verification for any SSE schemes, including but not limited to~\cite{stefanov2014practical,cash2014dynamic,kamara2012dynamic}. Therefore, we treat an existing SSE scheme as a black box such that our proposed scheme can be applied to these SSE schemes for result verification.
 
-\section{先验知识}
+\section{背景知识}
 
 \subsection{增量哈希}
 增量哈希 (Incremental Hash, IH) 由Bellare等人提出~\cite{bellare1994incremental}，并被已有的加密搜索方案~\cite{kamara2011cs2}所使用。增量哈希函数是一个抗碰撞的函数：$IH: \{0,1\}^* \rightarrow \{0,1\}^l$，两个随机字符串通过增量哈希函数相加或相减后，生成的哈希值不会产生碰撞。举例来说，假设 $D_w$ 是一个包含关键字 $w$ 的数据集合，它的增量哈希值为 $H$。 当一个新数据 $d$ 加入到 $D_w$ 中后， 新的数据集合变为 $D_w'$ ，即 $D_w+d$。对于原有数据集 $D_w$ 来说，数据 $d$ 的加入只是微小的变动。增量哈希函数可以基于数据 $d$ 和现有哈希值 $H$，并通过“加法”操作快速的计算出新文件集 $D_w'$ 的一个抗碰撞哈希值，而不需要基于新文件集 $D_w'$ 重新计算哈希值，这使得哈希操作的性能得到了较大的提升。
