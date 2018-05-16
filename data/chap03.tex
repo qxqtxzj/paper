@@ -422,17 +422,17 @@ $Verify$算法由数据持有者执行，数据持有者在收到云服务器返
   \label{tab:compareSSE}
   %\begin{threeparttable}
   \begin{tabular}{c c c c}
-    \hline
+    \toprule[1.5pt]
     通信开销    & DSSE~\cite{cash2014dynamic} &\single       &  占比 \\
-    \hline
+    \midrule[1pt]
     搜索令牌          & 390 B                 & 32 B         & 8.2\%\\
 
     搜索结果/结果证明   & 53 KB              & 3 KB         & 5.7\%\\
-    \hline
+    \bottomrule[1.5pt]
   \end{tabular}
 \end{center}
 \end{table}
-\vspace{-0.075in}
+\vspace{-0.2in}
 结果显示，DSSE方案的搜索结果大小平均为53KB左右，而我们的结果证明大小仅仅为3KB左右，即由\single 方案引入的额外开销低于6\%。此外，DSSE方案~\cite{cash2014dynamic}生成的令牌大小平均为390B，而\single 方案生成的令牌仅为32B，即由\single 方案引入的额外开销低于9\%。这些实验结果充分表明了，\single 方案是实用且高效的。
 
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  16 MAY 2018 00:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.29)  16 MAY 2018 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2363,77 +2363,75 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip99
 \algorithmicindent=\skip100
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 25
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 27
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 25.
- (./main.aux
-(./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux) (./data/chap04.aux)
-(./data/chap05.aux) (./data/ack.aux) (./data/resume.aux))
+(Font)              scaled to size 12.045pt on input line 27.
+ (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 25.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 25
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 27.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 27
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 25.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 27.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 27.
 
 (c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 25
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 27
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 2
-5.
+7.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 25.
+LaTeX Info: Redefining \selectfont on input line 27.
 \c@mv@tabular=\count403
 \c@mv@boldtabular=\count404
 Package caption Info: Begin \AtBeginDocument code.
@@ -2456,7 +2454,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
 )
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2466,9 +2464,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count405
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -2512,7 +2510,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 
 ABD: EveryShipout initializing macros (./data/cover.tex)
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 34.
+(Font)              scaled to size 26.09749pt on input line 36.
 \g__fontspec_family_SimHei_int=\count406
 .................................................
 . fontspec info: "no-font-shape"
@@ -2529,13 +2527,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . 
 . Could not resolve font "SimHei/I" (it probably doesn't exist).
 .................................................
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 34.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 36.
 
 (c:/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 34.
+(Font)              scaled to size 10.84042pt on input line 36.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2548,11 +2546,11 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 23.48758pt on input line 34.
+(Font)              scaled to size 23.48758pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 34.
+(Font)              scaled to size 18.06749pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
+(Font)              scaled to size 16.06pt on input line 36.
 \g__fontspec_family_FangSong_GB2312_int=\count407
 .................................................
 . fontspec info: "no-font-shape"
@@ -2582,30 +2580,30 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 3
-4.
+6.
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
+(Font)              scaled to size 16.06pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
+(Font)              scaled to size 14.05249pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 34.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 34.
+(Font)              scaled to size 10.53937pt on input line 36.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 36.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 34.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 36.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 34.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 36.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/newtx/untxsyc.fd
@@ -2647,67 +2645,67 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 22.08249pt on input line 34.
+(Font)              scaled to size 22.08249pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <22.08249> not availabl
 e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 22.08249pt on input line 34.
+(Font)              scaled to size 22.08249pt on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <22.08249> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 19.8741pt on input line 34.
+(Font)              scaled to size 19.8741pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.06pt on input line 34.
+(Font)              scaled to size 16.06pt on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <16.06> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 14.45389pt on input line 34.
+(Font)              scaled to size 14.45389pt on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 14.45389pt on input line 34.
+(Font)              scaled to size 14.45389pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 34.
+(Font)              scaled to size 15.05624pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 34.
+(Font)              scaled to size 15.05624pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
+(Font)              scaled to size 12.045pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 34.
+(Font)              scaled to size 9.03374pt on input line 36.
  [3] [4
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
+(Font)              scaled to size 14.05249pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.05249> not availabl
 e
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 34.
+(Font)              scaled to size 14.05249pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 34.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 34.
+(Font)              scaled to size 6.0pt on input line 36.
 
 [5] [6
 
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 3
-4.
+6.
  (c:/texlive/2017/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
+(Font)              scaled to size 12.045pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12.045> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 34.
+(Font)              scaled to size 12.045pt on input line 36.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 34.
+(Font)              scaled to size 10.53937pt on input line 36.
  [1
 
 
@@ -2732,13 +2730,241 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 第1章
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 12.64714pt on input line 3.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
+
+Package natbib Warning: Citation `juels2007pors' on page 1 undefined on input l
+ine 4.
+
+
+Package natbib Warning: Citation `ateniese2008scalable' on page 1 undefined on 
+input line 4.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 1 undefined on input l
+ine 4.
+
+
+Package natbib Warning: Citation `wang2011enabling' on page 1 undefined on inpu
+t line 4.
+
+
+Package natbib Warning: Citation `stefanov2012iris' on page 1 undefined on inpu
+t line 4.
+
+
+Package natbib Warning: Citation `kamara2013parallel' on page 1 undefined on in
+put line 4.
+
+
+Package natbib Warning: Citation `sun2015catch' on page 1 undefined on input li
+ne 4.
+
+
+Package natbib Warning: Citation `ateniese2007provable' on page 1 undefined on 
+input line 6.
+
+
+Package natbib Warning: Citation `ateniese2008scalable' on page 1 undefined on 
+input line 6.
+
+
+Package natbib Warning: Citation `curtmola2008mr' on page 1 undefined on input 
+line 6.
+
+
+Package natbib Warning: Citation `erway2015dynamic' on page 1 undefined on inpu
+t line 6.
+
+
+Package natbib Warning: Citation `zhu2012cooperative' on page 1 undefined on in
+put line 6.
+
+
+Package natbib Warning: Citation `juels2007pors' on page 1 undefined on input l
+ine 6.
+
+
+Package natbib Warning: Citation `bowers2009proofs' on page 1 undefined on inpu
+t line 6.
+
+
+Package natbib Warning: Citation `stefanov2012iris' on page 1 undefined on inpu
+t line 6.
+
+
+Package natbib Warning: Citation `wang2010privacy' on page 1 undefined on input
+ line 6.
+
+
+Package natbib Warning: Citation `wang2010toward' on page 1 undefined on input 
+line 6.
+
+
+Package natbib Warning: Citation `wang2013privacy' on page 1 undefined on input
+ line 6.
+
+
+Package natbib Warning: Citation `wang2011enabling' on page 1 undefined on inpu
+t line 6.
+
+
+Package natbib Warning: Citation `zhu2011dynamic' on page 1 undefined on input 
+line 6.
+
+
+Package natbib Warning: Citation `song2000practical' on page 1 undefined on inp
+ut line 7.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 1 undefined o
+n input line 7.
+
+
+Package natbib Warning: Citation `kamara2012dynamic' on page 1 undefined on inp
+ut line 7.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 1 undefined on input
+ line 7.
+
+
+Package natbib Warning: Citation `wang2016searchable' on page 1 undefined on in
+put line 7.
+
+
+Package natbib Warning: Citation `boneh2004public' on page 1 undefined on input
+ line 7.
+
 [1
 
 
 
 ]
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 2 undefined o
+n input line 10.
+
+
+Package natbib Warning: Citation `kamara2012dynamic' on page 2 undefined on inp
+ut line 10.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 2 undefined on input
+ line 10.
+
+
+Package natbib Warning: Citation `sun2015catch' on page 2 undefined on input li
+ne 10.
+
+
+Package natbib Warning: Citation `bost2016verifiable' on page 2 undefined on in
+put line 10.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 2 undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 13.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 13.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 13.
+
+
+Package natbib Warning: Citation `bost2016verifiable' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 2 undefined on input 
+line 13.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 13.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 13.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 2 undefined on input 
+line 13.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 2 undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 13.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 2 undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 13.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 2 undefined on input l
+ine 14.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 14.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 14.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 14.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 14.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 14.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 2 undefined on input 
+line 14.
+
+
+Package natbib Warning: Citation `bost2016verifiable' on page 2 undefined on in
+put line 14.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 14.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 14.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -2747,6 +2973,10 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.03374pt on input line 14.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.03374pt on input line 14.
+
+LaTeX Warning: Reference `tab:comparison' on page 2 undefined on input line 14.
+
+
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 11.04124pt on input line 20.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 23
@@ -2757,14 +2987,44 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.06006pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.07271pt on input line 23.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 27.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <11.04124> not availabl
+e
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.04124pt on input line 27.
+
+Package natbib Warning: Citation `kamara2011cs2' on page 2 undefined on input l
+ine 27.
+
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 11.04124pt on input line 27.
 
-Overfull \hbox (0.86737pt too wide) in paragraph at lines 23--44
- [] 
- []
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 29.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 31.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 33.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 35.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 37.
+
+
+Package natbib Warning: Citation `bost2016verifiable' on page 2 undefined on in
+put line 39.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 2 undefined on input 
+line 41.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.0pt on input line 47.
@@ -2772,8 +3032,51 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.0pt on input line 47.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 47.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 47.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10.53937> not availabl
+e
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.53937pt on input line 47.
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 47.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 47.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 47.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 2 undefined on input 
+line 47.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 2 undefined on input 
+line 49.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 2 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 2 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 49.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 2 undefined on i
+nput line 49.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 49.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
@@ -2781,7 +3084,276 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 11.74377pt on input line 54.
-[2] [3] [4] [5] [6]) [7] [8]
+
+Package natbib Warning: Citation `ateniese2007provable' on page 2 undefined on 
+input line 55.
+
+
+Package natbib Warning: Citation `ateniese2008scalable' on page 2 undefined on 
+input line 55.
+
+
+Package natbib Warning: Citation `curtmola2008mr' on page 2 undefined on input 
+line 55.
+
+
+Package natbib Warning: Citation `erway2015dynamic' on page 2 undefined on inpu
+t line 55.
+
+
+Package natbib Warning: Citation `zhu2012cooperative' on page 2 undefined on in
+put line 55.
+
+
+Package natbib Warning: Citation `juels2007pors' on page 2 undefined on input l
+ine 55.
+
+
+Package natbib Warning: Citation `bowers2009proofs' on page 2 undefined on inpu
+t line 55.
+
+
+Package natbib Warning: Citation `stefanov2012iris' on page 2 undefined on inpu
+t line 55.
+
+
+Package natbib Warning: Citation `wang2010privacy' on page 2 undefined on input
+ line 55.
+
+
+Package natbib Warning: Citation `wang2010toward' on page 2 undefined on input 
+line 55.
+
+
+Package natbib Warning: Citation `wang2013privacy' on page 2 undefined on input
+ line 55.
+
+
+Package natbib Warning: Citation `wang2011enabling' on page 2 undefined on inpu
+t line 55.
+
+
+Package natbib Warning: Citation `zhu2011dynamic' on page 2 undefined on input 
+line 55.
+
+
+Package natbib Warning: Citation `song2000practical' on page 2 undefined on inp
+ut line 58.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 2 undefined o
+n input line 58.
+
+
+Package natbib Warning: Citation `kamara2012dynamic' on page 2 undefined on inp
+ut line 58.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 2 undefined on input
+ line 58.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 2 undefined on
+ input line 58.
+
+
+Package natbib Warning: Citation `wang2010secure' on page 2 undefined on input 
+line 58.
+
+
+Package natbib Warning: Citation `boneh2004public' on page 2 undefined on input
+ line 58.
+
+[2] [3]
+
+Package natbib Warning: Citation `merkle1987digital' on page 4 undefined on inp
+ut line 62.
+
+
+Package natbib Warning: Citation `papamanthou2008authenticated' on page 4 undef
+ined on input line 62.
+
+
+Package natbib Warning: Citation `pugh1990skip' on page 4 undefined on input li
+ne 62.
+
+
+Package natbib Warning: Citation `goodrich2001implementation' on page 4 undefin
+ed on input line 62.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 4 undefined on input l
+ine 62.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 4 undefined on input l
+ine 66.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 4 undefined on in
+put line 68.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 4 undefined on in
+put line 68.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `kurosawa2012uc' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 4 undefined on in
+put line 68.
+
+
+Package natbib Warning: Citation `ogataefficient' on page 4 undefined on input 
+line 68.
+
+
+Package natbib Warning: Citation `chai2012verifiable' on page 4 undefined on in
+put line 68.
+
+
+Package natbib Warning: Citation `cheng2015verifiable' on page 4 undefined on i
+nput line 68.
+
+[4]
+
+Package natbib Warning: Citation `stefanov2014practical' on page 5 undefined on
+ input line 70.
+
+
+Package natbib Warning: Citation `bost2016verifiable' on page 5 undefined on in
+put line 70.
+
+
+Package natbib Warning: Citation `zheng2014vabks' on page 5 undefined on input 
+line 78.
+
+
+Package natbib Warning: Citation `liu2014efficient' on page 5 undefined on inpu
+t line 78.
+
+
+Package natbib Warning: Citation `sun2015catch' on page 5 undefined on input li
+ne 78.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 5 undefined o
+n input line 81.
+
+
+Package natbib Warning: Citation `yang2009multiuser' on page 5 undefined on inp
+ut line 81.
+
+
+Package natbib Warning: Citation `jarecki2013outsourced' on page 5 undefined on
+ input line 81.
+
+
+Package natbib Warning: Citation `sun2016efficient' on page 5 undefined on inpu
+t line 81.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 5 undefined o
+n input line 81.
+
+
+Package natbib Warning: Citation `yang2009multiuser' on page 5 undefined on inp
+ut line 81.
+
+
+Package natbib Warning: Citation `jarecki2013outsourced' on page 5 undefined on
+ input line 81.
+
+
+Package natbib Warning: Citation `sun2016efficient' on page 5 undefined on inpu
+t line 81.
+
+
+LaTeX Warning: Reference `cha:multi-user' on page 5 undefined on input line 81.
+
+
+[5]
+
+Package natbib Warning: Citation `stefanov2014practical' on page 6 undefined on
+ input line 87.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 6 undefined on input
+ line 87.
+
+
+Package natbib Warning: Citation `kamara2012dynamic' on page 6 undefined on inp
+ut line 87.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 6 undefined on input l
+ine 88.
+
+
+Package natbib Warning: Citation `kurosawa2013update' on page 6 undefined on in
+put line 88.
+
+
+Package natbib Warning: Citation `stefanov2014practical' on page 6 undefined on
+ input line 88.
+
+[6]
+
+LaTeX Warning: Reference `cha:intro' on page 7 undefined on input line 96.
+
+
+LaTeX Warning: Reference `cha:problem' on page 7 undefined on input line 96.
+
+
+LaTeX Warning: Reference `cha:single-user' on page 7 undefined on input line 96
+.
+
+
+LaTeX Warning: Reference `cha:problem' on page 7 undefined on input line 96.
+
+
+LaTeX Warning: Reference `cha:multi-user' on page 7 undefined on input line 96.
+
+
+
+LaTeX Warning: Reference `cha:single-user' on page 7 undefined on input line 96
+.
+
+
+LaTeX Warning: Reference `cha:single-user' on page 7 undefined on input line 96
+.
+
+
+LaTeX Warning: Reference `cha:single-user' on page 7 undefined on input line 96
+.
+
+
+LaTeX Warning: Reference `cha:conclusion' on page 7 undefined on input line 96.
+
+
+) [7] [8]
 \openout2 = `data/chap02.aux'.
 
  (./data/chap02.tex
@@ -2799,6 +3371,22 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 
 
 ]
+
+Package natbib Warning: Citation `bellare1994incremental' on page 10 undefined 
+on input line 58.
+
+
+Package natbib Warning: Citation `kamara2011cs2' on page 10 undefined on input 
+line 58.
+
+
+Package natbib Warning: Citation `wood2014ethereum' on page 10 undefined on inp
+ut line 65.
+
+
+Package natbib Warning: Citation `merklepatriciatree' on page 10 undefined on i
+nput line 65.
+
 File: fig/MPTUpdate.eps Graphic file (type eps)
 <fig/MPTUpdate.eps>
 
@@ -2806,7 +3394,35 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 69--71
  [][] 
  []
 
-[10] [11]
+
+LaTeX Warning: Reference `fig:MPTUpdate' on page 10 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `fig:MPTUpdate' on page 10 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `fig:MPTUpdate' on page 10 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `fig:MPTUpdate' on page 10 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `fig:MPTUpdate' on page 10 undefined on input line 75.
+
+
+[10]
+
+Package natbib Warning: Citation `RLPcode' on page 11 undefined on input line 7
+7.
+
+[11]
+
+LaTeX Warning: Reference `fig:SSE' on page 12 undefined on input line 84.
+
 File: fig/SSE.eps Graphic file (type eps)
 <fig/SSE.eps>
 
@@ -2815,6 +3431,37 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 88--90
  []
 
 [12]
+
+Package natbib Warning: Citation `bosch2015survey' on page 13 undefined on inpu
+t line 100.
+
+
+Package natbib Warning: Citation `sandhu1996role' on page 13 undefined on input
+ line 102.
+
+
+Package natbib Warning: Citation `ferraiolo2001proposed' on page 13 undefined o
+n input line 102.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 13 undefined 
+on input line 102.
+
+
+Package natbib Warning: Citation `jarecki2013outsourced' on page 13 undefined o
+n input line 102.
+
+
+Package natbib Warning: Citation `sun2016efficient' on page 13 undefined on inp
+ut line 102.
+
+
+LaTeX Warning: Reference `fig:MSSE' on page 13 undefined on input line 104.
+
+
+Package natbib Warning: Citation `curtmola2011searchable' on page 13 undefined 
+on input line 104.
+
 File: fig/MSSE.eps Graphic file (type eps)
 <fig/MSSE.eps>
 
@@ -2830,12 +3477,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./data/chap03.tex
 第3章
+
+LaTeX Warning: Reference `fig:GS-VSSE' on page 15 undefined on input line 7.
+
 File: fig/GS-VSSE.eps Graphic file (type eps)
 <fig/GS-VSSE.eps>
 
 Overfull \hbox (6.82864pt too wide) in paragraph at lines 10--12
  [][] 
  []
+
+
+LaTeX Warning: Reference `def:SSE' on page 15 undefined on input line 18.
 
 [15
 
@@ -2844,12 +3497,47 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 10--12
 ]
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.045pt on input line 23.
- [16] [17]
+
+
+LaTeX Warning: Reference `def:SSE' on page 16 undefined on input line 33.
+
+
+LaTeX Warning: Reference `def:single' on page 16 undefined on input line 33.
+
+[16] [17]
+
+LaTeX Warning: Reference `def:single' on page 18 undefined on input line 54.
+
+
+LaTeX Warning: Reference `alg:Init' on page 18 undefined on input line 58.
+
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 60.
+
+LaTeX Warning: Reference `alg:update' on page 18 undefined on input line 75.
+
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.0pt on input line 75.
- [18] [19] [20] [21]
+[18]
+
+LaTeX Warning: Reference `alg:verifyupdate' on page 19 undefined on input line 
+101.
+
+[19]
+
+LaTeX Warning: Reference `sec:example' on page 20 undefined on input line 123.
+
+
+LaTeX Warning: Reference `alg:Prove' on page 20 undefined on input line 127.
+
+
+LaTeX Warning: Reference `sec:example' on page 20 undefined on input line 128.
+
+[20]
+
+LaTeX Warning: Reference `alg:verify' on page 21 undefined on input line 183.
+
+[21]
 File: fig/inverted-index.eps Graphic file (type eps)
 <fig/inverted-index.eps>
 File: fig/MPT.eps Graphic file (type eps)
@@ -2868,7 +3556,43 @@ Overfull \hbox (22.13368pt too wide) in paragraph at lines 214--215
 [][] 
  []
 
-[22] [23] [24]
+
+LaTeX Warning: Reference `fig:inverted-index' on page 22 undefined on input lin
+e 221.
+
+
+LaTeX Warning: Reference `fig:MPT' on page 22 undefined on input line 221.
+
+
+LaTeX Warning: Reference `fig:updateProof' on page 22 undefined on input line 2
+21.
+
+
+LaTeX Warning: Reference `fig:resultProof' on page 22 undefined on input line 2
+21.
+
+
+LaTeX Warning: Reference `fig:inverted-index' on page 22 undefined on input lin
+e 223.
+
+
+LaTeX Warning: Reference `fig:MPT' on page 22 undefined on input line 223.
+
+[22]
+
+LaTeX Warning: Reference `fig:updateProof' on page 23 undefined on input line 2
+25.
+
+[23]
+
+LaTeX Warning: Reference `fig:resultProof' on page 24 undefined on input line 2
+28.
+
+
+LaTeX Warning: Reference `fig:resultProof' on page 24 undefined on input line 2
+29.
+
+[24]
 File: fig/security.eps Graphic file (type eps)
 <fig/security.eps>
 
@@ -2876,23 +3600,73 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 237--239
  [][] 
  []
 
+
+LaTeX Warning: Reference `fig:security' on page 25 undefined on input line 243.
+
+
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.045pt on input line 243.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 243.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.0pt on input line 243.
+
+LaTeX Warning: Reference `equ:sim' on page 25 undefined on input line 243.
+
+
+LaTeX Warning: Reference `def:sim' on page 25 undefined on input line 243.
+
 [25]
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
 ut line 257.
+
+
+LaTeX Warning: Reference `equ:leakage' on page 26 undefined on input line 263.
+
+
+LaTeX Warning: Reference `theo:sim' on page 26 undefined on input line 269.
+
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 271.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 276.
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
- [26] [27]
+[26]
+
+LaTeX Warning: Reference `def:freshness' on page 27 undefined on input line 287
+.
+
+
+LaTeX Warning: Reference `def:integrity' on page 27 undefined on input line 287
+.
+
+
+LaTeX Warning: Reference `equ:game' on page 27 undefined on input line 287.
+
+
+LaTeX Warning: Reference `def:game' on page 27 undefined on input line 287.
+
+
+LaTeX Warning: Reference `def:game' on page 27 undefined on input line 311.
+
+
+LaTeX Warning: Reference `theo:game' on page 27 undefined on input line 311.
+
+[27]
 Missing character: There is no ̃ in font ntx-Regular-tlf-t1!
+
+
+Package natbib Warning: Citation `enronemail' on page 28 undefined on input lin
+e 328.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 28 undefined on inpu
+t line 330.
+
+
+LaTeX Warning: Reference `fig:init' on page 28 undefined on input line 335.
+
 File: expr/initialization.eps Graphic file (type eps)
 <expr/initialization.eps>
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -2901,62 +3675,221 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.06006pt on input line 340.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.07271pt on input line 340.
- [28]
+[28]
+
+LaTeX Warning: Reference `fig:update' on page 29 undefined on input line 346.
+
 File: expr/update.eps Graphic file (type eps)
 <expr/update.eps>
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:verifyupdate' on page 29 undefined on input line 
+357.
 
 File: expr/verifyupdate.eps Graphic file (type eps)
 <expr/verifyupdate.eps>
 [29]
+
+LaTeX Warning: Reference `fig:prove' on page 30 undefined on input line 367.
+
 File: expr/prove.eps Graphic file (type eps)
 <expr/prove.eps>
- [30]
+[30]
+
+LaTeX Warning: Reference `fig:verify' on page 31 undefined on input line 376.
+
 File: expr/verify.eps Graphic file (type eps)
 <expr/verify.eps>
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:proof' on page 31 undefined on input line 385.
 
 [31]
 File: expr/proof.eps Graphic file (type eps)
 <expr/proof.eps>
- [32]
+
+
+LaTeX Warning: Reference `fig:storage' on page 32 undefined on input line 396.
+
+[32]
 File: expr/storage.eps Graphic file (type eps)
 <expr/storage.eps>
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 33 undefined on inpu
+t line 407.
+
+
+LaTeX Warning: Reference `fig:comparison' on page 33 undefined on input line 40
+7.
+
 File: expr/comparison.eps Graphic file (type eps)
 <expr/comparison.eps>
+
+Package natbib Warning: Citation `cash2014dynamic' on page 33 undefined on inpu
+t line 412.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 33 undefined on inpu
+t line 412.
+
+
+LaTeX Warning: Reference `fig:comparison' on page 33 undefined on input line 41
+5.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 33 undefined on inpu
+t line 415.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 33 undefined on inpu
+t line 415.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33] [34]) [35]
+[33]
+
+LaTeX Warning: Reference `tab:compareSSE' on page 34 undefined on input line 41
+7.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 34 undefined on inpu
+t line 421.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 34 undefined on inpu
+t line 421.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 34 undefined on inpu
+t line 426.
+
+
+Package natbib Warning: Citation `cash2014dynamic' on page 34 undefined on inpu
+t line 436.
+
+[34]) [35]
 \openout2 = `data/chap04.aux'.
 
  (./data/chap04.tex
 第4章
 File: fig/GM-VSSE.eps Graphic file (type eps)
 <fig/GM-VSSE.eps>
+
+LaTeX Warning: Reference `fig:GM-VSSE' on page 36 undefined on input line 18.
+
+
+LaTeX Warning: Reference `def:MSSE' on page 36 undefined on input line 22.
+
 [36
 
 
 
-] [37] [38] [39] [40]
+] [37]
+
+LaTeX Warning: Reference `def:multi' on page 38 undefined on input line 39.
+
+[38] [39]
+
+Package natbib Warning: Citation `stefanov2014practical' on page 40 undefined o
+n input line 64.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <9.03374> not available
+
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 9.03374pt on input line 68.
+
+LaTeX Warning: Reference `sec:experiments' on page 40 undefined on input line 6
+8.
+
+
+LaTeX Warning: Reference `sec:experiments' on page 40 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `mills1991internet' on page 40 undefined on in
+put line 69.
+
+
+Package natbib Warning: Citation `mills2010network' on page 40 undefined on inp
+ut line 69.
+
+
+Package natbib Warning: Citation `kopetz1987clock' on page 40 undefined on inpu
+t line 69.
+
+
+Package natbib Warning: Citation `elson2002fine' on page 40 undefined on input 
+line 69.
+
+
+Package natbib Warning: Citation `zhou2007accurate' on page 40 undefined on inp
+ut line 69.
+
+
+LaTeX Warning: Reference `equ:timestamp-chain' on page 40 undefined on input li
+ne 73.
+
+[40]
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 79.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 5.39996pt on input line 79.
  [41]
 
+LaTeX Warning: Reference `alg:check' on page 42 undefined on input line 102.
+
+
+LaTeX Warning: Reference `alg:verify2' on page 42 undefined on input line 102.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `alg:check' on page 42 undefined on input line 136.
+
+
+LaTeX Warning: Reference `alg:verify2' on page 42 undefined on input line 155.
 
 File: fig/timestamp.eps Graphic file (type eps)
 <fig/timestamp.eps>
-[42] [43] [44]
+[42]
+
+LaTeX Warning: Reference `fig:timestamp' on page 43 undefined on input line 171
+.
+
+[43]
+
+LaTeX Warning: Reference `sec:single-security' on page 44 undefined on input li
+ne 180.
+
+
+LaTeX Warning: Reference `theo:multi' on page 44 undefined on input line 180.
+
+[44]
+
+LaTeX Warning: Reference `fig:bandwidth' on page 45 undefined on input line 197
+.
+
+
+LaTeX Warning: Reference `fig:verify-2' on page 45 undefined on input line 197.
+
+
 File: expr/bandwidth.eps Graphic file (type eps)
 <expr/bandwidth.eps>
+
+LaTeX Warning: Reference `fig:bandwidth' on page 45 undefined on input line 208
+.
+
+
+LaTeX Warning: Reference `fig:bandwidth' on page 45 undefined on input line 209
+.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2967,6 +3900,14 @@ File: expr/verify-2.eps Graphic file (type eps)
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:verify-2' on page 46 undefined on input line 218.
+
+
+
+LaTeX Warning: Reference `fig:bandwidth' on page 46 undefined on input line 220
+.
 
 [46] [47]) [48]
 \openout2 = `data/chap05.aux'.
@@ -3018,24 +3959,38 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 \tf@thm=\write6
 \openout6 = `main.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
- (./main.aux (./data/chap01.aux) (./data/chap02.aux)
-(./data/chap03.aux) (./data/chap04.aux) (./data/chap05.aux) (./data/ack.aux)
-(./data/resume.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 86.
+
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+(./main.aux (./data/chap01.aux) (./data/chap02.aux) (./data/chap03.aux)
+(./data/chap04.aux) (./data/chap05.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+(./data/ack.aux) (./data/resume.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 45960 strings out of 493007
- 897276 string characters out of 6137965
- 951541 words of memory out of 5000000
- 49158 multiletter control sequences out of 15000+600000
- 681891 words of font info for 204 fonts, out of 8000000 for 9000
+ 45930 strings out of 493007
+ 896896 string characters out of 6137965
+ 933967 words of memory out of 5000000
+ 49142 multiletter control sequences out of 15000+600000
+ 684675 words of font info for 205 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  66i,12n,96p,10438b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
