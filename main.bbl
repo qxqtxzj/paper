@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -255,6 +255,27 @@ Liu P, Wang J, Ma H, et~al.
   on kp-abe\allowbreak[C]. \allowbreak{}
 \newblock Proc. of Broadband and Wireless Computing, Communication and
   Applications (BWCCA) , 2014.
+
+\bibitem[Liu\ et~al.(2015)Liu, Yang, Pan, and Wei]{liu2015cca}
+Liu Z, Yang X, Pan F, et~al.
+\newblock Cca-secure publicly verifiable public key encryption scheme without
+  pairings\allowbreak[J].
+\newblock International Journal of Grid and Utility Computing, 2015, 6\penalty0
+  (2): 74--82.
+
+\bibitem[Ameri\ et~al.(2015)Ameri, Asaar, Mohajeri, and
+  Salmasizadeh]{ameri2015generic}
+Ameri M~H, Asaar M~R, Mohajeri J, et~al.
+\newblock A generic construction for verifiable attribute-based keyword search
+  schemes.\allowbreak[J].
+\newblock IACR Cryptology ePrint Archive, 2015, 2015: 915.
+
+\bibitem[Zhang\ et~al.(2016)Zhang, Xue, Yu, and Liu]{zhang2016pvsae}
+Zhang R, Xue R, Yu T, et~al.
+\newblock Pvsae: A public verifiable searchable encryption service framework
+  for outsourced encrypted data\allowbreak[C]. \allowbreak{}
+\newblock Web Services (ICWS), 2016 IEEE International Conference on : IEEE,
+  2016: 428--435.
 
 \bibitem[Yang\ et~al.(2009)Yang, Bao, Ding, and Deng]{yang2009multiuser}
 Yang Y, Bao F, Ding X, et~al.

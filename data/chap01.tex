@@ -59,7 +59,7 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 
 
 \subsection{可验证数据结构}
-可验证数据结构 (Authenticated Data Structure, ADS) 在不可信的云存储环境中，主要被用于验证数据块的完整性。典型的可验证数据结构包括：默克尔树 (Merkle Tree, MT)~\cite{merkle1987digital}, 可验证哈希表( Authenticated Hash Table, AHT)~\cite{papamanthou2008authenticated} 以及可验证跳表 (Authenticated Skip List, ASL)~\cite{pugh1990skip,goodrich2001implementation}。其中，默克尔树是最常见的用于验证数据完整性的数据结构，但是默克尔树对数据更新的支持不够灵活。采用默克尔树实现的可验证对称加密搜索方案~\cite{kamara2011cs2}由于没法在中间节点存储关键字信息，因此也不支持与关键字相关的搜索。可验证哈希表采用了RSA累加器 (RSA Accumulator)~\footnote{RSA为提出该算法的三个密码学家名字的首字母，分别为Ron Rivest, Adi Shamir, 和Leonard Adleman}  方法来实现数据验证，但是它的搜索和更新性能都较低。具体而言，可验证哈希表的搜索与更新速度在毫秒级别，而我们采用的默克尔帕特里夏树 (Merkle Patricia Tree, MPT) 的搜索更新速度在微秒级别。可验证跳表采用了类似多级链表的方式来实现，一定程度上提升了搜索性能，但如果它将关键字信息存储于搜索路径上，存储空间将比MPT大很多。
+可验证数据结构 (Authenticated Data Structure, ADS) 在不可信的云存储环境中，主要被用于验证数据块的完整性。典型的可验证数据结构包括：默克尔树 (Merkle Tree, MT)~\cite{merkle1987digital}, 可验证哈希表( Authenticated Hash Table, AHT)~\cite{papamanthou2008authenticated} 以及可验证跳表 (Authenticated Skip List, ASL)~\cite{pugh1990skip,goodrich2001implementation}。其中，默克尔树是最常见的用于验证数据完整性的数据结构，但是默克尔树对数据更新的支持不够灵活。采用默克尔树实现的可验证对称加密搜索方案~\cite{kamara2011cs2}由于没法在中间节点存储关键字信息，因此也不支持与关键字相关的搜索。可验证哈希表采用了RSA累加器 (RSA Accumulator)~\footnote{RSA为提出该算法的三个密码学家名字的首字母，分别为Ron Rivest, Adi Shamir和Leonard Adleman}  方法来实现数据验证，但是它的搜索和更新性能都较低。具体而言，可验证哈希表的搜索与更新速度在毫秒级别，而我们采用的默克尔帕特里夏树 (Merkle Patricia Tree, MPT) 的搜索更新速度在微秒级别。可验证跳表采用了类似多级链表的方式来实现，一定程度上提升了搜索性能，但如果它将关键字信息存储于搜索路径上，存储空间将比MPT大很多。
 
 
 \subsection{可验证对称加密搜索方案}
@@ -75,7 +75,7 @@ cheng2015verifiable,ogataefficient,bost2016verifiable}仅仅支持在单用户�
 综上所述，现有的可验证加密搜索方案无法在保证验证效率的同时，完善地验证数据新鲜性和数据完整性。并且现有的方案都不能满足多用户场景下的对称加密搜索结果验证。这需要我们利用合理的数据结构，并设计合理的算法来设计一个通用的可验证对称加密搜索方案。
 
 \subsection{可验证公钥加密搜索方案}
-第一个可验证的公钥加密搜索方案~\cite{zheng2014vabks}由Zheng等人提出，他们的方案采用了基于属性的关键字 (Attribute-based keyword, ABK)技术，但是他们的方案也只适用于数据库静态的情况。基于他们的工作，Liu等人又提出了一个更高效的可验证公钥加密搜索方案~\cite{liu2014efficient}，Sun等人也提出了一个支持多关键字搜索的可验证公钥加密搜索方案~\cite{sun2015catch}。然而，由于公钥加密本身的限制，他们的方案必不可少地需要引入一个可信第三方，并且搜索的性能大大低于可验证对称加密搜索方案。
+第一个可验证的公钥加密搜索方案~\cite{zheng2014vabks}由Zheng等人提出，他们的方案采用了基于属性的关键字 (Attribute-based keyword, ABK)技术，但是他们的方案也只适用于数据库静态的情况，当用户数据有更新时，需要重新构建索引，效率低下。基于他们的工作，Liu等人又提出了一个更高效的可验证公钥加密搜索方案~\cite{liu2014efficient}，Sun等人提出了一个支持多关键字搜索的可验证公钥加密搜索方案~\cite{sun2015catch}，Liu等人又提出了一个可以防止选择密文攻击的可验证公钥加密方案~\cite{liu2015cca}。此外，也还有许多可验证公钥加密搜索方案~\cite{ameri2015generic,zhang2016pvsae}。然而，由于公钥加密本身的限制，他们的方案必不可少地需要引入一个可信第三方，并且搜索的性能大大低于可验证对称加密搜索方案。
 
 \subsection{多用户加密搜索方案}
 目前有一些多用户场景下的加密搜索方案~\cite{curtmola2011searchable,yang2009multiuser,jarecki2013outsourced,sun2016efficient}，但这些方案都不支持结果验证。Curtmola等人在2006年即提出了一个基于广播加密的多用户加密搜索方案~\cite{curtmola2011searchable}，该方案允许数据持有者将数据分享给其他用户，并且数据持有者可以设定其他用户的访问控制权限，可以随时撤销或者新增用户。Yang等人也通过双线性映射 (Bilinear Mapping) 技术提出了一种支持多用户读多用户写的方案~\cite{yang2009multiuser}，但是该方案的搜索效率与数据集合的大小成正比，无法应用于数据量很大的场景中。Jerecki等人随后又提出了一个多用户加密搜索方案~\cite{jarecki2013outsourced}，但是该方案需要数据持有者和其合法数据搜索用户产生频繁交互，给数据持有者带来了很大的通信开销。近期，Sun等人提出了一个非交互式的多用户加密搜索方案~\cite{sun2016efficient}，该方案降低了数据持有者的通信开销，但他们的方案不支持用户数据更新。据我们目前所知，现有的可验证对称加密搜索方案都只支持单用户场景下的结果验证，而不支持多用户场景下的结果验证，因为多用户场景下的结果验证会面临更多的挑战。例如，当数据在不同用户之间共享时，由于数据搜索用户无法探知数据持有者是否对数据集合进行了更新，因此一个恶意的服务器可以返回旧数据集合的搜索结果。除非数据持有者在每次更新时都通知所有的数据搜索用户，但这将会带来很大的通信开销。我们将在第~\ref{cha:multi-user} 章具体讲述我们的多用户方案。

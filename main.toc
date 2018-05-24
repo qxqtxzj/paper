@@ -50,6 +50,6 @@
 \contentsline {section}{\numberline {5.1}论文工作总结}{49}{section.5.1}
 \contentsline {section}{\numberline {5.2}未来工作展望}{50}{section.5.2}
 \contentsline {chapter}{参考文献}{51}{section*.32}
-\contentsline {chapter}{致\hspace {1em}谢}{54}{section*.34}
-\contentsline {chapter}{声\hspace {1em}明}{55}{section*.36}
-\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{56}{section*.38}
+\contentsline {chapter}{致\hspace {1em}谢}{55}{section*.34}
+\contentsline {chapter}{声\hspace {1em}明}{56}{section*.36}
+\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{57}{section*.38}
