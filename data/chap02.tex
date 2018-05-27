@@ -1,6 +1,6 @@
 \chapter{问题描述与背景知识}
 \label{cha:problem}
-本章将首先对论文的攻击模型，论文需要解决的问题和论文预计达到的目标进行定义，然后对论文中需要用到的先验知识进行介绍。
+本章将首先对论文的攻击模型，论文需要解决的问题和论文预计达到的目标进行定义，然后对论文中需要用到的背景知识进行介绍。
 
 \section{问题定义}
 在本节中，我们将正式定义方案的攻击模型，方案需要解决的问题以及方案需要实现的目标。
@@ -97,7 +97,7 @@
 
 \subsection{多用户对称加密搜索}
 
-根据Bosch等人提出的综述~\cite{bosch2015survey}，现有的加密搜索方案可以分为四种类别：单方写入/单方读取 (single writer/single reader, S/S)， 单方写入/多方读取(single writer/multi-reader, S/M)，多方写入/单方读取(multi- writer/single reader, M/S) 以及多方写入/多方读取(multi-writer/multi-reader, M/M)。在本文中我们主要针对单方写入/多方读取这种多用户场景，因为该场景多用于个人用户的存储与数据共享场景中，而多方写入/单方读取的场景多用于邮件数据存储，多方写入/多方读取场景主要用户企业级云存储方案中。
+根据Bosch等人提出的综述~\cite{bosch2015survey}，现有的加密搜索方案可以分为四种类别：单方写入/单方读取 (Single writer/Single reader, S/S)， 单方写入/多方读取(Single writer/Multi-reader, S/M)，多方写入/单方读取(Multi- writer/Single reader, M/S) 以及多方写入/多方读取(Multi-writer/Multi-reader, M/M)。在本文中我们主要针对单方写入/多方读取这种多用户场景，因为该场景多用于个人用户的存储与数据共享场景中，而多方写入/单方读取的场景多用于邮件数据存储，多方写入/多方读取场景主要用户企业级云存储方案中。
 
 本文并不致力于研究一种访问控制方案来实现多用户的加密搜索方案，因为针对用户的访问控制问题目前已有许多研究，例如基于角色的访问控制策略( Role-based Access Control Policies)~\cite{sandhu1996role,ferraiolo2001proposed}等等细粒度的访问控制方案。数据持有者可以根据每个用户的不同职责来为其分配不同的访问权限，每个角色对应于一种访问权限，例如只读等等。本方案可以为实现了这种数据访问控制的多用户加密搜索方案提供结果验证功能。目前已有相关研究提出了这种支持单方写入/多方读取的多用户加密搜索方案~\cite{curtmola2011searchable, jarecki2013outsourced,sun2016efficient}，例如广播加密方案(Broadcase Encryption, BE)和基于属性加密搜索方案(Attribute-Based Encryption, ABE)等等。
 

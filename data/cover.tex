@@ -65,9 +65,9 @@
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  云存储的发展使得用户可以方便地存储、获取与分享数据，例如提供了随时存取功能，减少了本地数据存储开销并且提供了灵活的服务。但与此同时，云存储也带来了很多安全问题，例如，数据隐私泄露等等。对称加密搜索的提出解决了云存储的数据隐私泄露问题，同时也保证了数据的可搜索性。通过使用对称加密搜索，用户可以将数据加密后再上传给云服务器，同时云服务器可以在加密数据上进行关键字搜索，从而确保数据隐私。
+  云存储的发展使得用户可以方便地存储、获取与分享数据，例如用户可以随时存取数据，减少了用户本地数据存储的开销并且为用户提供了更灵活的服务。但与此同时，云存储也带来了很多安全问题，例如，数据隐私泄露等等。对称加密搜索的提出解决了云存储的数据隐私泄露问题，同时也保证了数据的可搜索性。通过使用对称加密搜索，用户可以将数据加密后再上传给云服务器，同时云服务器可以在加密数据上进行关键字搜索，从而确保数据隐私。
 
-  然而，现有对称加密搜索方案的假定都是云服务器半可信，即云服务器会遵守协议。不幸的是，这个假设在现实情况中往往是不成立的，因为云服务器有可能会遭受外部攻击，内部配置错误，软件错误，甚至内部攻击等等。所有这些因素都会导致云服务器背离原有协议。为了解决该问题，可验证对称加密搜索技术相应提出，它通过结果验证机制可以检测云服务器的恶意行为。但是，现有的可验证对称加密搜索方案都不完善，例如，不支持用户数据动态更新，依赖于特定的对称加密搜索方案，只支持单用户读写等等。
+  然而，现有对称加密搜索方案的假定都是云服务器半可信，即云服务器会遵守协议。不幸的是，这个假设在现实情况中往往是不成立的，因为云服务器有可能会遇到外部攻击，内部配置错误，软件错误，甚至内部攻击等问题。所有这些因素都会导致云服务器背离原有协议。为了解决该问题，可验证对称加密搜索技术相应提出，它通过结果验证机制可以检测云服务器的恶意行为。但是，现有的可验证对称加密搜索方案都不完善，例如，不支持用户数据动态更新，依赖于特定的对称加密搜索方案，只支持单用户读写等等。
 
   针对以上的问题，本文提出了一种通用的可验证对称加密搜索方案，该方案支持用户数据更新，可以为任何加密搜索方案提供结果验证功能，并且能够同时在单用户和多用户的场景下工作。本文的主要工作和创新点包括：
 
@@ -89,14 +89,13 @@
   Searchable Symmetric Encryption (SSE) has been proposed. By using SSE, users can encrypt their data before uploading to cloud services, and cloud services can directly operate and search over encrypted data, which ensures data privacy.
 
   However, most existing SSE schemes are built based on the assumption that cloud services are semi-honest, which means cloud services will not deviate from the prescribed protocols. Unfortunately, this assumption does not always hold in practice, since cloud services may be subject to external attacks, internal misconfiguration errors, software bugs, and even insider threats. All these factors may cause the cloud services to deviate from the prescribed protocol and operate beyond the semi-honest model.
-  %This assumption does not always hold in practice due to the untrusted nature in storage outsourcing.
   To alleviate the issue, there have been studies on Verifiable Searchable Symmetric Encryption (VSSE), which functions against malicious cloud services by enabling results verification. But to our best knowledge, existing VSSE schemes exhibit very limited applicability, such as only supporting static database, demanding specific SSE constructions, or only working in the single-user model.
 
   In this paper, we proposed a generic verifiable SSE framework in both single-user model and single-writer multiple-reader model, which provides verifiability for any SSE schemes and further supports data updates. In summary, our contributions are three-fold:
   \begin{itemize}
     \item We proposed a verifiable SSE framework in single-user model and designed the result verification algorithms. The framework seperate the verification index from the SSE construction and can provides generic verification for any SSE schemes. The algorithms guaranteed both data freshness and data integrity with support of data updates.
     \item We proposed the first verifiable SSE framework in the single-writer and multiple-reader model, which ensures data freshness across multiple users and provides result verification under data sharing scenario.
-    \item Security analysis shows that our shceme will not leak any private information and experimental result shows that our scheme introduces negligible overhead for result verification.
+    \item Security analysis shows that our scheme will not leak any private information and experimental result shows that our scheme introduces negligible overhead for result verification.
     %通过安全性分析证明，本文提出的可验证对称加密搜索方案不泄露用户数据隐私信息。通过基于开源数据集的实验测试表明，方案引入的计算开销和通信开销很小，几乎可以忽略不计。We implemented our framework and fed it with an open-source data set.
   \end{itemize}
 \end{eabstract}
